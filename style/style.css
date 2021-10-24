@@ -8,7 +8,7 @@ header {
   background-color: darkgrey;
 }
 
-main {
+#main {
   width: 600px;
   height: 450px;
   background-color: forestgreen;
