@@ -9,7 +9,7 @@ img {
 }
 
 @media screen and (max-width: 576px) {
-  header nav .ButtonBox {
-    background-color: chartreuse;
+  header nav .News {
+    background-color: darkgreen;
   }
 }
