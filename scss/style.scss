@@ -1,0 +1,9 @@
+// 匯入檔案 @import
+@import "_01Joint.scss";
+
+// RWD 利用 媒體判斷來區分顯示裝置尺寸
+// 超小裝置 <576px max-wadth （最小寬度）
+@media screen and (max-width: 576px) {
+    // 匯入檔案 @import
+    @import "_02Esmall/01index";
+}
