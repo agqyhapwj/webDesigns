@@ -19,93 +19,91 @@
     <!-- html5 響應式網頁架構 id (唯一 #) class(類別 .) -->
     <!-- 頁首header(每頁固定) 主內容main(隨著頁面主題而不同，IE瀏覽器不支援) 頁尾footer(每頁固定) 文章 (article，IE支援取代 main 標籤) -->
     <header>
-        <header>
-            <!-- 導覽列標籤 nav 項目 ul 清單 li , 商標 標題 h1-->
-            <!-- 導覽列：Logo -->
-            <!-- 導覽列Button:1.最新活動 2.咖啡豆專區 3.會員專區 4.營業據點 5.咖啡寄杯 6.線上宅配 -->
-            <nav>
-                <!-- 導覽列Logo -->
-                <h1 id="Logo">BsCoffee </h1>
+        <!-- 導覽列標籤 nav 項目 ul 清單 li , 商標 標題 h1-->
+        <!-- 導覽列：Logo -->
+        <!-- 導覽列Button:1.最新活動 2.咖啡豆專區 3.會員專區 4.營業據點 5.咖啡寄杯 6.線上宅配 -->
+        <nav>
+            <!-- 導覽列Logo -->
+            <h1 id="Logo">BsCoffee </h1>
+            
+            <!--導覽列按鈕大框架 -->
+            <ul class="ButtonBox">
+
+                <!-- 按鈕1.最新活動. -->
+                <li class="News"><h3>1.最新活動</h3>
+                    <ul class="NewsBox">
+                        <li class="Birthday">當月壽星</li>
+                        <li class="FreeCoupon">五倍券</li>
+                        <li class="ShopOffers">單店優惠</li>
+                    </ul>
+                </li>
+
+                <!-- 按鈕2.咖啡豆專區 -->
+                <li class="CofeBeans"><h3>2.咖啡豆專區</h3>
+                    <ul class="cofeBeansBox">
+                        <li class="item1">神曲咖啡豆</li>
+                        <li class="Item2">響宴咖啡豆</li>
+                        <li class="Item3">新生咖啡豆</li>
+                        <li class="Item4">s經曲濃縮</li>
+                    </ul>
+                </li>
+
+                <!-- 按鈕3.會員專區 -->
+                <li class="Member"><h3>3.會員事項</h3>
+                    <ul class="MemberBox">
+                        <li class="Card">Bs會員卡</li>
+                        <li class="Warning">Bs卡注意事項</li>
+                        <li class="Point">點數兌換商品</li>
+                        <li class="MoneyInquiry">交易明細查詢</li>
+                    </ul>
+                </li>
+
+                <!-- 按鈕4.營業據點 -->
+                <li class="BusLocation"><h3>4.營業據點</h3>
+                    <ul class="BusLocationBox">
+                        <li class="location">據當查詢</li>
+                        <li class="WifeService">無線上網服務</li>
+                    </ul>
+                </li>
+
+                <!-- 按鈕5.咖啡寄杯 -->
+                <li class="DepositCofe"><h3>5.咖啡寄杯</h3>
+                    <ul class="DepositCofeBox">
+                        <li class="GiveAway">商品圖</li>
+                        <li class="Describe">文字說明</li>
+                    </ul>
+                </li>
+
+                <!-- 按鈕6.線上宅配 -->
+                <li class="OnLineDelivery"><h3>6.線上宅配</h3>
+                    <!-- 把圖片作為連結 點選跳轉到指定URL -->
+                    <a href="https://ec.dante.com.tw/">
+                        <img src="images/onLiveShop.jpg" alt="請點我進入購買頁面">
+                    </a>
                 
-                <!--導覽列按鈕大框架 -->
-                <ul class="ButtonBox">
-    
-                    <!-- 按鈕1.最新活動. -->
-                    <li class="News"><h3>1.最新活動</h3>
-                        <ul class="NewsBox">
-                            <li class="Birthday">當月壽星</li>
-                            <li class="FreeCoupon">五倍券</li>
-                            <li class="ShopOffers">單店優惠</li>
-                        </ul>
-                    </li>
-    
-                    <!-- 按鈕2.咖啡豆專區 -->
-                    <li class="CofeBeans"><h3>2.咖啡豆專區</h3>
-                        <ul class="cofeBeansBox">
-                            <li class="item1">神曲咖啡豆</li>
-                            <li class="Item2">響宴咖啡豆</li>
-                            <li class="Item3">新生咖啡豆</li>
-                            <li class="Item4">s經曲濃縮</li>
-                        </ul>
-                    </li>
-    
-                    <!-- 按鈕3.會員專區 -->
-                    <li class="Member"><h3>3.會員事項</h3>
-                        <ul class="MemberBox">
-                            <li class="Card">Bs會員卡</li>
-                            <li class="Warning">Bs卡注意事項</li>
-                            <li class="Point">點數兌換商品</li>
-                            <li class="MoneyInquiry">交易明細查詢</li>
-                        </ul>
-                    </li>
-    
-                    <!-- 按鈕4.營業據點 -->
-                    <li class="BusLocation"><h3>4.營業據點</h3>
-                        <ul class="BusLocationBox">
-                            <li class="location">據當查詢</li>
-                            <li class="WifeService">無線上網服務</li>
-                        </ul>
-                    </li>
-    
-                    <!-- 按鈕5.咖啡寄杯 -->
-                    <li class="DepositCofe"><h3>5.咖啡寄杯</h3>
-                        <ul class="DepositCofeBox">
-                            <li class="GiveAway">商品圖</li>
-                            <li class="Describe">文字說明</li>
-                        </ul>
-                    </li>
-    
-                    <!-- 按鈕6.線上宅配 -->
-                    <li class="OnLineDelivery"><h3>6.線上宅配</h3>
-                        <!-- 把圖片作為連結 點選跳轉到指定URL -->
-                        <a href="https://ec.dante.com.tw/">
-                            <img src="images/onLiveShop.jpg" alt="請點我進入購買頁面">
-                        </a>
-                    
-                    </li>
-                </ul>
-                
-                <!-- 導覽列 icon 區塊標籤 div id:Icon -->
-                <div id="Icon">
-                    <li class="MemberLogin">登入icon</li>
-                    <li class="Facebook">臉書icon</li>
-                </div>
-    
-                <!-- 廣告區 div命名 輪播功能用javascript 命名建議用ID選擇器; css3輪播功能命名 ID選擇器或是類別選擇器 -->
-                <!-- 固定輪播圖: 主內容 會隨著頁面不同而改變 商品廣告輸播區 -->
-            <div id="Banner">
-                <div class="LeftBtn"> <p> 左按鈕</p> </div>
-                <ul id="ImgBox">
-                    <li>輪播圖1</li>
-                    <li>輪播圖2</li>
-                    <li>輪播圖3</li>
-                    <li>輪播圖4</li>
-                    <li>輪播圖5</li>
-                </ul>
-                <div class="RigohtBtn">右按鈕</div>
+                </li>
+            </ul>
+            
+            <!-- 導覽列 icon 區塊標籤 div id:Icon -->
+            <div id="Icon">
+                <li class="MemberLogin">登入icon</li>
+                <li class="Facebook">臉書icon</li>
             </div>
-            </nav>
-        </header>
+
+            <!-- 廣告區 div命名 輪播功能用javascript 命名建議用ID選擇器; css3輪播功能命名 ID選擇器或是類別選擇器 -->
+            <!-- 固定輪播圖: 主內容 會隨著頁面不同而改變 商品廣告輸播區 -->
+        <div id="Banner">
+            <div class="LeftBtn"> <p> 左按鈕</p> </div>
+            <ul id="ImgBox">
+                <li>輪播圖1</li>
+                <li>輪播圖2</li>
+                <li>輪播圖3</li>
+                <li>輪播圖4</li>
+                <li>輪播圖5</li>
+            </ul>
+            <div class="RigohtBtn">右按鈕</div>
+        </div>
+        </nav>
     </header>
     <div id="main"></div>
     <footer></footer>
