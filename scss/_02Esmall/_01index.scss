@@ -35,9 +35,9 @@ header {
     }
 }
 
-footer {
-    address {
-        // 呼叫繼承物件
-        @extend %DN;
-    }
-}
+// footer {
+//     address {
+//         // 呼叫繼承物件
+//         @extend %DN;
+//     }
+// }
