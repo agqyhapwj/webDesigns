@@ -1,17 +1,37 @@
 // 呼叫 html 標籤，例如 :nav 稱作 類型選擇
 // 呼叫 id，例如 <li id='test'></li>， id="test", 「#test」
 // 呼叫 class， class="test1"，「.」類別選擇器；「.test」
-// scss 1.巢狀寫法 2.變數 $yourname(設定計算用的基礎值)
+// scss 1.巢狀寫法 2.變數 $yourname(設定計算用的基礎值) 3.繼承
 
-$w10: 10%;
+// css3的寫法 隱藏
 
 header {
-    // 寬度 100%
-    width: $w10 * 10;
-    nav {
-        .News {
-            // 隱藏
-            display: none;
-        }
-    }
+    width: 100%;
+}
+address,
+#Icon,
+#MenuBtn {
+    display: none;
+}
+
+#Logo {
+    background-color: aliceblue;
+}
+
+header {
+    // // 寬度 100%
+    // width: $w10 * 10;
+    // nav {
+    //     .News {
+    //         // 隱藏
+    //         display: none;
+    //     }
+    // }
+}
+
+footer {
+    // address {
+    //     // 隱藏
+    //     display: none;
+    // }
 }

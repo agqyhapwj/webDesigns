@@ -12,7 +12,12 @@ img {
   header {
     width: 100%;
   }
-  header nav .News {
+  address,
+  #Icon,
+  #MenuBtn {
     display: none;
+  }
+  #Logo {
+    background-color: aliceblue;
   }
 }
