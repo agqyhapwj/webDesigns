@@ -5,3 +5,9 @@
     // 內間距--上下左右為0 padding
     padding: 0;
 }
+// 圖片等比控制
+img {
+    // 寬度為100%，高度自動
+    width: 100%;
+    height: auto;
+}
