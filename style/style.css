@@ -9,7 +9,7 @@ img {
 }
 
 @media screen and (max-width: 576px) {
-  header {
-    background-color: aqua;
+  header nav .News {
+    background-color: burlywood;
   }
 }
