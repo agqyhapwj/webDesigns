@@ -7,3 +7,28 @@
     // 匯入檔案 @import
     @import "_02Esmall/01index";
 }
+
+// 小裝置 >=576px min-width(最大寬度 含等於)
+@media screen and (min-width: 576px) {
+    @import "_03Small/01index";
+}
+
+// 平版裝置 >=768px Medium min-width(最大寬度 含等於)
+@media screen and (min-width: 768px) {
+    @import "_04Medium/01index";
+}
+
+// 大平版裝置 >=992px Large min-width(最大寬度 含等於)
+@media screen and (min-width: 992px) {
+    @import "_05Large/01index";
+}
+
+// 螢幕裝置 >=1200px Xlarge min-width(最大寬度 含等於)
+@media screen and (min-width: 1200px) {
+    @import "_06Xlarge/01index";
+}
+
+// 超大螢幕裝置 >= 1400px XXlarge min-winth(最大寬度 含等於)
+@media screen and (min-width: 14001px) {
+    @import "_07XXlarge/01index";
+}
