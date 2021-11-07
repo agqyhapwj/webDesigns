@@ -1,10 +1,12 @@
 // 呼叫 html 標籤，例如 :nav 稱作 類型選擇
 // 呼叫 id，例如 <li id='test'></li>， id="test", 「#test」
 // 呼叫 class， class="test1"，「.」類別選擇器；「.test」
+// scss 巢狀寫法
 header {
     nav {
         .News {
-            background-color: darkgreen;
+            // 隱藏
+            display: none;
         }
     }
 }
