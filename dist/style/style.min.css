@@ -1,1 +1,1 @@
-*{margin:0 auto;padding:0}img{width:100%;height:auto}@media screen and (max-width: 576px){header{width:100%}address,#Icon,#MenuBtn{display:none}#Logo{background-color:aliceblue}}
+*{margin:0 auto;padding:0}img{width:100%;height:auto}@media screen and (max-width: 576px){header nav .News,footer address{display:none}header{width:100%}}

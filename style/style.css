@@ -9,15 +9,10 @@ img {
 }
 
 @media screen and (max-width: 576px) {
-  header {
-    width: 100%;
-  }
-  address,
-  #Icon,
-  #MenuBtn {
+  header nav .News, footer address {
     display: none;
   }
-  #Logo {
-    background-color: aliceblue;
+  header {
+    width: 100%;
   }
 }
