@@ -1,121 +1,102 @@
 <!DOCTYPE html>
     <!-- 網頁語系 繁體中文 -->
 <html lang="zh-tw">
-    <!-- head 瀏覽器專用 meta（文件相關資訊 響應式標籤 關鍵字 文字編碼方式） -->
+    <!-- head裡的內容 瀏覽器內的相關文件資訊 ment標籤(響應式標籤 關鍵字 文字編碼方式 支援的瀏覽器等…)-->
 <head>
-    <!-- 文字編碼方式 萬國碼 -->
     <meta charset="UTF-8">
-    <!-- 伺服器屬性 內容：ie瀏覽器 = edge 瀏覽器（相容性） -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- 響應式 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 外部樣式連結 -->
-    <link rel="stylesheet" href="dist/style/style.min.css">
-    <!-- 網頁標題 唯一標籤 -->
-    <title>購物車專案</title>
-    </head>
- 
+    <title>我的測試專案</title>
+</head>
+<!-- html5響應式架構 id(唯一#) class(類別.) IE不支援(main標籤)可用 文章(article id="main")來取代-->
+<!-- 頁者headerr(每頁固定) 主內容main(隨著頁面主題而不同，IE瀏覽器不支援) 頁尾footer(每頁固定) -->
 <body>
-    <!-- html5 響應式網頁架構 id (唯一 #) class(類別 .) -->
-    <!-- 頁首header(每頁固定) 主內容main(隨著頁面主題而不同，IE瀏覽器不支援) 頁尾footer(每頁固定) 文章 (article，IE支援取代 main 標籤) -->
     <header>
-        <!-- 導覽列 標籤 nav [logo = 商標 標題 h1] 項目 ul 清單 li  -->
-        <!-- 導覽列Button:1.最新活動 2.咖啡豆專區 3.會員專區 4.營業據點 5.咖啡寄杯 6.線上宅配 -->
         <nav>
-            <!-- 導覽列Logo -->
-            <h1 id="Logo">BsCoffee </h1>
-
-            <!-- 導覽列 icon 區塊標籤 div id:Icon -->
-            <div id="Icon">
-                <li class="MemberLogin">登入icon</li>
+            <!-- 導覽列 nav大框架 logo=商標或標題h1,  icon, 按鈕 ,項目ul 清單li 輪播圖用 div id="命名"  -->
+            <!-- logo -->
+            <h1 id="Logo">BsCoffee</h1>
+            
+            <!-- icon -->
+            <div id="icon">
+                <li class="MemberLogin">會員登入icon</li>
                 <li class="Facebook">臉書icon</li>
-            </div> <hr>
+            </div>
 
             <!-- 手機版選單按鈕 -->
             <div id="MenuBtn">
-                選單
+                ☰選單按鈕區
             </div>
-            
-            <!--導覽列按鈕大框架 -->
 
-            <!-- 按鈕1.最新活動. -->
+            <!-- 按鈕1 最新活動 -->
             <h3 class="News">最新活動</h3>
-                <ul class="NewsBox">
+                <ul class="NewBox">
                     <li class="Birthday">當月壽星</li>
                     <li class="FreeCoupon">五倍券</li>
                     <li class="ShopOffers">單店優惠</li>
                 </ul>
-              
 
-            <!-- 按鈕2.咖啡豆專區 -->
+            <!-- 按鈕2 咖啡豆專區 -->
             <h3 class="CofeBeans">咖啡豆專區</h3>
                 <ul class="CofeBeansBox">
                     <li class="item1">神曲咖啡豆</li>
-                    <li class="Item2">響宴咖啡豆</li>
-                    <li class="Item3">新生咖啡豆</li>
-                    <li class="Item4">經典濃縮豆</li>
+                    <li class="item2">響宴咖啡豆</li>
+                    <li class="item3">新生咖啡豆</li>
+                    <li class="item4">經典濃縮豆</li>
                 </ul>
-                
 
-            <!-- 按鈕3.會員專區 -->
+            <!-- 按鈕3 會員專區 -->
             <h3 class="Member">會員事項</h3>
                 <ul class="MemberBox">
-                    <li class="Card">Bs會員卡</li>
-                    <li class="Warning">Bs卡注意事項</li>
+                    <li class="Card">Bs會員戶</li>
+                    <li class="Warning">Bs卡主意事項</li>
                     <li class="Point">點數兌換商品</li>
                     <li class="MoneyInquiry">交易明細查詢</li>
                 </ul>
-                
 
-            <!-- 按鈕4.營業據點 -->
+            <!-- 按鈕4 營業據點 -->
             <h3 class="BusLocation">營業據點</h3>
                 <ul class="BusLocationBox">
                     <li class="Location">據點查詢</li>
                     <li class="WifeService">無線上網服務</li>
                 </ul>
-                
 
-            <!-- 按鈕5.咖啡寄杯 -->
+            <!-- 按鈕5 咖啡寄杯 -->
             <h3 class="DepositCofe">咖啡寄杯</h3>
                 <ul class="DepositCofeBox">
                     <li class="GiveAway">商品圖</li>
                     <li class="Describe">文字說明</li>
                 </ul>
-                
 
-            <!-- 按鈕6.線上宅配 -->
-            <h3 class="OnLineDelivery">線上宅配</h3>
-                <!-- 把圖片作為連結 點選跳轉到指定URL -->
+            <!-- 按鈕6 線上宅配 -->
+            <h3 class="OnlineDelivery">線上宅配</h3>
                 <a href="">
                     <img src="" alt="">
                 </a>
-                
-            <!-- 輪播廣告區 div命名 輪播功能用javascript 命名建議用ID選擇器; css3輪播功能命名 ID選擇器或是類別選擇器 -->
-            <!-- 固定輪播圖: 主內容 會隨著頁面不同而改變 商品廣告輸播區 -->
+            
+            <!--輪播廣告區(div命名) 輪播功能用javascript 命名建議用ID選擇器；輪播功能用css3 命名用ID或類別選擇器  -->
+            <!-- 固定輪播圖：主內容 會隨著頁面不同而改變 商品廣告輪播區 -->
             <div id="Banner">
-                <div id="LeftBtn"> <p> 左按鈕</p> </div>
+                <div id="LeftBtn"><p>左按鈕</p></div>
                     <ul id="ImgBox">
                         <li>輪播圖1</li>
                         <li>輪播圖2</li>
                         <li>輪播圖3</li>
                         <li>輪播圖4</li>
-                    <li>輪播圖5</li>
                     </ul>
-                <div id="RigohtBtn">右按鈕</div>
+                <div id="RightBtn"><p>右按鈕</p></div>
             </div>
         </nav>
     </header> <hr>
 
     <article id="main">
-        
-        <!-- 主內容廣告區：1.帶手機喝咖啡 2.好物分享 3.咖啡寄杯 4.行動咖啡箱  -->
+         <!-- 主內容廣告區 →→→ 1:帶手機喝咖啡 2:好物分享 3:咖啡寄杯 4:行動咖啡箱 -->
 
-        <!-- 1.帶手機喝咖啡 -->
-        <article id="PhoneDrink">
-        
-            <h3>帶手機喝咖啡</h3>
+         <!-- 1:帶手機喝咖啡 -->
+         <article id="PhoneDrink">
+             <h3>帶手機喝咖啡</h3>
             <section>
-                <p class="Images">商品圖片</p>
+                <p class="Inages">商品圖片</p>
                 <p>
                     <h4>商品名稱</h4>
                     <ul>
@@ -123,82 +104,81 @@
                         <li class="Car">放購物車icon</li>
                     </ul>
                 </p>
-                <!-- 螢光標記 mark  刪除線 s 行內範圍 span-->
-                <p>商品簡介:字數限制(<mark>中文26字，英文與數字13字</mark>)若超過會用...設計</p>
+                <!-- 螢光標記:mark 刪除線:s 行內範圍:span -->
+                <p>商品簡介:若字限制(<mark>中文13字，英文與數字26字</mark>)會利用...設計</p>
                 <ul>
-                    <li class="OriginalPrice">原價<span><s>1000</s></span>元</li>
+                    <li class="OriginaPrice">原價 <span> <s> 1000 </s> </span> 元 </li>
                     <li class="BargainPrice">特價 <span> 800 </span> 元 </li>
                 </ul>
             </section>
-        </article>
+         </article>
 
-            <!-- 2.好物分享 -->
-            <article id="Share">
-                <h3>好物分享</h3>
-                <section>
-                    <p class="Inages">商品圖片</p>
-                    <p>
-                        <h4>商品名稱</h4>
-                        <ul>
-                            <li class="Love">放我的最愛icon</li>
-                            <li class="Car">放購物車icon</li>
-                        </ul>
-                    </p>
-                    <!-- 螢光標記:mark 刪除線:s 行內範圍:span -->
-                    <p>商品簡介:若字限制(<mark>中文13字，英文與數字26字</mark>)會利用...設計</p>
+          <!-- 2:好物分享 -->
+          <article id="Share">
+            <h3>好物分享</h3>
+            <section>
+                <p class="Inages">商品圖片</p>
+                <p>
+                    <h4>商品名稱</h4>
                     <ul>
-                        <li class="OriginaPrice">原價 <span> <s> 1000 </s> </span> 元 </li>
-                        <li class="BargainPrice">特價 <span> 800 </span> 元 </li>
+                        <li class="Love">放我的最愛icon</li>
+                        <li class="Car">放購物車icon</li>
                     </ul>
-                </section>
-            </article>
+                </p>
+                <!-- 螢光標記:mark 刪除線:s 行內範圍:span -->
+                <p>商品簡介:若字限制(<mark>中文13字，英文與數字26字</mark>)會利用...設計</p>
+                <ul>
+                    <li class="OriginaPrice">原價 <span> <s> 1000 </s> </span> 元 </li>
+                    <li class="BargainPrice">特價 <span> 800 </span> 元 </li>
+                </ul>
+            </section>
+         </article>
 
-        <!-- 3.咖啡寄杯 -->
-        <article id="DepositCofe_1">
-            <h3>咖啡寄杯超便利</h3>
-            <a href="">
-                <img src="" alt="">
+         <!-- 3:咖啡寄杯 -->
+         <article id="Deposicofe">
+             <h3>咖啡寄杯超便利</h3>
+             <a href="">
+                 <img src="" alt="">
             </a>
-        
-        </article>
+         </article>
 
-        <!-- 4.行動咖啡箱 -->
-        <article id="ActionCofe">
+         <!-- 4:行動咖啡箱 -->
+         <article id="ActionCofe">
             <h3>行動咖啡箱</h3>
             <a href="">
                 <img src="" alt="">
-            </a>
-        </article>
-
+           </a>
+         </article>
+         
     </article> <hr>
-    
+
     <footer>
-        <!-- 擁有者資訊 建議瀏覽器解析度 版權聲明 安全政策 服務條款 連結：隱私權政策-->
-        <p><h4>Bk Coffee&copy;版權宣告2020 - <span id="Year">2021</span></h4></p>
-        <!-- 聯絡資訊 地址，客服電話，E-mail、LindID、FB、GoogleMap -->
+        <!--擁有者資訊  版權聲明 瀏覽器解析度 安全政策 服務條款 連結:隱私政策  -->
+        <!-- 聯絡資訊 地址 客服電話 E-mail LindID Fb GoogleMap 等…-->
+        <p> <h4>BkCoffee&copy;版權宣告2020 - <span id="Year">2021</span> </h4> </p>
+
         <address>
-            <h4>聯絡資訊：</h4>
-        
-            <p class="Address"><h5>地址:台中市</h5></p>
-            <p class="Tel"><h5>TEL: 04:837-xxxx</h5></p>
-            <p class="E-Mail"><h5>E-mail: yourMail@gmail.com</h5></p>
-            <p class="LindID"><h5>Line ID: agqyhapwj</h5></p>
-                    
-            <p class="FB"><h5>Fb Icon & Url</h5>
+            <h4>聯絡資訊:</h4>
+            <p class="Address"> <h5>地址:台中市xxx</h5> </p>
+            <p class="Tel"> <h5>TEL: 04-837-xxxx</h5> </p>
+            <p class="E-mail"> <h5>E-mail: yourMail</h5> </p>
+            <p class="LineID"> <h5>Line ID: agqyhapw</h5> </p>
+
+            <p class="FB"> <h5>Fb icon & url</h5>
                 <a href="">
                     <img src="" alt="">
                 </a>
             </p>
 
-            <p class="GoogleMap"><h5>GoogleMap Icon & Url</h5>
+            <p class="GoogleMap"> <h5>GoogleMap icon & url</h5>
                 <a href="">
                     <img src="" alt="">
                 </a>
             </p>
-            
-                
-            
+
         </address>
+
+
     </footer>
 </body>
 </html>
