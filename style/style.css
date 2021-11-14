@@ -57,9 +57,6 @@ You may only @extend selectors within the same directiv.
     width: 100%;
     background-color: pink;
   }
-  header nav .News {
-    display: none;
-  }
   footer address {
     display: none;
   }
