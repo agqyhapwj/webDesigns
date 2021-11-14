@@ -23,7 +23,7 @@ You may only @extend selectors within the same directiv.
     float: left;
   }
   header nav .NewBox {
-    display: block;
+    display: none;
   }
   header nav #MenuBtn {
     float: left;

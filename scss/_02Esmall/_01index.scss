@@ -29,7 +29,7 @@ header {
         }
         .NewBox {
             // 呼叫 混合函式(寫在共用區)
-            @include OB;
+            @include DN;
         }
 
         // 靠左對齊(與 Logo 同一行)
