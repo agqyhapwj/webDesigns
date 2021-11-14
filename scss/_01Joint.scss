@@ -26,6 +26,11 @@ You may only @extend selectors within the same directiv.
     display: none;
 }
 
+// 計算區: 計算header裡 Logo與MenuBtn 之間的的寬度
+@mixin LBW($WM, $WA) {
+    width: $w10 * $WM + $WA;
+}
+
 // 撰寫 scss 的「混合函式 @mixin」就是一個Function，修正scss的繼承功能，鬆法被 @media 使用的問題
 @mixin DN {
     display: none;

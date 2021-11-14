@@ -31,24 +31,24 @@ header {
         解決方式
         1: nav 的父框架 header，給予高度；或是 nav 給予高度
         2:清除浮動狀態，由nav設定
+        3:利用圖片高度撐開父框架的高
         */
         width: $w10 * 10;
-        // 設定高度單位為 % （未給予基準值，所以無法計算出實際高度）
-        // vh（可視裝置的度，計算出實際高度；依照裝置的高度做出計算）
-        height: 10vh;
         background-color: aquamarine;
         // 解決方法二：清除浮動狀態，由nav設定寫在53行
 
         // 靠左對齊(與 MenuBtn 同一行)
         #Logo {
-            width: $w10 * 8;
+            // 寬度 % or VW(螢幕可視範圍的百分比)
+            // width: $w10 * 9;
+            @include LBW(8, 5%);
             float: left;
             background-color: rgb(33, 101, 104);
         }
 
         // 靠左對齊(與 Logo 同一行)
         #MenuBtn {
-            width: $w10 * 2;
+            width: $w10 * 1;
             float: left;
         }
         .Clear {

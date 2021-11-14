@@ -27,18 +27,18 @@ You may only @extend selectors within the same directiv.
         解決方式
         1: nav 的父框架 header，給予高度；或是 nav 給予高度
         2:清除浮動狀態，由nav設定
+        3:利用圖片高度撐開父框架的高
         */
     width: 100%;
-    height: 10vh;
     background-color: aquamarine;
   }
   header nav #Logo {
-    width: 80%;
+    width: 85%;
     float: left;
     background-color: #216568;
   }
   header nav #MenuBtn {
-    width: 20%;
+    width: 10%;
     float: left;
   }
   header nav .Clear {
