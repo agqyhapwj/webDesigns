@@ -64,3 +64,29 @@ You may only @extend selectors within the same directiv.
     display: block;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  header {
+    width: 100%;
+    background-color: #7d0a28;
+  }
+  header nav .NewBox {
+    display: block;
+  }
+  footer address {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  header {
+    width: 100%;
+    background-color: #204570;
+  }
+  header nav .NewBox {
+    display: block;
+  }
+  footer address {
+    display: block;
+  }
+}
