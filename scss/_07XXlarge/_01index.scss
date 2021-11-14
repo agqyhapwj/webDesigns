@@ -3,9 +3,18 @@ header {
     width: $w10 * 10;
     background-color: rgb(32, 69, 112);
     nav {
+        // 靠左對齊(與 MenuBtn 同一行)
+        #Logo {
+            float: left;
+        }
         .NewBox {
             // 呼叫 混合函式(寫在共用區)
             @include OB;
+        }
+
+        // 靠左對齊(與 Logo 同一行)
+        #MenuBtn {
+            float: left;
         }
     }
 }
