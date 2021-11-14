@@ -16,6 +16,7 @@ You may only @extend selectors within the same directiv.
 */
 @media screen and (max-width: 576px) {
   header {
+    background-color: violet;
     width: 100%;
   }
   header nav #Logo {
