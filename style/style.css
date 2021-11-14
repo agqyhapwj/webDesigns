@@ -18,7 +18,6 @@ You may only @extend selectors within the same directiv.
   header {
     background-color: violet;
     width: 100%;
-    height: 60px;
   }
   header nav {
     /*
@@ -36,10 +35,7 @@ You may only @extend selectors within the same directiv.
   header nav #Logo {
     width: 80%;
     float: left;
-    background-color: cadetblue;
-  }
-  header nav .AllBtn {
-    display: none;
+    background-color: #216568;
   }
   header nav #MenuBtn {
     width: 20%;
@@ -47,6 +43,9 @@ You may only @extend selectors within the same directiv.
   }
   header nav .Clear {
     clear: both;
+  }
+  header .AllBtn {
+    display: none;
   }
   footer address {
     display: none;

@@ -22,7 +22,7 @@ header {
     background-color: violet;
     // // 寬度 100%
     width: $w10 * 10;
-    height: 60px;
+
     nav {
         /*
         浮動對齊的問題 float
@@ -43,11 +43,7 @@ header {
         #Logo {
             width: $w10 * 8;
             float: left;
-            background-color: cadetblue;
-        }
-        .AllBtn {
-            // 呼叫 混合函式(寫在共用區)
-            @include DN;
+            background-color: rgb(33, 101, 104);
         }
 
         // 靠左對齊(與 Logo 同一行)
@@ -58,6 +54,10 @@ header {
         .Clear {
             @include clearFloat;
         }
+    }
+    .AllBtn {
+        // 呼叫 混合函式(寫在共用區)
+        @include DN;
     }
 }
 
