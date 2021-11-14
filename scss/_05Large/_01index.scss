@@ -5,7 +5,7 @@ header {
     width: $w10 * 10;
     background-color: pink;
     nav {
-        .NewBox {
+        .News {
             // 呼叫 混合函式(寫在共用區)
             @include OB;
         }

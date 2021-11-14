@@ -22,7 +22,7 @@ You may only @extend selectors within the same directiv.
   header nav #Logo {
     float: left;
   }
-  header nav .NewBox {
+  header nav .News {
     display: none;
   }
   header nav #MenuBtn {
@@ -38,7 +38,7 @@ You may only @extend selectors within the same directiv.
     width: 100%;
     background-color: aqua;
   }
-  header nav .NewBox {
+  header nav .News {
     display: none;
   }
   footer address {
@@ -51,7 +51,7 @@ You may only @extend selectors within the same directiv.
     width: 100%;
     background-color: yellow;
   }
-  header nav .NewBox {
+  header nav .News {
     display: none;
   }
   footer address {
@@ -64,7 +64,7 @@ You may only @extend selectors within the same directiv.
     width: 100%;
     background-color: pink;
   }
-  header nav .NewBox {
+  header nav .News {
     display: block;
   }
   footer address {
@@ -77,7 +77,7 @@ You may only @extend selectors within the same directiv.
     width: 100%;
     background-color: #7d0a28;
   }
-  header nav .NewBox {
+  header nav .News {
     display: block;
   }
   footer address {
@@ -90,7 +90,7 @@ You may only @extend selectors within the same directiv.
     width: 100%;
     background-color: #204570;
   }
-  header nav .NewBox {
+  header nav .News {
     display: block;
   }
   footer address {
