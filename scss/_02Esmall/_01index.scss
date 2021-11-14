@@ -22,9 +22,18 @@ header {
     // // 寬度 100%
     width: $w10 * 10;
     nav {
+        // 靠左對齊(與 MenuBtn 同一行)
+        #Logo {
+            float: left;
+        }
         .NewBox {
             // 呼叫 混合函式(寫在共用區)
-            @include DN;
+            @include OB;
+        }
+
+        // 靠左對齊(與 Logo 同一行)
+        #MenuBtn {
+            float: left;
         }
     }
 }

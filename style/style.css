@@ -18,8 +18,14 @@ You may only @extend selectors within the same directiv.
   header {
     width: 100%;
   }
+  header nav #Logo {
+    float: left;
+  }
   header nav .NewBox {
-    display: none;
+    display: block;
+  }
+  header nav #MenuBtn {
+    float: left;
   }
   footer address {
     display: none;
@@ -83,14 +89,8 @@ You may only @extend selectors within the same directiv.
     width: 100%;
     background-color: #204570;
   }
-  header nav #Logo {
-    float: left;
-  }
   header nav .NewBox {
     display: block;
-  }
-  header nav #MenuBtn {
-    float: left;
   }
   footer address {
     display: block;
