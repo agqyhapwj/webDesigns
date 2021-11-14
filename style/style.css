@@ -18,7 +18,7 @@ You may only @extend selectors within the same directiv.
   header {
     width: 100%;
   }
-  header nav .NewsBox {
+  header nav h3 .NewBox {
     display: none;
   }
   footer address {

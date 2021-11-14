@@ -22,9 +22,11 @@ header {
     // // 寬度 100%
     width: $w10 * 10;
     nav {
-        .NewsBox {
-            // 呼叫 混合函式(寫在共用區)
-            @include DN;
+        h3 {
+            .NewBox {
+                // 呼叫 混合函式(寫在共用區)
+                @include DN;
+            }
         }
     }
 }
