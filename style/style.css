@@ -18,6 +18,7 @@ You may only @extend selectors within the same directiv.
   header {
     background-color: violet;
     width: 100%;
+    height: 60px;
   }
   header nav {
     /*
@@ -28,6 +29,8 @@ You may only @extend selectors within the same directiv.
         1: nav 的父框架 header，給予高度；或是 nav 給予高度
         2:清除浮動狀態，由nav設定
         */
+    width: 100%;
+    background-color: aquamarine;
   }
   header nav #Logo {
     float: left;

@@ -22,6 +22,7 @@ header {
     background-color: violet;
     // // 寬度 100%
     width: $w10 * 10;
+    height: 60px;
     nav {
         /*
         浮動對齊的問題 float
@@ -31,6 +32,11 @@ header {
         1: nav 的父框架 header，給予高度；或是 nav 給予高度
         2:清除浮動狀態，由nav設定
         */
+        width: $w10 * 10;
+        background-color: aquamarine;
+        // 解決方法一:給予高度；二擇一，寫入header或是nav
+        // height:65px;
+
         // 靠左對齊(與 MenuBtn 同一行)
         #Logo {
             float: left;
