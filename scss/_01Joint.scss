@@ -30,3 +30,9 @@ You may only @extend selectors within the same directiv.
 @mixin DN {
     display: none;
 }
+
+// 開啟隱藏物件
+@mixin OB {
+    // 顯示方式：區塊
+    idsplay: block;
+}
