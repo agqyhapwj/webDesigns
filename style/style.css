@@ -30,15 +30,19 @@ You may only @extend selectors within the same directiv.
         2:清除浮動狀態，由nav設定
         */
     width: 100%;
+    height: 10vh;
     background-color: aquamarine;
   }
   header nav #Logo {
+    width: 80%;
     float: left;
+    background-color: cadetblue;
   }
   header nav .AllBtn {
     display: none;
   }
   header nav #MenuBtn {
+    width: 20%;
     float: left;
   }
   header nav .Clear {

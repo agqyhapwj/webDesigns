@@ -33,12 +33,17 @@ header {
         2:清除浮動狀態，由nav設定
         */
         width: $w10 * 10;
+        // 設定高度單位為 % （未給予基準值，所以無法計算出實際高度）
+        // vh（可視裝置的度，計算出實際高度；依照裝置的高度做出計算）
+        height: 10vh;
         background-color: aquamarine;
         // 解決方法二：清除浮動狀態，由nav設定寫在53行
 
         // 靠左對齊(與 MenuBtn 同一行)
         #Logo {
+            width: $w10 * 8;
             float: left;
+            background-color: cadetblue;
         }
         .AllBtn {
             // 呼叫 混合函式(寫在共用區)
@@ -47,6 +52,7 @@ header {
 
         // 靠左對齊(與 Logo 同一行)
         #MenuBtn {
+            width: $w10 * 2;
             float: left;
         }
         .Clear {
