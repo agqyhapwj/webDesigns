@@ -58,6 +58,6 @@ You may only @extend selectors within the same directiv.
     background-color: pink;
   }
   footer address {
-    display: none;
+    idsplay: block;
   }
 }

@@ -13,6 +13,6 @@ header {
 footer {
     address {
         // 呼叫 混合函式(寫在共用區)
-        @include DN;
+        @include OB;
     }
 }
