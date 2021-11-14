@@ -18,7 +18,7 @@ You may only @extend selectors within the same directiv.
   header {
     width: 100%;
   }
-  header nav h3 .NewBox {
+  header nav .NewBox {
     display: none;
   }
   footer address {
@@ -31,7 +31,7 @@ You may only @extend selectors within the same directiv.
     width: 100%;
     background-color: aqua;
   }
-  header nav .News {
+  header nav .NewBox {
     display: none;
   }
   footer address {
@@ -44,7 +44,7 @@ You may only @extend selectors within the same directiv.
     width: 100%;
     background-color: yellow;
   }
-  header nav .News {
+  header nav .NewBox {
     display: none;
   }
   footer address {
