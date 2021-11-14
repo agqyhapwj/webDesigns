@@ -23,6 +23,14 @@ header {
     // // 寬度 100%
     width: $w10 * 10;
     nav {
+        /*
+        浮動對齊的問題 float
+        1:#logo 與#BtnBOX 物件的父框架 nav，無寬度
+        2: nav的父框架 header，高度消失(展開)
+        解決方式
+        1: nav 的父框架 header，給予高度；或是 nav 給予高度
+        2:清除浮動狀態，由nav設定
+        */
         // 靠左對齊(與 MenuBtn 同一行)
         #Logo {
             float: left;
