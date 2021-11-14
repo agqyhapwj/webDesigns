@@ -35,11 +35,14 @@ You may only @extend selectors within the same directiv.
   header nav #Logo {
     float: left;
   }
-  header nav .News {
+  header nav .AllBtn {
     display: none;
   }
   header nav #MenuBtn {
     float: left;
+  }
+  header nav .Clear {
+    clear: both;
   }
   footer address {
     display: none;

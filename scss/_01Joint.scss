@@ -36,3 +36,9 @@ You may only @extend selectors within the same directiv.
     // 顯示方式：區塊
     display: block;
 }
+
+// 清除浮動 float
+@mixin clearFloat {
+    // 清除左右浮動
+    clear: both;
+}
