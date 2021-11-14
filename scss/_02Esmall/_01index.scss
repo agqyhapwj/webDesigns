@@ -51,6 +51,8 @@ header {
             width: $w10 * 1;
             float: left;
         }
+
+        // html裡 清除浮動樣式 (用 p class="Clear")
         .Clear {
             @include clearFloat;
         }
