@@ -54,7 +54,7 @@ You may only @extend selectors within the same directiv.
 
 @media screen and (min-width: 576px) {
   header {
-    background-color: #03444d;
+    background-color: #1a535a;
     width: 100%;
   }
   header nav {
