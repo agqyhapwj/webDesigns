@@ -57,6 +57,9 @@ You may only @extend selectors within the same directiv.
     width: 100%;
     background-color: pink;
   }
+  header nav .NewBox {
+    display: block;
+  }
   footer address {
     display: block;
   }
