@@ -8,15 +8,20 @@ header {
     // 顯示方式:彈性佈局
     display: flex;
     // 換行
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-color: darkgoldenrod;
 
     nav {
-        background-color: darkgoldenrod;
+        width: $w10 * 4;
+
+        background-color: rgb(95, 71, 11);
 
         //Logo寬度 + icon 寬度 = 總寬度 100vw (100%)
-        #logo {
-            width: $w10 * 7;
+        #Logo {
+            width: 100%;
             display: flex;
+            // float: none;
+            background-color: chocolate;
         }
 
         #MenuBtn {
@@ -29,6 +34,15 @@ header {
         width: $w10 * 3;
         display: flex;
         @include DNli;
+    }
+
+    form {
+        width: $w10 * 3;
+    }
+
+    .AllBtn {
+        width: 100vw;
+        @include OB;
     }
 }
 

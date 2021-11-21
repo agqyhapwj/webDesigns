@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-    <!-- 網頁語系 繁體中文 -->
+<!-- 網頁語系 繁體中文 -->
 <html lang="zh-tw">
-    <!-- head裡的內容 瀏覽器內的相關文件資訊 ment標籤(響應式標籤 關鍵字 文字編碼方式 支援的瀏覽器等…)-->
+<!-- head裡的內容 瀏覽器內的相關文件資訊 ment標籤(響應式標籤 關鍵字 文字編碼方式 支援的瀏覽器等…)-->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,35 +13,38 @@
 </head>
 <!-- html5響應式架構 id(唯一#) class(類別.) IE不支援(main標籤)可用 文章(article id="main")來取代-->
 <!-- 頁者headerr(每頁固定) 主內容main(隨著頁面主題而不同，IE瀏覽器不支援) 頁尾footer(每頁固定) -->
+
 <body>
     <header>
         <nav>
             <!-- 導覽列 nav大框架 logo=商標或標題h1,  icon, 按鈕 ,項目ul 清單li 輪播圖用 div id="命名"  -->
             <!-- logo -->
             <h1 id="Logo">BsCoffee</h1>
-            
+
             <!-- 手機版選單按鈕 -->
             <div id="MenuBtn">
                 <!-- 設定方法一：直接置入圖片img；alt 替代文字(圖片連結失效時)；title提示文字(不重要的圖片，可以不用設定) -->
-                <img src="images/icon/menuIcon.svg" alt="BS選單圖片 title="">
+                <img src="images/icon/menuIcon.svg" alt="BS選單圖片" title="">
             </div>
 
             <!-- 清除浮動樣式 -->
             <p class="Clear"></p>
         </nav>
 
-            <!-- icon -->
-            <div id="icon">
-                <li class="MemberLogin">會員</li>
-                <li class="Facebook">臉書</li>
-            </div>
-        
+        <!-- icon -->
+        <div id="icon">
+            <li class="MemberLogin">會員</li>
+            <li class="Facebook">臉書</li>
+        </div>
 
-            <!-- 搜尋框 -->
+
+        <!-- 搜尋框 -->
+        <form action="">
             <input id="search" type="text" placeholder="請輸入商品名稱" style="text-align:center">
+        </form>
 
         <div class="AllBtn">
-            
+
             <!-- 按鈕1 最新活動 -->
             <div class="News">最新活動
                 <ul class="NewBox">
@@ -96,33 +100,39 @@
             <!--輪播廣告區(div命名) 輪播功能用javascript 命名建議用ID選擇器；輪播功能用css3 命名用ID或類別選擇器  -->
             <!-- 固定輪播圖：主內容 會隨著頁面不同而改變 商品廣告輪播區 -->
             <div id="Banner">
-                <div id="LeftBtn"><p>左按鈕</p></div>
-                    <ul id="ImgBox">
-                        <li>輪播圖1</li>
-                        <li>輪播圖2</li>
-                        <li>輪播圖3</li>
-                        <li>輪播圖4</li>
-                    </ul>
-                <div id="RightBtn"><p>右按鈕</p></div>
+                <div id="LeftBtn">
+                    <p>左按鈕</p>
+                </div>
+                <ul id="ImgBox">
+                    <li>輪播圖1</li>
+                    <li>輪播圖2</li>
+                    <li>輪播圖3</li>
+                    <li>輪播圖4</li>
+                </ul>
+                <div id="RightBtn">
+                    <p>右按鈕</p>
+                </div>
             </div>
-            
+
         </div>
-    </header> <hr> <hr>
+    </header>
+    <hr>
+    <hr>
 
     <article id="main">
-         <!-- 主內容廣告區 →→→ 1:帶手機喝咖啡 2:好物分享 3:咖啡寄杯 4:行動咖啡箱 -->
+        <!-- 主內容廣告區 →→→ 1:帶手機喝咖啡 2:好物分享 3:咖啡寄杯 4:行動咖啡箱 -->
 
-         <!-- 1:帶手機喝咖啡 -->
-         <article id="PhoneDrink">
-             <h3>帶手機喝咖啡</h3>
+        <!-- 1:帶手機喝咖啡 -->
+        <article id="PhoneDrink">
+            <h3>帶手機喝咖啡</h3>
             <section>
                 <p class="Inages">商品圖片</p>
                 <p>
-                    <h4>商品名稱</h4>
-                    <ul>
-                        <li class="Love">放我的最愛icon</li>
-                        <li class="Car">放購物車icon</li>
-                    </ul>
+                <h4>商品名稱</h4>
+                <ul>
+                    <li class="Love">放我的最愛icon</li>
+                    <li class="Car">放購物車icon</li>
+                </ul>
                 </p>
                 <!-- 螢光標記:mark 刪除線:s 行內範圍:span -->
                 <p>商品簡介:若字限制(<mark>中文13字，英文與數字26字</mark>)會利用...設計</p>
@@ -131,19 +141,19 @@
                     <li class="BargainPrice">特價 <span> 800 </span> 元 </li>
                 </ul>
             </section>
-         </article>
+        </article>
 
-          <!-- 2:好物分享 -->
-          <article id="Share">
+        <!-- 2:好物分享 -->
+        <article id="Share">
             <h3>好物分享</h3>
             <section>
                 <p class="Inages">商品圖片</p>
                 <p>
-                    <h4>商品名稱</h4>
-                    <ul>
-                        <li class="Love">放我的最愛icon</li>
-                        <li class="Car">放購物車icon</li>
-                    </ul>
+                <h4>商品名稱</h4>
+                <ul>
+                    <li class="Love">放我的最愛icon</li>
+                    <li class="Car">放購物車icon</li>
+                </ul>
                 </p>
                 <!-- 螢光標記:mark 刪除線:s 行內範圍:span -->
                 <p>商品簡介:若字限制(<mark>中文13字，英文與數字26字</mark>)會利用...設計</p>
@@ -152,24 +162,24 @@
                     <li class="BargainPrice">特價 <span> 800 </span> 元 </li>
                 </ul>
             </section>
-         </article>
+        </article>
 
-         <!-- 3:咖啡寄杯 -->
-         <article id="Deposicofe">
-             <h3>咖啡寄杯超便利</h3>
-             <a href="">
-                 <img src="" alt="">
+        <!-- 3:咖啡寄杯 -->
+        <article id="Deposicofe">
+            <h3>咖啡寄杯超便利</h3>
+            <a href="">
+                <img src="" alt="">
             </a>
-         </article>
+        </article>
 
-         <!-- 4:行動咖啡箱 -->
-         <article id="ActionCofe">
+        <!-- 4:行動咖啡箱 -->
+        <article id="ActionCofe">
             <h3>行動咖啡箱</h3>
             <a href="">
                 <img src="" alt="">
-           </a>
-         </article>
-         
+            </a>
+        </article>
+
     </article>
 
     <footer>
@@ -195,12 +205,21 @@
 
         <address>
             <h4>聯絡資訊:</h4>
-            <p class="Address"> <h5>地址:台中市xxx</h5> </p>
-            <p class="Tel"> <h5>TEL: 04-837-xxxx</h5> </p>
-            <p class="E-mail"> <h5>E-mail: yourMail</h5> </p>
-            <p class="LineID"> <h5>Line ID: agqyhapw</h5> </p>
+            <p class="Address">
+            <h5>地址:台中市xxx</h5>
+            </p>
+            <p class="Tel">
+            <h5>TEL: 04-837-xxxx</h5>
+            </p>
+            <p class="E-mail">
+            <h5>E-mail: yourMail</h5>
+            </p>
+            <p class="LineID">
+            <h5>Line ID: agqyhapw</h5>
+            </p>
         </address>
 
     </footer>
 </body>
+
 </html>

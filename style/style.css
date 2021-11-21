@@ -25,26 +25,26 @@ You may only @extend selectors within the same directiv.
         2:清除浮動狀態，由nav設定
         3:利用圖片高度撐開父框架的高
         */
-    width: 100vw;
     background-color: aquamarine;
   }
   header nav #Logo {
-    width: 88vw;
-  }
-  header nav #MenuBtn {
-    width: 12vw;
-  }
-  header nav #Logo {
+    width: 80vw;
     float: left;
     background-color: #216568;
   }
   header nav #MenuBtn {
+    width: 20vw;
     float: left;
     background-color: yellow;
+  }
+  header nav #MenuBtn img {
+    width: 100%;
   }
   header nav .Clear {
     clear: both;
   }
+  header #icon,
+  header form,
   header .AllBtn {
     display: none;
   }
@@ -160,15 +160,20 @@ You may only @extend selectors within the same directiv.
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  header nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     background-color: darkgoldenrod;
   }
-  header nav #logo {
-    width: 70vw;
+  header nav {
+    width: 40vw;
+    background-color: #5f470b;
+  }
+  header nav #Logo {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background-color: chocolate;
   }
   header nav #MenuBtn {
     display: none;
@@ -179,6 +184,13 @@ You may only @extend selectors within the same directiv.
     display: -ms-flexbox;
     display: flex;
     list-style-type: none;
+  }
+  header form {
+    width: 30vw;
+  }
+  header .AllBtn {
+    width: 100vw;
+    display: block;
   }
   footer address {
     display: block;
