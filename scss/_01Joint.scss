@@ -13,7 +13,7 @@ img {
 }
 
 // 變數區
-$w10: 10%;
+$w10: 10vw;
 
 // 繼承區 (相同樣式) : 將scss的繼承功能，寫在共用檔內，因為位置編排有誤，故造成編譯時出錯
 /*
@@ -28,7 +28,22 @@ You may only @extend selectors within the same directiv.
 
 // 計算區: 計算header裡 Logo與MenuBtn 之間的的寬度
 @mixin LBW($WM, $WA) {
-    width: $w10 * $WM + $WA;
+    // 計算區 1:設變數(承載值的物件名稱) $WM=倍數 $WA=加的總數
+    $LogoW: $w10 * $WM + $WM;
+    // MenuBtn寬度 = 父框架的總寬度(100)，Logo寬度(85)
+    $MBW: $w10 * 10 - $LogoW;
+
+    // 連動 計算寬度Logo 與 MenuBtn
+    // 呼叫 id (標籤 或 id class)
+    #Logo {
+        // 寬度
+        width: $LogoW;
+    }
+
+    #MenuBtn {
+        // 寬度
+        width: $MBW;
+    }
 }
 
 // 撰寫 scss 的「混合函式 @mixin」就是一個Function，修正scss的繼承功能，鬆法被 @media 使用的問題
@@ -46,4 +61,9 @@ You may only @extend selectors within the same directiv.
 @mixin clearFloat {
     // 清除左右浮動
     clear: both;
+}
+
+// 隱藏項目符號
+@mixin DNli {
+    list-style-type: none;
 }
