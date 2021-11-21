@@ -3,12 +3,32 @@
 header {
     // // 寬度 100%
     width: $w10 * 10;
-    background-color: pink;
+
+    // 彈性佈局 flex;對齊物件的父框架
+    // 顯示方式:彈性佈局
+    display: flex;
+    // 換行
+    // flex-wrap: wrap;
+
     nav {
-        .News {
-            // 呼叫 混合函式(寫在共用區)
-            @include OB;
+        background-color: darkgoldenrod;
+
+        //Logo寬度 + icon 寬度 = 總寬度 100vw (100%)
+        #logo {
+            width: $w10 * 7;
+            display: flex;
         }
+
+        #MenuBtn {
+            //隱藏物件
+            @include DN;
+        }
+    }
+
+    #icon {
+        width: $w10 * 3;
+        display: flex;
+        @include DNli;
     }
 }
 

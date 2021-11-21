@@ -19,9 +19,9 @@
 // }
 
 header {
-    background-color: violet;
+    // background-color: violet;
     // // 寬度 100%
-    width: $w10 * 10;
+    // width: $w10 * 10;
 
     nav {
         /*
@@ -37,19 +37,22 @@ header {
         background-color: aquamarine;
         // 解決方法二：清除浮動狀態，由nav設定寫在53行
 
+        // 單位不同無法計算，所以改為同一單位vw
+        @include LBW(8, 5vw);
+
         // 靠左對齊(與 MenuBtn 同一行)
         #Logo {
             // 寬度 % or VW(螢幕可視範圍的百分比)
-            // width: $w10 * 9;
-            @include LBW(8, 5%);
+            // width: $w10 * 8;
             float: left;
             background-color: rgb(33, 101, 104);
         }
 
         // 靠左對齊(與 Logo 同一行)
         #MenuBtn {
-            width: $w10 * 1;
+            // width: $w10 * 1;
             float: left;
+            background-color: yellow;
         }
 
         // html裡 清除浮動樣式 (用 p class="Clear")

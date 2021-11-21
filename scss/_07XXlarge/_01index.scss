@@ -2,12 +2,6 @@ header {
     // // 寬度 100%
     width: $w10 * 10;
     background-color: rgb(32, 69, 112);
-    nav {
-        .News {
-            // 呼叫 混合函式(寫在共用區)
-            @include OB;
-        }
-    }
 }
 
 footer {

@@ -15,10 +15,6 @@ You may only @extend selectors within the same directiv.
 無法由 @media (媒體判斷)去呼叫「外部連結檔」
 */
 @media screen and (max-width: 576px) {
-  header {
-    background-color: violet;
-    width: 100%;
-  }
   header nav {
     /*
         浮動對齊的問題 float
@@ -29,17 +25,22 @@ You may only @extend selectors within the same directiv.
         2:清除浮動狀態，由nav設定
         3:利用圖片高度撐開父框架的高
         */
-    width: 100%;
+    width: 100vw;
     background-color: aquamarine;
   }
   header nav #Logo {
-    width: 85%;
+    width: 88vw;
+  }
+  header nav #MenuBtn {
+    width: 12vw;
+  }
+  header nav #Logo {
     float: left;
     background-color: #216568;
   }
   header nav #MenuBtn {
-    width: 10%;
     float: left;
+    background-color: yellow;
   }
   header nav .Clear {
     clear: both;
@@ -53,22 +54,32 @@ You may only @extend selectors within the same directiv.
 }
 
 @media screen and (min-width: 576px) {
-  header {
-    background-color: #1a535a;
-    width: 100%;
-  }
   header nav {
-    width: 100%;
-    background-color: aquamarine;
+    /*
+        浮動對齊的問題 float
+        1:#logo 與#BtnBOX 物件的父框架 nav，無寬度
+        2: nav的父框架 header，高度消失(展開)
+        解決方式
+        1: nav 的父框架 header，給予高度；或是 nav 給予高度
+        2:清除浮動狀態，由nav設定
+        3:利用圖片高度撐開父框架的高
+        */
+    width: 100vw;
+    background-color: #007c53;
   }
   header nav #Logo {
-    width: 85%;
-    float: left;
-    background-color: #216568;
+    width: 88vw;
   }
   header nav #MenuBtn {
-    width: 10%;
+    width: 12vw;
+  }
+  header nav #Logo {
     float: left;
+    background-color: #165f00;
+  }
+  header nav #MenuBtn {
+    float: left;
+    background-color: greenyellow;
   }
   header nav .Clear {
     clear: both;
@@ -82,11 +93,37 @@ You may only @extend selectors within the same directiv.
 }
 
 @media screen and (min-width: 768px) {
-  header {
-    width: 100%;
-    background-color: yellow;
+  header nav {
+    /*
+        浮動對齊的問題 float
+        1:#logo 與#BtnBOX 物件的父框架 nav，無寬度
+        2: nav的父框架 header，高度消失(展開)
+        解決方式
+        1: nav 的父框架 header，給予高度；或是 nav 給予高度
+        2:清除浮動狀態，由nav設定
+        3:利用圖片高度撐開父框架的高
+        */
+    width: 100vw;
+    background-color: #00ec9e;
   }
-  header nav .News {
+  header nav #Logo {
+    width: 88vw;
+  }
+  header nav #MenuBtn {
+    width: 12vw;
+  }
+  header nav #Logo {
+    float: left;
+    background-color: #006b70;
+  }
+  header nav #MenuBtn {
+    float: left;
+    background-color: darkblue;
+  }
+  header nav .Clear {
+    clear: both;
+  }
+  header .AllBtn {
     display: none;
   }
   footer address {
@@ -96,11 +133,29 @@ You may only @extend selectors within the same directiv.
 
 @media screen and (min-width: 992px) {
   header {
-    width: 100%;
-    background-color: pink;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  header nav .News {
-    display: block;
+  header nav {
+    background-color: darkgoldenrod;
+  }
+  header nav #logo {
+    width: 70vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav #MenuBtn {
+    display: none;
+  }
+  header #icon {
+    width: 30vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
   }
   footer address {
     display: block;
@@ -109,11 +164,8 @@ You may only @extend selectors within the same directiv.
 
 @media screen and (min-width: 1200px) {
   header {
-    width: 100%;
+    width: 100vw;
     background-color: #7d0a28;
-  }
-  header nav .News {
-    display: block;
   }
   footer address {
     display: block;
@@ -122,11 +174,8 @@ You may only @extend selectors within the same directiv.
 
 @media screen and (min-width: 1400px) {
   header {
-    width: 100%;
+    width: 100vw;
     background-color: #204570;
-  }
-  header nav .News {
-    display: block;
   }
   footer address {
     display: block;
