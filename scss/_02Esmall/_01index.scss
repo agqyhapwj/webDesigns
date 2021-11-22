@@ -33,6 +33,7 @@ header {
         3:利用圖片高度撐開父框架的高
         */
         // width: 100%;
+        width: $w10 * 10;
         background-color: aquamarine;
         // 解決方法二：清除浮動狀態，由nav設定寫在53行
 
