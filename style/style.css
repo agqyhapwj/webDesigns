@@ -87,7 +87,7 @@ You may only @extend selectors within the same directiv.
     display: none;
   }
   #Main #Banner #ImgBox {
-    width: 200vw;
+    width: 100vw;
     list-style-type: none;
     padding-bottom: 40vh;
     background-color: aliceblue;
