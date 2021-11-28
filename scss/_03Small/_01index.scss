@@ -44,6 +44,12 @@ header {
             @include clearFloat;
         }
     }
+
+    #icon,
+    form {
+        @include DN;
+    }
+
     .AllBtn {
         // 呼叫 混合函式(寫在共用區)
         @include DN;

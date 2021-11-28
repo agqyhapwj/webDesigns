@@ -14,6 +14,7 @@ img {
 
 // 變數區
 $w10: 10vw;
+
 // 文字尺寸:單位 px(固定值)，em(百分比，會疊加父框架設定的值)，rem(百分比，不會疊加父框架設定的值)
 // em基礎為:1em =16px，rem基礎為:1rem = 16px\
 $Trem: 1rem;
@@ -49,7 +50,7 @@ You may only @extend selectors within the same directiv.
     }
 }
 
-// 撰寫 scss 的「混合函式 @mixin」就是一個Function，修正scss的繼承功能，鬆法被 @media 使用的問題
+// 撰寫 scss 的「混合函式 @mixin」就是一個Function，修正scss的繼承功能，無法被 @media 使用的問題
 @mixin DN {
     display: none;
 }

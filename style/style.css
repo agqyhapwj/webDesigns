@@ -28,12 +28,12 @@ You may only @extend selectors within the same directiv.
     background-color: aquamarine;
   }
   header nav #Logo {
-    width: 80vw;
+    width: 90vw;
     float: left;
     background-color: #216568;
   }
   header nav #MenuBtn {
-    width: 20vw;
+    width: 10vw;
     float: left;
     background-color: yellow;
   }
@@ -44,7 +44,9 @@ You may only @extend selectors within the same directiv.
     clear: both;
   }
   header #icon,
-  header form,
+  header form {
+    display: none;
+  }
   header .AllBtn {
     display: none;
   }
@@ -82,14 +84,23 @@ You may only @extend selectors within the same directiv.
     overflow: hidden;
     position: relative;
   }
-  #Main #Banner #Btn {
+  #Main #Banner .Btn {
+    width: 30px;
+    height: 12vh;
+    text-align: center;
+    line-height: 12vh;
     font-size: 2rem;
     position: absolute;
-    z-index: 5;
+    z-index: 15;
+    top: 14vh;
   }
   #Main #Banner .LeftBtn {
-    width: 7vw;
-    background-color: chartreuse;
+    left: 2.5vw;
+    background-color: #7f1dcf;
+  }
+  #Main #Banner .RightBtn {
+    right: 2.5vw;
+    background-color: brown;
   }
   #Main #Banner #ImgBox {
     width: 100vw;
@@ -98,7 +109,7 @@ You may only @extend selectors within the same directiv.
     background-color: aliceblue;
   }
   #Main #Banner #ImgBox li {
-    width: 200vw;
+    width: 100vw;
     float: left;
     position: absolute;
     font-size: 72px;
@@ -107,7 +118,7 @@ You may only @extend selectors within the same directiv.
   }
   #Main #Banner #ImgBox .Item01 {
     width: 100vw;
-    background-image: url(../../images/banner/05.jpg);
+    background-image: url(../../images/banner/01.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -144,6 +155,10 @@ You may only @extend selectors within the same directiv.
   }
   header nav .Clear {
     clear: both;
+  }
+  header #icon,
+  header form {
+    display: none;
   }
   header .AllBtn {
     display: none;
@@ -248,6 +263,9 @@ You may only @extend selectors within the same directiv.
   }
   header form {
     width: 30vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   header .AllBtn {
     width: 100vw;
