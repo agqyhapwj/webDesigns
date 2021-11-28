@@ -82,9 +82,14 @@ You may only @extend selectors within the same directiv.
     overflow: hidden;
     position: relative;
   }
-  #Main #Banner #LeftBtn,
-  #Main #Banner #RightBtn {
-    display: none;
+  #Main #Banner #Btn {
+    font-size: 2rem;
+    position: absolute;
+    z-index: 5;
+  }
+  #Main #Banner .LeftBtn {
+    width: 7vw;
+    background-color: chartreuse;
   }
   #Main #Banner #ImgBox {
     width: 100vw;

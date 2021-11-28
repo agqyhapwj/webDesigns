@@ -7,9 +7,17 @@
         overflow: hidden;
         // 定位點：相對定位
         position: relative;
-        #LeftBtn,
-        #RightBtn {
-            @include DN;
+        #Btn {
+            font-size: $Trem * 2;
+            // 定位點
+            position: absolute;
+            // 移動階層(圖層概念)
+            z-index: 5;
+        }
+        .LeftBtn {
+            width: $w10 * 0.7;
+            // padding: 10px;
+            background-color: chartreuse;
         }
 
         #ImgBox {
