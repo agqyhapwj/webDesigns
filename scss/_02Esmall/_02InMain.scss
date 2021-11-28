@@ -1,0 +1,22 @@
+#Main {
+    background-color: blueviolet;
+
+    #Banner {
+        #LeftBtn,
+        #RightBtn {
+            @include DN;
+        }
+
+        #ImgBox {
+            width: $w10 * 10;
+            @include DNli;
+            background-color: aliceblue;
+            li {
+                width: $w10 * 10;
+                float: left;
+                // 定位點 絕對位置
+                position: absolute;
+            }
+        }
+    }
+}
