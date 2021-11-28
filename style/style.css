@@ -80,18 +80,19 @@ You may only @extend selectors within the same directiv.
   #Main #Banner {
     width: 100vw;
     overflow: hidden;
+    position: relative;
   }
   #Main #Banner #LeftBtn,
   #Main #Banner #RightBtn {
     display: none;
   }
   #Main #Banner #ImgBox {
-    width: 300vw;
+    width: 200vw;
     list-style-type: none;
     background-color: aliceblue;
   }
   #Main #Banner #ImgBox li {
-    width: 300vw;
+    width: 200vw;
     float: left;
     position: absolute;
   }

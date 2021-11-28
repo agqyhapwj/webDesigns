@@ -5,19 +5,22 @@
         width: $w10 * 10;
         // 溢位設定，將超出的可視範圍給隱藏
         overflow: hidden;
+        // 定位點：相對定位
+        position: relative;
         #LeftBtn,
         #RightBtn {
             @include DN;
         }
 
         #ImgBox {
-            width: $w10 * 30;
+            width: $w10 * 20;
             @include DNli;
             background-color: aliceblue;
             li {
-                width: $w10 * 30;
+                width: $w10 * 20;
                 float: left;
-                // 定位點 絕對位置
+                // 定位點 絕對定位:1.單獨呼叫時，原點(0,0)會位於畫面(可視範圍)的左上角
+                // 物件的父框架呼叫 相對定位(position: relative)時，功能設為，重新定位原點至父框架
                 position: absolute;
             }
         }
