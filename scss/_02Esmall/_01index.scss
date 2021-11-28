@@ -53,7 +53,15 @@ header {
             width: 15vw;
             float: left;
             img {
-                width: 100%;
+                width: $w10 * 1;
+                // 背景圖片
+                background-image: url(../../images/icon/menuIcon.svg);
+                // 不動覆
+                background-repeat: no-repeat;
+                // 背景圖片 置中對齊
+                background-position: center;
+                // 背景圖片尺寸
+                background-size: cover;
             }
             background-color: yellow;
         }
