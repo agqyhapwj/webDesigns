@@ -75,17 +75,21 @@ You may only @extend selectors within the same directiv.
   #Main {
     background-color: blueviolet;
   }
+  #Main #Banner {
+    width: 100vw;
+    overflow: hidden;
+  }
   #Main #Banner #LeftBtn,
   #Main #Banner #RightBtn {
     display: none;
   }
   #Main #Banner #ImgBox {
-    width: 100vw;
+    width: 300vw;
     list-style-type: none;
     background-color: aliceblue;
   }
   #Main #Banner #ImgBox li {
-    width: 100vw;
+    width: 300vw;
     float: left;
     position: absolute;
   }

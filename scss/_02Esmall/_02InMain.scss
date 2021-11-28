@@ -2,17 +2,20 @@
     background-color: blueviolet;
 
     #Banner {
+        width: $w10 * 10;
+        // 溢位設定，將超出的可視範圍給隱藏
+        overflow: hidden;
         #LeftBtn,
         #RightBtn {
             @include DN;
         }
 
         #ImgBox {
-            width: $w10 * 10;
+            width: $w10 * 30;
             @include DNli;
             background-color: aliceblue;
             li {
-                width: $w10 * 10;
+                width: $w10 * 30;
                 float: left;
                 // 定位點 絕對位置
                 position: absolute;
