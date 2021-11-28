@@ -28,10 +28,12 @@ You may only @extend selectors within the same directiv.
     background-color: aquamarine;
   }
   header nav #Logo {
+    width: 80vw;
     float: left;
     background-color: #216568;
   }
   header nav #MenuBtn {
+    width: 20vw;
     float: left;
     background-color: yellow;
   }
