@@ -43,14 +43,14 @@ header {
         // 靠左對齊(與 MenuBtn 同一行)
         #Logo {
             // 寬度 % or VW(螢幕可視範圍的百分比)
-            width: 90vw;
+            width: 85vw;
             float: left;
             background-color: rgb(33, 101, 104);
         }
 
         // 靠左對齊(與 Logo 同一行)
         #MenuBtn {
-            width: 10vw;
+            width: 15vw;
             float: left;
             img {
                 width: 100%;
