@@ -51,7 +51,7 @@ You may only @extend selectors within the same directiv.
   header form {
     display: none;
   }
-  header .AllBtn {
+  header .BtnBox {
     display: none;
   }
   footer {
@@ -164,7 +164,7 @@ You may only @extend selectors within the same directiv.
   header form {
     display: none;
   }
-  header .AllBtn {
+  header .BtnBox {
     display: none;
   }
   footer {
@@ -271,7 +271,7 @@ You may only @extend selectors within the same directiv.
     display: -ms-flexbox;
     display: flex;
   }
-  header .AllBtn {
+  header .BtnBox {
     width: 100vw;
     display: block;
   }
