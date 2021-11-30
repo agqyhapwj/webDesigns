@@ -50,20 +50,22 @@ header {
 
         // 靠左對齊(與 Logo 同一行)
         #MenuBtn {
-            width: 15vw;
+            width: 30px;
             float: left;
-            img {
-                width: $w10 * 1;
-                // 背景圖片
-                background-image: url(../../images/icon/menuIcon.svg);
-                // 不動覆
-                background-repeat: no-repeat;
-                // 背景圖片 置中對齊
-                background-position: center;
-                // 背景圖片尺寸
-                background-size: cover;
-            }
-            background-color: yellow;
+            font-size: $Trem * 0.5;
+            background-color: palevioletred;
+            // img {
+            //     width: $w10 * 1;
+            //     // 背景圖片
+            //     background-image: url(../../images/icon/menuIcon.svg);
+            //     // 不動覆
+            //     background-repeat: no-repeat;
+            //     // 背景圖片 置中對齊
+            //     background-position: center;
+            //     // 背景圖片尺寸
+            //     background-size: cover;
+            // }
+            // background-color: yellow;
         }
 
         // html裡 清除浮動樣式 (用 p class="Clear")
