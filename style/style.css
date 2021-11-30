@@ -33,10 +33,18 @@ You may only @extend selectors within the same directiv.
     background-color: #216568;
   }
   header nav #MenuBtn {
-    width: 30px;
+    width: 15vw;
     float: left;
-    font-size: 0.5rem;
-    background-color: palevioletred;
+    overflow: hidden;
+    position: relative;
+  }
+  header nav #MenuBtn img {
+    width: -0.2vw;
+    background-image: url(../../images/icon/menuIcon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: yellow;
   }
   header nav .Clear {
     clear: both;
