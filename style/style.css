@@ -46,7 +46,7 @@ You may only @extend selectors within the same directiv.
     z-index: 15;
     /* 移動階層(圖層概念) */
     top: -0.5vh;
-    left: 3.5vw;
+    left: 0.8vw;
     background-color: palevioletred;
   }
   header nav .Clear {
