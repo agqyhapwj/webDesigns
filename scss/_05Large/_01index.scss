@@ -13,12 +13,12 @@ header {
 
     nav {
         width: $w10 * 4;
-
         background-color: rgb(95, 71, 11);
 
         //Logo寬度 + icon 寬度 = 總寬度 100vw (100%)
         #Logo {
             width: 100%;
+            height: auto;
             display: flex;
             // float: none;
             background-color: chocolate;

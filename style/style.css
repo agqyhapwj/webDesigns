@@ -262,6 +262,7 @@ You may only @extend selectors within the same directiv.
   }
   header nav #Logo {
     width: 100%;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
