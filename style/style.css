@@ -29,13 +29,13 @@ You may only @extend selectors within the same directiv.
   }
   header nav #Logo {
     width: 80vw;
-    height: 11vw;
+    height: 6.5vh;
     float: left;
     background-color: #216568;
   }
   header nav #MenuBtn {
     width: 13vw;
-    height: 12vw;
+    height: 7vh;
     float: left;
     line-height: 7.8vh;
     /* 垂直置中:高度 = 行距 */
