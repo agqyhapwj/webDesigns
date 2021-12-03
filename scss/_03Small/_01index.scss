@@ -29,7 +29,7 @@ header {
             // 寬度 % or VW(螢幕可視範圍的百分比)
             // width: $w10 * 8;
             width: 85vw;
-            height: 8vw;
+            height: 6vh;
             float: left;
             background-color: rgb(22, 95, 0);
         }
@@ -38,7 +38,7 @@ header {
         #MenuBtn {
             // width: $w10 * 1;
             width: 10vw;
-            height: 8.5vw;
+            height: 6.2vh;
             float: left;
             line-height: 6vh * 1.1; /* 垂直置中:高度 = 行距 */
             font-size: $Trem * 4; /* 文字大小 */
