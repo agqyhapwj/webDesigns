@@ -17,17 +17,19 @@ header {
         2:清除浮動狀態，由nav設定
         3:利用圖片高度撐開父框架的高
         */
-        width: $w10 * 10;
+        // width: $w10 * 10;
         background-color: rgb(0, 124, 83);
         // 解決方法二：清除浮動狀態，由nav設定寫在53行
 
         // 單位不同無法計算，所以改為同一單位vw
-        @include LBW(8, 5vw);
+        // @include LBW(8, 0vw);
 
         // 靠左對齊(與 MenuBtn 同一行)
         #Logo {
             // 寬度 % or VW(螢幕可視範圍的百分比)
             // width: $w10 * 8;
+            width: 85vw;
+            height: 8vw;
             float: left;
             background-color: rgb(22, 95, 0);
         }
@@ -35,7 +37,15 @@ header {
         // 靠左對齊(與 Logo 同一行)
         #MenuBtn {
             // width: $w10 * 1;
+            width: 10vw;
+            height: 8.5vw;
             float: left;
+            line-height: 6vh * 1.1; /* 垂直置中:高度 = 行距 */
+            font-size: $Trem * 4; /* 文字大小 */
+            position: relative; /* 相對定位點 */
+            z-index: 15; /* 移動階層(圖層概念) */
+            top: -0.25vh;
+            left: 2.5vw;
             background-color: greenyellow;
         }
 

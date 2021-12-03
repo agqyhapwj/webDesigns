@@ -44,21 +44,22 @@ header {
         #Logo {
             // 寬度 % or VW(螢幕可視範圍的百分比)
             width: 80vw;
+            height: 11vw;
             float: left;
             background-color: rgb(33, 101, 104);
         }
 
         // 靠左對齊(與 Logo 同一行)
         #MenuBtn {
-            width: 47px;
-            height: 6vh * 1.22;
+            width: 13vw;
+            height: 12vw;
             float: left;
             line-height: 6vh * 1.3; /* 垂直置中:高度 = 行距 */
-            font-size: $Trem * 3.5; /* 文字大小 */
+            font-size: $Trem * 3; /* 文字大小 */
             position: relative; /* 相對定位點 */
             z-index: 15; /* 移動階層(圖層概念) */
-            top: 20vh - 20vh;
-            left: 2.5vw;
+            top: -0.5vh;
+            left: 3.5vw;
             background-color: palevioletred;
         }
 

@@ -29,23 +29,24 @@ You may only @extend selectors within the same directiv.
   }
   header nav #Logo {
     width: 80vw;
+    height: 11vw;
     float: left;
     background-color: #216568;
   }
   header nav #MenuBtn {
-    width: 47px;
-    height: 7.32vh;
+    width: 13vw;
+    height: 12vw;
     float: left;
     line-height: 7.8vh;
     /* 垂直置中:高度 = 行距 */
-    font-size: 3.5rem;
+    font-size: 3rem;
     /* 文字大小 */
     position: relative;
     /* 相對定位點 */
     z-index: 15;
     /* 移動階層(圖層概念) */
-    top: 0vh;
-    left: 2.5vw;
+    top: -0.5vh;
+    left: 3.5vw;
     background-color: palevioletred;
   }
   header nav .Clear {
@@ -144,21 +145,28 @@ You may only @extend selectors within the same directiv.
         2:清除浮動狀態，由nav設定
         3:利用圖片高度撐開父框架的高
         */
-    width: 100vw;
     background-color: #007c53;
   }
   header nav #Logo {
-    width: 88vw;
-  }
-  header nav #MenuBtn {
-    width: 12vw;
-  }
-  header nav #Logo {
+    width: 85vw;
+    height: 8vw;
     float: left;
     background-color: #165f00;
   }
   header nav #MenuBtn {
+    width: 10vw;
+    height: 8.5vw;
     float: left;
+    line-height: 6.6vh;
+    /* 垂直置中:高度 = 行距 */
+    font-size: 4rem;
+    /* 文字大小 */
+    position: relative;
+    /* 相對定位點 */
+    z-index: 15;
+    /* 移動階層(圖層概念) */
+    top: -0.25vh;
+    left: 2.5vw;
     background-color: greenyellow;
   }
   header nav .Clear {
