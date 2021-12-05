@@ -7,19 +7,23 @@
         overflow: hidden;
         // 定位點：相對定位
         position: relative;
+
+        $ImagePadding: 335px;
+        // 父框架的padding 335px - 子框架的padding 250px = 相差值 $Differ
+        $Differ: 85px;
         .Btn {
             width: 20px;
-            height: 6vh * 2;
+            height: 95px;
             // 水平置中
             text-align: center;
             // 垂直置中 高度 = 行距
-            line-height: 6vh * 2;
+            line-height: 95px;
             font-size: $Trem * 1.2;
             // 定位點
             position: absolute;
             // 移動階層(圖層概念)
             z-index: 15;
-            top: 20vh - 6vh;
+            top: ($ImagePadding/ 2) - (95px / 2);
             @include Rounded(15);
         }
         .LeftBtn {
@@ -36,7 +40,7 @@
             width: $w10 * 10;
             @include DNli;
             // 內間距設定下方間距，當成圖片的高度，單位 % 或 vh
-            padding-bottom: 40vh;
+            padding-bottom: $ImagePadding;
             background-color: aliceblue;
             li {
                 width: $w10 * 10;
@@ -48,8 +52,9 @@
                 // margin-left: -168px;
                 font-size: 72px;
                 text-align: center;
-                // 內間距設定下方間距，當成圖片的高度，單位 % 或 vh
-                padding-bottom: 26vh;
+                // 內間距設定下方間距，當成圖片的高度，單位 % 或 vh （會隨著裝置而變變） 800px * 0.26 = 208px；固定值px
+                // 子框架的padding = 父框架的padding - 相差值 $Differ
+                padding-bottom: $ImagePadding - $Differ;
             }
             .Item01 {
                 @include BPhoto(center, cover, banner, "05.jpg");
