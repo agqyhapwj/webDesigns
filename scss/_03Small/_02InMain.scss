@@ -8,9 +8,10 @@
         // 定位點：相對定位
         position: relative;
 
-        $ImagePadding: 335px;
-        // 父框架的padding 335px - 子框架的padding 250px = 相差值 $Differ
-        $Differ: 85px;
+        $ImagePadding: 385px;
+        // 父框架的padding 335px - 子框架的padding 250px = 相差值 $Differ 85px
+        // 以增加50px為基礎值，相差值增加 5px 為基礎值
+        $Differ: 90px;
         .Btn {
             width: 20px;
             height: 95px;
