@@ -244,13 +244,13 @@ You may only @extend selectors within the same directiv.
   }
   #Main #Banner .Btn {
     width: 20px;
-    height: 12vh;
+    height: 95px;
     text-align: center;
-    line-height: 12vh;
+    line-height: 95px;
     font-size: 1.2rem;
     position: absolute;
     z-index: 15;
-    top: 14vh;
+    top: 120px;
     border-radius: 15px;
   }
   #Main #Banner .LeftBtn {
@@ -264,7 +264,7 @@ You may only @extend selectors within the same directiv.
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 350px;
+    padding-bottom: 335px;
     background-color: #915252;
   }
   #Main #Banner #ImgBox li {
