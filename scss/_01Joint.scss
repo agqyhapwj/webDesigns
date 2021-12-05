@@ -71,3 +71,20 @@ You may only @extend selectors within the same directiv.
 @mixin DNli {
     list-style-type: none;
 }
+
+// 商詹廣告背景圖片語法
+@mixin BPhoto($PosiTion, $Size, $Material, $Image) {
+    // 變數設定 1.對齊 $PosiTion 2.尺寸 $Size 3.資料夾位置 $Material ；圖片$Image
+    // 問題：路徑無法直接讀取變數名稱
+    // 解答：scss提供的語法，插入值寫法（基於javascript的es6語法），#{自訂名稱（只能英文和數字）}
+    // 例如：#{$Image}，寫在路徑上
+    width: $w10 * 10;
+    // 不重覆
+    background-repeat: no-repeat;
+    // 背景圖片 置中對齊
+    background-position: $PosiTion;
+    // 背景圖片尺寸
+    background-size: $Size;
+    // 背景圖片位置
+    background-image: url(../../images/#{$Material}/#{$Image});
+}

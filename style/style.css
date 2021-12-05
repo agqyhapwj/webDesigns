@@ -34,7 +34,7 @@ You may only @extend selectors within the same directiv.
     background-color: #216568;
   }
   header nav #MenuBtn {
-    width: 13vw;
+    width: 10vw;
     height: 7vh;
     float: left;
     line-height: 7.8vh;
@@ -127,10 +127,17 @@ You may only @extend selectors within the same directiv.
   }
   #Main #Banner #ImgBox .Item01 {
     width: 100vw;
-    background-image: url(../../images/banner/01.jpg);
+    background-image: url(../../images/banner/05.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+  #Main #Banner #ImgBox .Item02 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../images/banner/04.jpg);
   }
 }
 
