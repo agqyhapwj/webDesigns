@@ -8,52 +8,55 @@ header {
     // 顯示方式:彈性佈局
     display: flex;
     // 換行
-    flex-wrap: wrap;
+
     background-color: darkgoldenrod;
 
     nav {
-        width: $w10 * 4;
+        // // 寬度 100%
+        width: $w10 * 10;
+        height: 100px;
+        display: flex;
+        flex-wrap: wrap;
         background-color: rgb(95, 71, 11);
 
         //Logo寬度 + icon 寬度 = 總寬度 100vw (100%)
         #Logo {
-            width: 100%;
-            height: auto;
-            display: flex;
+            width: $w10 * 4;
             // float: none;
             background-color: chocolate;
+        }
+
+        #icon {
+            width: $w10 * 3;
+            @include OB;
+            @include DNli;
+            display: flex;
+        }
+
+        form {
+            width: $w10 * 3;
+            @include OB;
+        }
+
+        .BtnBox {
+            // 開啟隱藏物件
+            @include OB;
+            width: $w10 * 10;
+            // 彈性佈局
+            display: flex;
+            // 隱藏項目符號
+            @include DNli;
+
+            // // 如果有第二層選單可以用這個方式
+            // ul {
+            //     @include DN;
+            // }
         }
 
         #MenuBtn {
             //隱藏物件
             @include DN;
         }
-    }
-
-    #icon {
-        width: $w10 * 3;
-        display: flex;
-        @include DNli;
-    }
-
-    form {
-        width: $w10 * 3;
-        display: flex;
-    }
-
-    .BtnBox {
-        // 開啟隱藏物件
-        @include OB;
-        width: $w10 * 10;
-        // 彈性佈局
-        display: flex;
-        // 隱藏項目符號
-        @include DNli;
-
-        // // 如果有第二層選單可以用這個方式
-        // ul {
-        //     @include DN;
-        // }
     }
 }
 

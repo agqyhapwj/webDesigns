@@ -59,18 +59,19 @@ header {
             @include PhoneMenu(center, contain, icon, "menu.svg");
         }
 
+        #icon,
+        form {
+            @include DN;
+        }
+        .BtnBox {
+            // 呼叫 混合函式(寫在共用區)
+            @include DN;
+        }
+
         // html裡 清除浮動樣式 (用 p class="Clear")
         .Clear {
             @include clearFloat;
         }
-    }
-    #icon,
-    form {
-        @include DN;
-    }
-    .BtnBox {
-        // 呼叫 混合函式(寫在共用區)
-        @include DN;
     }
 }
 

@@ -23,7 +23,7 @@ header {
         // 解決方法二：清除浮動狀態，由nav設定寫在53行
 
         // 單位不同無法計算，所以改為同一單位vw
-        @include LBW(8, 5vw);
+        @include LBW(8, 10vw);
 
         // 靠左對齊(與 MenuBtn 同一行)
         #Logo {
@@ -36,19 +36,23 @@ header {
 
         // 靠左對齊(與 Logo 同一行)
         #MenuBtn {
+            height: 80px;
             // width: $w10 * 1;
             float: left;
-            background-color: darkblue;
+            // 文字取代圖片，呈現背景圖，而隱藏文字；首行縮排
+            text-indent: -9999px;
+            @include PhoneMenu(center, contain, icon, "menu.svg");
+        }
+
+        .BtnBox {
+            // 呼叫 混合函式(寫在共用區)
+            @include DN;
         }
 
         // html裡 清除浮動樣式 (用 p class="Clear")
         .Clear {
             @include clearFloat;
         }
-    }
-    .AllBtn {
-        // 呼叫 混合函式(寫在共用區)
-        @include DN;
     }
 }
 
