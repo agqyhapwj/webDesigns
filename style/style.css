@@ -28,26 +28,18 @@ You may only @extend selectors within the same directiv.
     background-color: aquamarine;
   }
   header nav #Logo {
-    width: 80vw;
-    height: 6.5vh;
     float: left;
     background-color: #216568;
   }
   header nav #MenuBtn {
-    width: 10vw;
-    height: 7vh;
     float: left;
-    line-height: 7.8vh;
-    /* 垂直置中:高度 = 行距 */
-    font-size: 3rem;
-    /* 文字大小 */
-    position: relative;
-    /* 相對定位點 */
-    z-index: 15;
-    /* 移動階層(圖層概念) */
-    top: -0.5vh;
-    left: 0.8vw;
     background-color: palevioletred;
+    text-indent: -9999px;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../../images/icon/menu.svg);
   }
   header nav .Clear {
     clear: both;
