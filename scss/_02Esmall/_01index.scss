@@ -38,7 +38,7 @@ header {
         // 解決方法二：清除浮動狀態，由nav設定寫在53行
 
         // 單位不同無法計算，所以改為同一單位vw
-        // @include LBW(8, 5vw);
+        @include LBW(8, 5vw);
 
         // 靠左對齊(與 MenuBtn 同一行)
         #Logo {
