@@ -36,8 +36,8 @@
             width: $w10 * 10;
             @include DNli;
             // 內間距設定下方間距，當成圖片的高度，單位 % 或 vh
-            padding-bottom: 40vh;
-            background-color: aliceblue;
+            padding-bottom: 32.5vh;
+            background-color: rgb(18, 111, 192);
             li {
                 width: $w10 * 10;
                 float: left;

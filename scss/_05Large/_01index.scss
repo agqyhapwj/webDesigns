@@ -42,8 +42,18 @@ header {
     }
 
     .BtnBox {
-        width: 100vw;
+        // 開啟隱藏物件
         @include OB;
+        width: $w10 * 10;
+        // 彈性佈局
+        display: flex;
+        // 隱藏項目符號
+        @include DNli;
+
+        // // 如果有第二層選單可以用這個方式
+        // ul {
+        //     @include DN;
+        // }
     }
 }
 

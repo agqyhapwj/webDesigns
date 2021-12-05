@@ -88,3 +88,9 @@ You may only @extend selectors within the same directiv.
     // 背景圖片位置
     background-image: url(../../images/#{$Material}/#{$Image});
 }
+
+// 圓角矩形
+@mixin Rounded($Num) {
+    // 邊框角度設定，建議單位為（像素px）
+    border-radius: $Num + px;
+}
