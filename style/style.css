@@ -159,6 +159,104 @@ You may only @extend selectors within the same directiv.
     background-size: cover;
     background-image: url(../../images/banner/01.jpg);
   }
+  #Main > #Limited h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #Main > #Limited > .LCommodity {
+    width: 85%;
+    margin-bottom: 20px;
+    background-color: white;
+  }
+  #Main > #Limited > .LCommodity > #TitleBox {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    list-style-type: none;
+    letter-spacing: 2px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  #Main > #Limited > .LCommodity > #TitleBox > .Title {
+    width: 70%;
+    font-size: 1.7rem;
+  }
+  #Main > #Limited > .LCommodity > #TitleBox > .Number {
+    width: 30%;
+    font-size: 1.1rem;
+    text-align: right;
+    padding-top: 0.6rem;
+  }
+  #Main > #Limited > .LCommodity > #TitleBox > .Text {
+    width: 100%;
+    text-align: right;
+  }
+  #Main > #Limited > .LCommodity > .Images {
+    width: 280px;
+    height: 230px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: pink;
+  }
+  #Main > #Limited > .LCommodity .LNameBox {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 15px;
+    background-color: skyblue;
+  }
+  #Main > #Limited > .LCommodity .LNameBox > h3 {
+    width: 80%;
+    font-size: 1.4rem;
+  }
+  #Main > #Limited > .LCommodity .LNameBox > li {
+    width: 20%;
+    list-style-type: none;
+  }
+  #Main > #Limited > .LCommodity > .Brief {
+    width: 85%;
+    text-align: justify;
+    background-color: #09dada;
+    margin-bottom: 10px;
+  }
+  #Main > #Limited > .LCommodity > #PriceBox {
+    width: 90%;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 10px;
+  }
+  #Main > #Limited > .LCommodity > #PriceBox > .OriginaPrice {
+    width: 35%;
+    font-size: 0.9rem;
+    padding-top: 0.3rem;
+  }
+  #Main > #Limited > .LCommodity > #PriceBox > .OriginaPrice > span {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: skyblue;
+  }
+  #Main > #Limited > .LCommodity > #PriceBox > .BargainPrice {
+    width: 45%;
+    font-size: 1.2rem;
+  }
+  #Main > #Limited > .LCommodity > #PriceBox > .BargainPrice > span {
+    font-size: 1.5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: brown;
+    font-weight: 600;
+  }
+  #Main > #Limited > .LCommodity > #PriceBox > .Car {
+    width: 20%;
+  }
 }
 
 @media screen and (min-width: 576px) {
