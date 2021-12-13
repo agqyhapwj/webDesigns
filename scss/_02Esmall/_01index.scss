@@ -1,6 +1,7 @@
 // 呼叫 html 標籤，例如 :nav 稱作 類型選擇
 // 呼叫 id，例如 <li id='test'></li>， id="test", 「#test」
 // 呼叫 class， class="test1"，「.」類別選擇器；「.test」
+// 後代選擇器，例如： header nav li nav框架中若存在li標籤標，不論是哪一個層級，都會直接受影響
 // scss 1.巢狀寫法 2.變數 $yourname(設定計算用的基礎值) 3.繼承 %yourname (css3語法相司，但能通中呈現)
 
 // css3的寫法 隱藏
@@ -80,11 +81,13 @@ footer {
     margin-top: 2rem;
 
     hr {
+        // 水平線與下方距離
         margin-bottom: 2rem;
     }
 
     // 頁尾手機版次導覽置中
     nav {
+        // 與下方距離
         margin-bottom: 2rem;
         ul {
             width: 80%;
@@ -97,8 +100,10 @@ footer {
 
     // 版權宣告置中
     div {
+        // 與下方的距離
         margin-bottom: 0.7rem;
         h4 {
+            // 文字置中
             text-align: center;
         }
     }
