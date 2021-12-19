@@ -271,7 +271,7 @@
             // 隱藏項目符號
             @include DNli;
             // 文字尺寸
-            font-size: $Trem * 1.1;
+            font-size: $Trem * 1;
             // 英文轉換為大寫
             text-transform: uppercase;
             // 字距
@@ -403,7 +403,7 @@
             // 隱藏項目符號
             @include DNli;
             // 文字尺寸
-            font-size: $Trem * 1.1;
+            font-size: $Trem * 1;
             // 英文轉換為大寫
             text-transform: uppercase;
             // 字距

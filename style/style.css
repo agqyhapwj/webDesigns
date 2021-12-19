@@ -264,7 +264,7 @@ You may only @extend selectors within the same directiv.
     width: 80%;
     text-align: right;
     list-style-type: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding-bottom: 15px;
@@ -331,7 +331,7 @@ You may only @extend selectors within the same directiv.
     width: 80%;
     text-align: right;
     list-style-type: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding-bottom: 15px;
