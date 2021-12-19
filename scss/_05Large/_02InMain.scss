@@ -102,7 +102,7 @@
 
         > article {
             // 一行兩欄
-            width: $w1p * 8;
+            // width: $w1p * 8; 可以取消裝置閱讀比較舒服，版面比較寬
             display: flex;
             flex-wrap: wrap;
             > .Commodity {
@@ -327,7 +327,7 @@
 
         > article {
             // 一行兩欄
-            width: $w1p * 8;
+            // width: $w1p * 8; 可以取消裝置閱讀比較舒服，版面比較寬
             display: flex;
             flex-wrap: wrap;
             > .Commodity {
