@@ -100,163 +100,169 @@
             }
         }
 
-        > .Commodity {
-            // 寬度
-            width: $w1p * 10 / 3 - 3%;
-            // 外間距
-            margin: {
-                bottom: 20px;
-            }
-            // 背景顏色
-            background-color: white;
-            // 陰影 x軸 y軸 模糊 顏色
-            box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
-
-            > #TitleBox {
+        > article {
+            // 一行兩欄
+            width: $w1p * 8;
+            display: flex;
+            flex-wrap: wrap;
+            > .Commodity {
                 // 寬度
-                width: $w1p * 8;
-                // 彈性佈局
-                display: flex;
-                // 換行
-                flex-wrap: wrap;
-                // 隱藏項目符號
-                list-style-type: none;
-                // 字距
-                letter-spacing: 2px;
-                // 與外框的距離，設定為內間距
-                padding: {
-                    top: 15px;
-                    bottom: 10px;
-                }
-
-                > .Title {
-                    width: $TW;
-                    font-size: $TFS;
-                }
-                > .Number {
-                    width: $NW;
-                    font-size: $NFS;
-                    text-align: right;
-                    // 計算Title 與 Number 內間距的差
-                    padding: {
-                        top: $TFS - $NFS;
-                    }
-                }
-                > .Text {
-                    width: $w1p * 10;
-                    text-align: right;
-                }
-            }
-
-            > .Images {
-                // 寬度
-                width: $w1p * 8.5;
+                width: $w1p * 10 / 3 - 3%;
                 // 外間距
                 margin: {
-                    bottom: 10px;
-                }
-                // 圓角矩形 邊框設定轉角的角度「圓角矩形」
-                border-radius: 15px;
-                // background-color: pink;
-
-                > a {
-                    > img {
-                        // 圖片邊框 線段的粗細 線段的樣式（實線） 顏色
-                        border: 1.5px solid rgb(68, 7, 7);
-                        border-radius: 15px;
-                    }
-                }
-            }
-
-            .LName {
-                width: $w1p * 9;
-                // 彈性佈局 橫向排版
-                display: flex;
-                // 外間距
-                margin: {
-                    bottom: 15px;
-                }
-                background-color: skyblue;
-
-                > h3 {
-                    width: $TW + 10;
-                    // 文字尺寸
-                    font-size: $Trem * 1.4;
-                }
-
-                > li {
-                    width: $NW - 10;
-                    // 隱藏項目符號
-                    list-style-type: none;
-                }
-            }
-
-            > .Brief {
-                // 寬度
-                width: $w1p * 8.5;
-                // 文字對齊 左右切齊
-                text-align: justify;
-                background-color: rgb(9, 218, 218);
-                // 外間距
-                padding: {
                     bottom: 20px;
                 }
-            }
+                // 背景顏色
+                background-color: white;
+                // 陰影 x軸 y軸 模糊 顏色
+                box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
 
-            > #PriceBox {
-                // 寬度
-                width: $w1p * 9;
-                // 隱藏項目符號
-                list-style-type: none;
-                // 彈性佈局
-                display: flex;
-                // 內間距 只要是有包一層的 第一個及最後一個物件 只能用內間距推開「外間距無效」
-                padding: {
-                    bottom: 10px;
-                }
-
-                > .OriginaPrice {
+                > #TitleBox {
                     // 寬度
-                    width: $w1p * 3.5;
-                    // 文字尺寸
-                    font-size: $Trem * 0.9;
-                    // 內間距
+                    width: $w1p * 8;
+                    // 彈性佈局
+                    display: flex;
+                    // 換行
+                    flex-wrap: wrap;
+                    // 隱藏項目符號
+                    list-style-type: none;
+                    // 字距
+                    letter-spacing: 2px;
+                    // 與外框的距離，設定為內間距
                     padding: {
-                        top: $Trem * 0.3;
+                        top: 15px;
+                        bottom: 10px;
                     }
 
-                    > span {
-                        padding: {
-                            left: 5px;
-                            right: 5px;
-                        }
-                        // 文字顏色
-                        color: skyblue;
+                    > .Title {
+                        width: $TW;
+                        font-size: $TFS;
                     }
-                }
-                > .BargainPrice {
-                    // 寬度
-                    width: $w1p * 4.5;
-                    // 文字尺寸
-                    font-size: $Trem * 1.2;
-
-                    > span {
-                        // em or rem 的尺寸，基於 根目錄之下的值為基準
-                        font-size: $Trem * 1.5;
+                    > .Number {
+                        width: $NW;
+                        font-size: $NFS;
+                        text-align: right;
+                        // 計算Title 與 Number 內間距的差
                         padding: {
-                            left: 5px;
-                            right: 5px;
+                            top: $TFS - $NFS;
                         }
-                        // 文字顏色
-                        color: brown;
-                        // 文字粗細600就很粗了
-                        font-weight: 600;
+                    }
+                    > .Text {
+                        width: $w1p * 10;
+                        text-align: right;
                     }
                 }
 
-                > .Car {
+                > .Images {
                     // 寬度
-                    width: $w1p * 2;
+                    width: $w1p * 8.5;
+                    // 外間距
+                    margin: {
+                        bottom: 10px;
+                    }
+                    // 圓角矩形 邊框設定轉角的角度「圓角矩形」
+                    border-radius: 15px;
+                    // background-color: pink;
+
+                    > a {
+                        > img {
+                            // 圖片邊框 線段的粗細 線段的樣式（實線） 顏色
+                            border: 1.5px solid rgb(68, 7, 7);
+                            border-radius: 15px;
+                        }
+                    }
+                }
+
+                .LName {
+                    width: $w1p * 9;
+                    // 彈性佈局 橫向排版
+                    display: flex;
+                    // 外間距
+                    margin: {
+                        bottom: 15px;
+                    }
+                    background-color: skyblue;
+
+                    > h3 {
+                        width: $TW + 10;
+                        // 文字尺寸
+                        font-size: $Trem * 1.4;
+                    }
+
+                    > li {
+                        width: $NW - 10;
+                        // 隱藏項目符號
+                        list-style-type: none;
+                    }
+                }
+
+                > .Brief {
+                    // 寬度
+                    width: $w1p * 8.5;
+                    // 文字對齊 左右切齊
+                    text-align: justify;
+                    background-color: rgb(9, 218, 218);
+                    // 外間距
+                    padding: {
+                        bottom: 20px;
+                    }
+                }
+
+                > #PriceBox {
+                    // 寬度
+                    width: $w1p * 9;
+                    // 隱藏項目符號
+                    list-style-type: none;
+                    // 彈性佈局
+                    display: flex;
+                    // 內間距 只要是有包一層的 第一個及最後一個物件 只能用內間距推開「外間距無效」
+                    padding: {
+                        bottom: 10px;
+                    }
+
+                    > .OriginaPrice {
+                        // 寬度
+                        width: $w1p * 3.5;
+                        // 文字尺寸
+                        font-size: $Trem * 0.9;
+                        // 內間距
+                        padding: {
+                            top: $Trem * 0.3;
+                        }
+
+                        > span {
+                            padding: {
+                                left: 5px;
+                                right: 5px;
+                            }
+                            // 文字顏色
+                            color: skyblue;
+                        }
+                    }
+                    > .BargainPrice {
+                        // 寬度
+                        width: $w1p * 4.5;
+                        // 文字尺寸
+                        font-size: $Trem * 1.2;
+
+                        > span {
+                            // em or rem 的尺寸，基於 根目錄之下的值為基準
+                            font-size: $Trem * 1.5;
+                            padding: {
+                                left: 5px;
+                                right: 5px;
+                            }
+                            // 文字顏色
+                            color: brown;
+                            // 文字粗細600就很粗了
+                            font-weight: 600;
+                        }
+                    }
+
+                    > .Car {
+                        // 寬度
+                        width: $w1p * 2;
+                    }
                 }
             }
         }
@@ -319,74 +325,80 @@
             }
         }
 
-        > .Commodity {
-            // 寬度
-            width: $w1p * 10 / 3 - 3%;
-            // 外間距
-            margin: {
-                bottom: 20px;
-            }
-            // 背景顏色
-            background-color: white;
-            // 陰影 x軸 y軸 模糊 顏色
-            box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
-
-            > .Null {
-                height: 30px;
-            }
-
-            > .Images {
+        > article {
+            // 一行兩欄
+            width: $w1p * 8;
+            display: flex;
+            flex-wrap: wrap;
+            > .Commodity {
                 // 寬度
-                width: $w1p * 8.5;
+                width: $w1p * 10 / 3 - 3%;
                 // 外間距
                 margin: {
-                    bottom: 10px;
+                    bottom: 20px;
                 }
-                // 圓角矩形 邊框設定轉角的角度「圓角矩形」
-                border-radius: 15px;
-                // background-color: pink;
+                // 背景顏色
+                background-color: white;
+                // 陰影 x軸 y軸 模糊 顏色
+                box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
 
-                > a {
-                    > img {
-                        // 圖片邊框 線段的粗細 線段的樣式（實線） 顏色
-                        border: 1.5px solid rgb(68, 7, 7);
-                        border-radius: 15px;
+                > .Null {
+                    height: 30px;
+                }
+
+                > .Images {
+                    // 寬度
+                    width: $w1p * 8.5;
+                    // 外間距
+                    margin: {
+                        bottom: 10px;
+                    }
+                    // 圓角矩形 邊框設定轉角的角度「圓角矩形」
+                    border-radius: 15px;
+                    // background-color: pink;
+
+                    > a {
+                        > img {
+                            // 圖片邊框 線段的粗細 線段的樣式（實線） 顏色
+                            border: 1.5px solid rgb(68, 7, 7);
+                            border-radius: 15px;
+                        }
                     }
                 }
-            }
 
-            .LName {
-                width: $w1p * 9;
-                // 彈性佈局 橫向排版
-                display: flex;
-                // 外間距
-                margin: {
-                    bottom: 15px;
+                .LName {
+                    width: $w1p * 9;
+                    // 彈性佈局 橫向排版
+                    display: flex;
+                    // 外間距
+                    margin: {
+                        bottom: 15px;
+                    }
+                    background-color: skyblue;
+
+                    > h3 {
+                        width: $TW + 10;
+                        // 文字尺寸
+                        font-size: $Trem * 1.4;
+                    }
+
+                    > li {
+                        width: $NW - 10;
+                        // 隱藏項目符號
+                        list-style-type: none;
+                    }
                 }
-                background-color: skyblue;
 
-                > h3 {
-                    width: $TW + 10;
-                    // 文字尺寸
-                    font-size: $Trem * 1.4;
-                }
-
-                > li {
-                    width: $NW - 10;
-                    // 隱藏項目符號
-                    list-style-type: none;
-                }
-            }
-
-            > .Brief {
-                // 寬度
-                width: $w1p * 8.5;
-                // 文字對齊 左右切齊
-                text-align: justify;
-                background-color: rgb(9, 218, 218);
-                // 內間距
-                padding: {
-                    bottom: 20px;
+                > .Brief {
+                    // 寬度
+                    width: $w1p * 8.5;
+                    // 文字對齊 左右切齊
+                    text-align: justify;
+                    background-color: rgb(9, 218, 218);
+                    // 內間距
+                    padding: {
+                        bottom: 20px;
+                    }
                 }
             }
         }
