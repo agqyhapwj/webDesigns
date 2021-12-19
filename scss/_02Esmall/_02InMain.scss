@@ -257,5 +257,33 @@
                 }
             }
         }
+
+        // more
+        > .more {
+            width: $w1p * 8;
+            // 文字對齊 靠右
+            text-align: right;
+            // 隱藏項目符號
+            @include DNli;
+            // 文字尺寸
+            font-size: $Trem * 1.7;
+            // 英文轉換為大寫
+
+            // 字距
+            letter-spacing: 2px;
+
+            // 外間距
+            margin: {
+                bottom: 15px;
+            }
+            background-color: burlywood;
+
+            > a {
+                // 取消連結底線樣式
+                text-decoration: none;
+                // 顏色
+                color: royalblue;
+            }
+        }
     }
 }

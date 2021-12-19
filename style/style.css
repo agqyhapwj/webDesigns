@@ -261,6 +261,19 @@ You may only @extend selectors within the same directiv.
   #Main > #Limited > .LCommodity > #PriceBox > .Car {
     width: 20%;
   }
+  #Main > #Limited > .more {
+    width: 80%;
+    text-align: right;
+    list-style-type: none;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    background-color: burlywood;
+  }
+  #Main > #Limited > .more > a {
+    text-decoration: none;
+    color: royalblue;
+  }
 }
 
 @media screen and (min-width: 576px) {

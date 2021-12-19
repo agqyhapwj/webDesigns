@@ -115,6 +115,9 @@ You may only @extend selectors within the same directiv.
 }
 
 // 商品區 架構
+// $TWM(Title寬度的倍數)~$TFSFSM(Title文字大小的倍數)~$NFSFSM(Number文字大小的倍數)$MainW(Main寬度)
+// $BR(背景顏色的R)~$BG(背景顏色的G)~$BB(背景顏色的B)
+// $TitleLe(Title的字距)~$ImagesRa(商品圖片的圓角矩形)~$Lines(圖片的邊框粗細)
 @mixin LiMer(
     $TWM,
     $TFSFSM,
