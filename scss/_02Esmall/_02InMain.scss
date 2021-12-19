@@ -85,6 +85,9 @@
         $TFS: $Trem * 1.7;
         $NFS: $Trem * 1.1;
 
+        // 背景圖1
+        background-image: url(../../images/BG/001.png);
+
         h1 {
             // 文字尺寸
             font-size: $Trem * 1.5;
@@ -97,7 +100,7 @@
             }
         }
 
-        > .LCommodity {
+        > .Commodity {
             // 寬度
             width: $w1p * 8.5;
             // 外間距
@@ -165,7 +168,7 @@
                 }
             }
 
-            .LNameBox {
+            .LName {
                 width: $w1p * 9;
                 // 彈性佈局 橫向排版
                 display: flex;
@@ -195,8 +198,8 @@
                 text-align: justify;
                 background-color: rgb(9, 218, 218);
                 // 外間距
-                margin: {
-                    bottom: 10px;
+                padding: {
+                    bottom: 20px;
                 }
             }
 
@@ -272,8 +275,138 @@
             // 字距
             letter-spacing: 2px;
 
+            // 內間距
+            padding: {
+                bottom: 15px;
+            }
+
+            > a {
+                // 寬度 高度px 設定內間距 padding:第一個px管上下 第二個px管左右
+                padding: 5px 30px;
+                // 顯示方式 以「文字方塊」呈現
+                display: inline-block;
+                background-color: coral;
+                // 取消連結底線樣式
+                text-decoration: none;
+                // 顏色
+                color: royalblue;
+                // 圓角矩形
+                border-radius: 20px;
+            }
+        }
+    }
+
+    > #Share {
+        // 計算式
+        $TW: $w1p * 7;
+        $NW: $w1p * 10 - $TW;
+
+        $TFS: $Trem * 1.7;
+        $NFS: $Trem * 1.1;
+
+        // 背景圖1
+        background-image: url(../../images/BG/002.png);
+
+        h1 {
+            // 文字尺寸
+            font-size: $Trem * 1.5;
+            // 標題置中
+            text-align: center;
+            // 內間距
+            padding: {
+                top: 15px;
+                bottom: 15px;
+            }
+        }
+
+        > .Commodity {
+            // 寬度
+            width: $w1p * 8.5;
             // 外間距
             margin: {
+                bottom: 20px;
+            }
+            // 背景顏色
+            background-color: white;
+            // 陰影 x軸 y軸 模糊 顏色
+            box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
+
+            > .Null {
+                height: 30px;
+            }
+
+            > .Images {
+                // 寬度
+                width: 280px;
+                // 外間距
+                margin: {
+                    bottom: 10px;
+                }
+                // 圓角矩形 邊框設定轉角的角度「圓角矩形」
+                border-radius: 15px;
+                // background-color: pink;
+
+                > a {
+                    > img {
+                        // 圖片邊框 線段的粗細 線段的樣式（實線） 顏色
+                        border: 1.5px solid rgb(68, 7, 7);
+                        border-radius: 15px;
+                    }
+                }
+            }
+
+            .LName {
+                width: $w1p * 9;
+                // 彈性佈局 橫向排版
+                display: flex;
+                // 外間距
+                margin: {
+                    bottom: 15px;
+                }
+                background-color: skyblue;
+
+                > h3 {
+                    width: $TW + 10;
+                    // 文字尺寸
+                    font-size: $Trem * 1.4;
+                }
+
+                > li {
+                    width: $NW - 10;
+                    // 隱藏項目符號
+                    list-style-type: none;
+                }
+            }
+
+            > .Brief {
+                // 寬度
+                width: $w1p * 8.5;
+                // 文字對齊 左右切齊
+                text-align: justify;
+                background-color: rgb(9, 218, 218);
+                // 內間距
+                padding: {
+                    bottom: 20px;
+                }
+            }
+        }
+
+        // more
+        > .more {
+            width: $w1p * 8;
+            // 文字對齊 靠右
+            text-align: right;
+            // 隱藏項目符號
+            @include DNli;
+            // 文字尺寸
+            font-size: $Trem * 1.3;
+            // 英文轉換為大寫
+            text-transform: uppercase;
+            // 字距
+            letter-spacing: 2px;
+
+            // 內間距
+            padding: {
                 bottom: 15px;
             }
 

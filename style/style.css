@@ -57,9 +57,6 @@ You may only @extend selectors within the same directiv.
   header nav .Clear {
     clear: both;
   }
-  footer {
-    margin-top: 2rem;
-  }
   footer hr {
     margin-bottom: 2rem;
   }
@@ -159,20 +156,23 @@ You may only @extend selectors within the same directiv.
     background-size: cover;
     background-image: url(../../images/banner/01.jpg);
   }
+  #Main > #Limited {
+    background-image: url(../../images/BG/001.png);
+  }
   #Main > #Limited h1 {
     font-size: 1.5rem;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  #Main > #Limited > .LCommodity {
+  #Main > #Limited > .Commodity {
     width: 85%;
     margin-bottom: 20px;
     background-color: white;
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
             box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
   }
-  #Main > #Limited > .LCommodity > #TitleBox {
+  #Main > #Limited > .Commodity > #TitleBox {
     width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -184,30 +184,30 @@ You may only @extend selectors within the same directiv.
     padding-top: 15px;
     padding-bottom: 10px;
   }
-  #Main > #Limited > .LCommodity > #TitleBox > .Title {
+  #Main > #Limited > .Commodity > #TitleBox > .Title {
     width: 70%;
     font-size: 1.7rem;
   }
-  #Main > #Limited > .LCommodity > #TitleBox > .Number {
+  #Main > #Limited > .Commodity > #TitleBox > .Number {
     width: 30%;
     font-size: 1.1rem;
     text-align: right;
     padding-top: 0.6rem;
   }
-  #Main > #Limited > .LCommodity > #TitleBox > .Text {
+  #Main > #Limited > .Commodity > #TitleBox > .Text {
     width: 100%;
     text-align: right;
   }
-  #Main > #Limited > .LCommodity > .Images {
+  #Main > #Limited > .Commodity > .Images {
     width: 280px;
     margin-bottom: 10px;
     border-radius: 15px;
   }
-  #Main > #Limited > .LCommodity > .Images > a > img {
+  #Main > #Limited > .Commodity > .Images > a > img {
     border: 1.5px solid #440707;
     border-radius: 15px;
   }
-  #Main > #Limited > .LCommodity .LNameBox {
+  #Main > #Limited > .Commodity .LName {
     width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -215,21 +215,21 @@ You may only @extend selectors within the same directiv.
     margin-bottom: 15px;
     background-color: skyblue;
   }
-  #Main > #Limited > .LCommodity .LNameBox > h3 {
+  #Main > #Limited > .Commodity .LName > h3 {
     width: 80%;
     font-size: 1.4rem;
   }
-  #Main > #Limited > .LCommodity .LNameBox > li {
+  #Main > #Limited > .Commodity .LName > li {
     width: 20%;
     list-style-type: none;
   }
-  #Main > #Limited > .LCommodity > .Brief {
+  #Main > #Limited > .Commodity > .Brief {
     width: 85%;
     text-align: justify;
     background-color: #09dada;
-    margin-bottom: 10px;
+    padding-bottom: 20px;
   }
-  #Main > #Limited > .LCommodity > #PriceBox {
+  #Main > #Limited > .Commodity > #PriceBox {
     width: 90%;
     list-style-type: none;
     display: -webkit-box;
@@ -237,28 +237,28 @@ You may only @extend selectors within the same directiv.
     display: flex;
     padding-bottom: 10px;
   }
-  #Main > #Limited > .LCommodity > #PriceBox > .OriginaPrice {
+  #Main > #Limited > .Commodity > #PriceBox > .OriginaPrice {
     width: 35%;
     font-size: 0.9rem;
     padding-top: 0.3rem;
   }
-  #Main > #Limited > .LCommodity > #PriceBox > .OriginaPrice > span {
+  #Main > #Limited > .Commodity > #PriceBox > .OriginaPrice > span {
     padding-left: 5px;
     padding-right: 5px;
     color: skyblue;
   }
-  #Main > #Limited > .LCommodity > #PriceBox > .BargainPrice {
+  #Main > #Limited > .Commodity > #PriceBox > .BargainPrice {
     width: 45%;
     font-size: 1.2rem;
   }
-  #Main > #Limited > .LCommodity > #PriceBox > .BargainPrice > span {
+  #Main > #Limited > .Commodity > #PriceBox > .BargainPrice > span {
     font-size: 1.5rem;
     padding-left: 5px;
     padding-right: 5px;
     color: brown;
     font-weight: 600;
   }
-  #Main > #Limited > .LCommodity > #PriceBox > .Car {
+  #Main > #Limited > .Commodity > #PriceBox > .Car {
     width: 20%;
   }
   #Main > #Limited > .more {
@@ -268,9 +268,76 @@ You may only @extend selectors within the same directiv.
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
   }
   #Main > #Limited > .more > a {
+    padding: 5px 30px;
+    display: inline-block;
+    background-color: coral;
+    text-decoration: none;
+    color: royalblue;
+    border-radius: 20px;
+  }
+  #Main > #Share {
+    background-image: url(../../images/BG/002.png);
+  }
+  #Main > #Share h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #Main > #Share > .Commodity {
+    width: 85%;
+    margin-bottom: 20px;
+    background-color: white;
+    -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
+            box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
+  }
+  #Main > #Share > .Commodity > .Null {
+    height: 30px;
+  }
+  #Main > #Share > .Commodity > .Images {
+    width: 280px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+  #Main > #Share > .Commodity > .Images > a > img {
+    border: 1.5px solid #440707;
+    border-radius: 15px;
+  }
+  #Main > #Share > .Commodity .LName {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 15px;
+    background-color: skyblue;
+  }
+  #Main > #Share > .Commodity .LName > h3 {
+    width: 80%;
+    font-size: 1.4rem;
+  }
+  #Main > #Share > .Commodity .LName > li {
+    width: 20%;
+    list-style-type: none;
+  }
+  #Main > #Share > .Commodity > .Brief {
+    width: 85%;
+    text-align: justify;
+    background-color: #09dada;
+    padding-bottom: 20px;
+  }
+  #Main > #Share > .more {
+    width: 80%;
+    text-align: right;
+    list-style-type: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+  }
+  #Main > #Share > .more > a {
     padding: 5px 30px;
     display: inline-block;
     background-color: coral;
@@ -322,9 +389,6 @@ You may only @extend selectors within the same directiv.
   }
   header nav .Clear {
     clear: both;
-  }
-  footer {
-    margin-top: 2rem;
   }
   footer hr {
     margin-bottom: 2rem;
@@ -424,6 +488,207 @@ You may only @extend selectors within the same directiv.
     background-position: center;
     background-size: cover;
     background-image: url(../../images/banner/01.jpg);
+  }
+  #Main > #Limited {
+    background-image: url(../../images/BG/001.png);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #Main > #Limited h1 {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #Main > #Limited > .Commodity {
+    width: 45vw;
+    margin-bottom: 20px;
+    background-color: white;
+    -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
+            box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
+  }
+  #Main > #Limited > .Commodity > #TitleBox {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    list-style-type: none;
+    letter-spacing: 2px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  #Main > #Limited > .Commodity > #TitleBox > .Title {
+    width: 70%;
+    font-size: 1.7rem;
+  }
+  #Main > #Limited > .Commodity > #TitleBox > .Number {
+    width: 30%;
+    font-size: 1.1rem;
+    text-align: right;
+    padding-top: 0.6rem;
+  }
+  #Main > #Limited > .Commodity > #TitleBox > .Text {
+    width: 100%;
+    text-align: right;
+  }
+  #Main > #Limited > .Commodity > .Images {
+    width: 85%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+  #Main > #Limited > .Commodity > .Images > a > img {
+    border: 1.5px solid #440707;
+    border-radius: 15px;
+  }
+  #Main > #Limited > .Commodity .LName {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 15px;
+    background-color: skyblue;
+  }
+  #Main > #Limited > .Commodity .LName > h3 {
+    width: 80%;
+    font-size: 1.4rem;
+  }
+  #Main > #Limited > .Commodity .LName > li {
+    width: 20%;
+    list-style-type: none;
+  }
+  #Main > #Limited > .Commodity > .Brief {
+    width: 85%;
+    text-align: justify;
+    background-color: #09dada;
+    padding-bottom: 20px;
+  }
+  #Main > #Limited > .Commodity > #PriceBox {
+    width: 90%;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 10px;
+  }
+  #Main > #Limited > .Commodity > #PriceBox > .OriginaPrice {
+    width: 35%;
+    font-size: 0.9rem;
+    padding-top: 0.3rem;
+  }
+  #Main > #Limited > .Commodity > #PriceBox > .OriginaPrice > span {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: skyblue;
+  }
+  #Main > #Limited > .Commodity > #PriceBox > .BargainPrice {
+    width: 45%;
+    font-size: 1.2rem;
+  }
+  #Main > #Limited > .Commodity > #PriceBox > .BargainPrice > span {
+    font-size: 1.5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: brown;
+    font-weight: 600;
+  }
+  #Main > #Limited > .Commodity > #PriceBox > .Car {
+    width: 20%;
+  }
+  #Main > #Limited > .more {
+    width: 80%;
+    text-align: right;
+    list-style-type: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+  }
+  #Main > #Limited > .more > a {
+    padding: 5px 30px;
+    display: inline-block;
+    background-color: coral;
+    text-decoration: none;
+    color: royalblue;
+    border-radius: 20px;
+  }
+  #Main > #Share {
+    background-image: url(../../images/BG/002.png);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #Main > #Share h1 {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #Main > #Share > .Commodity {
+    width: 45vw;
+    margin-bottom: 20px;
+    background-color: white;
+    -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
+            box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
+  }
+  #Main > #Share > .Commodity > .Null {
+    height: 30px;
+  }
+  #Main > #Share > .Commodity > .Images {
+    width: 85%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+  #Main > #Share > .Commodity > .Images > a > img {
+    border: 1.5px solid #440707;
+    border-radius: 15px;
+  }
+  #Main > #Share > .Commodity .LName {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 15px;
+    background-color: skyblue;
+  }
+  #Main > #Share > .Commodity .LName > h3 {
+    width: 80%;
+    font-size: 1.4rem;
+  }
+  #Main > #Share > .Commodity .LName > li {
+    width: 20%;
+    list-style-type: none;
+  }
+  #Main > #Share > .Commodity > .Brief {
+    width: 85%;
+    text-align: justify;
+    background-color: #09dada;
+    padding-bottom: 20px;
+  }
+  #Main > #Share > .more {
+    width: 80%;
+    text-align: right;
+    list-style-type: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+  }
+  #Main > #Share > .more > a {
+    padding: 5px 30px;
+    display: inline-block;
+    background-color: coral;
+    text-decoration: none;
+    color: royalblue;
+    border-radius: 20px;
   }
 }
 
