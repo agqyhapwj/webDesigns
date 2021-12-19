@@ -155,7 +155,7 @@ You may only @extend selectors within the same directiv.
         // 隱藏項目符號
         list-style-type: none;
         // 字距
-        letter-spacing: 2px;
+        letter-spacing: $TitleLe;
         // 與外框的距離，設定為內間距
         padding: {
             top: 15px;
