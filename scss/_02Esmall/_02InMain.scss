@@ -146,15 +146,21 @@
             > .Images {
                 // 寬度
                 width: 280px;
-                // 高度設定絕對高，不會隨著裝置高度而變動
-                height: 230px;
                 // 外間距
                 margin: {
                     bottom: 10px;
                 }
                 // 圓角矩形 邊框設定轉角的角度「圓角矩形」
                 border-radius: 15px;
-                background-color: pink;
+                // background-color: pink;
+
+                > a {
+                    > img {
+                        // 圖片邊框 線段的粗細 線段的樣式（實線） 顏色
+                        border: 1.5px solid rgb(68, 7, 7);
+                        border-radius: 15px;
+                    }
+                }
             }
 
             .LNameBox {

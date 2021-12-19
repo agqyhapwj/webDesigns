@@ -198,10 +198,12 @@ You may only @extend selectors within the same directiv.
   }
   #Main > #Limited > .LCommodity > .Images {
     width: 280px;
-    height: 230px;
     margin-bottom: 10px;
     border-radius: 15px;
-    background-color: pink;
+  }
+  #Main > #Limited > .LCommodity > .Images > a > img {
+    border: 1.5px solid #440707;
+    border-radius: 15px;
   }
   #Main > #Limited > .LCommodity .LNameBox {
     width: 90%;
