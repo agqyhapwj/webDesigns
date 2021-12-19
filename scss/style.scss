@@ -24,11 +24,13 @@
 // 大平版裝置 >=992px Large min-width(最大寬度 含等於)
 @media screen and (min-width: 992px) {
     @import "_05Large/01index";
+    @import "_05Large/02InMain";
 }
 
 // 螢幕裝置 >=1200px Xlarge min-width(最大寬度 含等於)
 @media screen and (min-width: 1200px) {
     @import "_06Xlarge/01index";
+    @import "_06Xlarge/02InMain";
 }
 
 // 超大螢幕裝置 >= 1400px XXlarge min-winth(最大寬度 含等於)

@@ -102,7 +102,7 @@
 
         > .Commodity {
             // 寬度
-            width: $w1p * 9;
+            width: $w1p * 10 / 3 - 3%;
             // 外間距
             margin: {
                 bottom: 20px;
@@ -150,7 +150,7 @@
 
             > .Images {
                 // 寬度
-                width: $w1p * 9.2;
+                width: $w1p * 8.5;
                 // 外間距
                 margin: {
                     bottom: 10px;
@@ -321,7 +321,7 @@
 
         > .Commodity {
             // 寬度
-            width: $w10 * 9;
+            width: $w1p * 10 / 3 - 3%;
             // 外間距
             margin: {
                 bottom: 20px;
@@ -337,7 +337,7 @@
 
             > .Images {
                 // 寬度
-                width: $w1p * 9.2;
+                width: $w1p * 8.5;
                 // 外間距
                 margin: {
                     bottom: 10px;
