@@ -265,12 +265,15 @@ You may only @extend selectors within the same directiv.
     width: 80%;
     text-align: right;
     list-style-type: none;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 15px;
-    background-color: burlywood;
   }
   #Main > #Limited > .more > a {
+    padding: 5px 30px;
+    display: inline-block;
+    background-color: coral;
     text-decoration: none;
     color: royalblue;
   }
