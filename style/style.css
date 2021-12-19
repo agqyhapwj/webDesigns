@@ -276,6 +276,7 @@ You may only @extend selectors within the same directiv.
     background-color: coral;
     text-decoration: none;
     color: royalblue;
+    border-radius: 20px;
   }
 }
 
