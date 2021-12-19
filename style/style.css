@@ -84,7 +84,7 @@ You may only @extend selectors within the same directiv.
     display: none;
   }
   #Main {
-    background-color: blueviolet;
+    background-color: #b8e7f0;
   }
   #Main #Banner {
     width: 100vw;
