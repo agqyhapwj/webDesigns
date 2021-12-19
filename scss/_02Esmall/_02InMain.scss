@@ -102,7 +102,7 @@
 
         > .Commodity {
             // 寬度
-            width: $w1p * 8.5;
+            width: $w10 * 9;
             // 外間距
             margin: {
                 bottom: 20px;
@@ -150,7 +150,7 @@
 
             > .Images {
                 // 寬度
-                width: 280px;
+                width: $w1p * 9.2;
                 // 外間距
                 margin: {
                     bottom: 10px;
@@ -269,7 +269,7 @@
             // 隱藏項目符號
             @include DNli;
             // 文字尺寸
-            font-size: $Trem * 1.3;
+            font-size: $Trem * 1.1;
             // 英文轉換為大寫
             text-transform: uppercase;
             // 字距
@@ -321,7 +321,7 @@
 
         > .Commodity {
             // 寬度
-            width: $w1p * 8.5;
+            width: $w10 * 9;
             // 外間距
             margin: {
                 bottom: 20px;
@@ -337,7 +337,7 @@
 
             > .Images {
                 // 寬度
-                width: 280px;
+                width: $w1p * 9.2;
                 // 外間距
                 margin: {
                     bottom: 10px;
@@ -399,7 +399,7 @@
             // 隱藏項目符號
             @include DNli;
             // 文字尺寸
-            font-size: $Trem * 1.3;
+            font-size: $Trem * 1.1;
             // 英文轉換為大寫
             text-transform: uppercase;
             // 字距

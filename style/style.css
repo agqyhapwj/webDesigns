@@ -165,7 +165,7 @@ You may only @extend selectors within the same directiv.
     padding-bottom: 15px;
   }
   #Main > #Limited > .Commodity {
-    width: 85%;
+    width: 90vw;
     margin-bottom: 20px;
     background-color: white;
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
@@ -198,7 +198,7 @@ You may only @extend selectors within the same directiv.
     text-align: right;
   }
   #Main > #Limited > .Commodity > .Images {
-    width: 280px;
+    width: 92%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
@@ -264,7 +264,7 @@ You may only @extend selectors within the same directiv.
     width: 80%;
     text-align: right;
     list-style-type: none;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding-bottom: 15px;
@@ -287,7 +287,7 @@ You may only @extend selectors within the same directiv.
     padding-bottom: 15px;
   }
   #Main > #Share > .Commodity {
-    width: 85%;
+    width: 90vw;
     margin-bottom: 20px;
     background-color: white;
     -webkit-box-shadow: 2.5px 2.5px 8px rgba(0, 0, 0, 0.25);
@@ -297,7 +297,7 @@ You may only @extend selectors within the same directiv.
     height: 30px;
   }
   #Main > #Share > .Commodity > .Images {
-    width: 280px;
+    width: 92%;
     margin-bottom: 10px;
     border-radius: 15px;
   }
@@ -331,7 +331,7 @@ You may only @extend selectors within the same directiv.
     width: 80%;
     text-align: right;
     list-style-type: none;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding-bottom: 15px;
