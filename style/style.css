@@ -69,7 +69,6 @@ You may only @extend selectors within the same directiv.
     display: -ms-flexbox;
     display: flex;
     list-style-type: none;
-    background-color: #c5c2be;
   }
   footer div {
     margin-bottom: 0.7rem;
@@ -402,7 +401,6 @@ You may only @extend selectors within the same directiv.
     display: -ms-flexbox;
     display: flex;
     list-style-type: none;
-    background-color: #c5c2be;
   }
   footer div {
     margin-bottom: 0.7rem;
