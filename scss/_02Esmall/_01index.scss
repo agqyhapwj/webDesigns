@@ -98,6 +98,28 @@ header {
         overflow: hidden;
         z-index: 9999;
         background-color: white;
+
+        > #Close {
+            // 寬度與高度
+            width: 40px;
+            height: 40px;
+            @include DNli;
+            // 定位點 絕對定位
+            position: absolute;
+            // 位移 靠右 要設定 上和右 與頁面間距
+            top: 10px;
+            right: 10px;
+            background-color: rosybrown;
+        }
+        > h1 {
+            // 寬度
+            width: $w1p * 10;
+            // 高度
+            height: 110px;
+            text-align: center;
+            line-height: 110px;
+            background-color: yellowgreen;
+        }
     }
 }
 

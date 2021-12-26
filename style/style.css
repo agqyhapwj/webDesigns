@@ -81,6 +81,22 @@ You may only @extend selectors within the same directiv.
     z-index: 9999;
     background-color: white;
   }
+  header > #MenuNav > #Close {
+    width: 40px;
+    height: 40px;
+    list-style-type: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rosybrown;
+  }
+  header > #MenuNav > h1 {
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    line-height: 110px;
+    background-color: yellowgreen;
+  }
   footer hr {
     margin-bottom: 2rem;
   }
