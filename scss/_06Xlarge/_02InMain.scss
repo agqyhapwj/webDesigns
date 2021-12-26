@@ -106,11 +106,17 @@
             display: flex;
             flex-wrap: wrap;
             > .Commodity {
+                // 寬度變數
+                $ComW: $w1p * 10 / 4 - 1;
                 // 寬度
-                width: $w1p * 10 / 4 - 1%;
+                width: $ComW;
                 // 外間距
                 margin: {
                     bottom: 20px;
+                    // （（總寬度 100）-（物件的寬度 30.333 * 物件數 3 =91））= 9（剩下的寬度）
+                    // 剩下的寬度 / 左右邊自的總數
+                    left: ((($w1p * 10) - ($ComW * 4)) / 2) / 4;
+                    right: ((($w1p * 10) - ($ComW * 4)) / 2) / 4;
                 }
                 // 背景顏色
                 background-color: white;
@@ -331,11 +337,17 @@
             display: flex;
             flex-wrap: wrap;
             > .Commodity {
+                // 寬度變數
+                $ComW: $w1p * 10 / 4 - 1;
                 // 寬度
-                width: $w1p * 10 / 4 - 1%;
+                width: $ComW;
                 // 外間距
                 margin: {
                     bottom: 20px;
+                    // （（總寬度 100）-（物件的寬度 30.333 * 物件數 3 =91））= 9（剩下的寬度）
+                    // 剩下的寬度 / 左右邊自的總數
+                    left: ((($w1p * 10) - ($ComW * 4)) / 2) / 4;
+                    right: ((($w1p * 10) - ($ComW * 4)) / 2) / 4;
                 }
                 // 背景顏色
                 background-color: white;
