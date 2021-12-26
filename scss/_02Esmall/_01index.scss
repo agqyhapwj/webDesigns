@@ -120,6 +120,41 @@ header {
             line-height: 110px;
             background-color: yellowgreen;
         }
+        > ul {
+            width: $w1p * 9.5;
+            // 上邊界 外間距
+            margin {
+                top: 25px;
+            }
+            @include DNli;
+            // 彈性佈局
+            display: flex;
+            // 換行
+            flex-wrap: wrap;
+            background-color: salmon;
+
+            > .item {
+                width: $w1p * 9 / 2;
+                height: 70px;
+                margin: {
+                    bottom: 100px;
+                }
+                background-color: sandybrown;
+            }
+
+            > .itemtwo {
+                width: $w1p * 10 / 2 - 2;
+                height: 90px;
+                margin: {
+                    top: 10px;
+                    bottom: 10px;
+                }
+            }
+
+            > .Milk {
+                background-color: slateblue;
+            }
+        }
     }
 }
 
