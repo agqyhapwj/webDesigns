@@ -4,6 +4,13 @@
   padding: 0;
 }
 
+body,
+html {
+  width: 100%;
+  max-width: 100vw;
+  height: 100%;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -15,6 +22,9 @@ You may only @extend selectors within the same directiv.
 無法由 @media (媒體判斷)去呼叫「外部連結檔」
 */
 @media screen and (max-width: 576px) {
+  header {
+    width: 100%;
+  }
   header nav {
     /*
         浮動對齊的問題 float
