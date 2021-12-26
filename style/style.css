@@ -26,6 +26,10 @@ You may only @extend selectors within the same directiv.
     width: 100%;
   }
   header nav {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: wheat;
     /*
         浮動對齊的問題 float
         1:#logo 與#BtnBOX 物件的父框架 nav，無寬度
@@ -35,7 +39,6 @@ You may only @extend selectors within the same directiv.
         2:清除浮動狀態，由nav設定
         3:利用圖片高度撐開父框架的高
         */
-    background-color: aquamarine;
   }
   header nav #Logo {
     width: 85vw;
@@ -96,6 +99,7 @@ You may only @extend selectors within the same directiv.
     width: 100vw;
     overflow: hidden;
     position: relative;
+    margin-top: 60px;
   }
   #Main #Banner .Btn {
     width: 20px;

@@ -25,6 +25,12 @@ header {
     width: $w1p * 10;
 
     nav {
+        // 定位點 停佇
+        position: fixed;
+        // 靠上
+        top: 0;
+        z-index: 999;
+        background-color: wheat;
         /*
         浮動對齊的問題 float
         1:#logo 與#BtnBOX 物件的父框架 nav，無寬度
@@ -36,7 +42,7 @@ header {
         */
         // width: 100%;
         // width: $w10 * 10;
-        background-color: aquamarine;
+
         // 解決方法二：清除浮動狀態，由nav設定寫在53行
 
         // 單位不同無法計算，所以改為同一單位vw
