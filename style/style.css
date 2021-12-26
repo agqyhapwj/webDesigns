@@ -98,7 +98,9 @@ You may only @extend selectors within the same directiv.
     background-color: yellowgreen;
   }
   header > #MenuNav > ul {
-    width: 95%;
+    width: 90%;
+    position: relative;
+    top: 50px;
     list-style-type: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -108,23 +110,16 @@ You may only @extend selectors within the same directiv.
     background-color: salmon;
   }
   header > #MenuNav > ul margin {
-    top: 25px;
+    top: -260px;
   }
   header > #MenuNav > ul > .item {
-    width: 45%;
+    width: 30%;
     height: 70px;
     margin-bottom: 100px;
     text-align: center;
     background-color: sandybrown;
   }
-  header > #MenuNav > ul > .itemtwo {
-    width: 48%;
-    height: 90px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  header > #MenuNav > ul > .Milk {
+  header > #MenuNav > ul > .color {
     background-color: slateblue;
   }
   footer hr {

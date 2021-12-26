@@ -121,10 +121,15 @@ header {
             background-color: yellowgreen;
         }
         > ul {
-            width: $w1p * 9.5;
+            width: $w1p * 9;
+            // 定位點 相對定位
+            position: relative;
+            // 移位 往下移動（設定 top 數值）
+            top: 50px;
+
             // 上邊界 外間距
             margin {
-                top: 25px;
+                top: -260px;
             }
             @include DNli;
             // 彈性佈局
@@ -134,7 +139,7 @@ header {
             background-color: salmon;
 
             > .item {
-                width: $w1p * 9 / 2;
+                width: $w1p * 9 / 3;
                 height: 70px;
                 margin: {
                     bottom: 100px;
@@ -143,17 +148,17 @@ header {
                 background-color: sandybrown;
             }
 
-            > .itemtwo {
-                width: $w1p * 10 / 2 - 2;
-                height: 90px;
-                margin: {
-                    top: 10px;
-                    bottom: 10px;
-                }
-                text-align: center;
-            }
+            // > .itemtwo {
+            //     width: $w1p * 10 / 2 - 2;
+            //     height: 90px;
+            //     margin: {
+            //         top: 10px;
+            //         bottom: 10px;
+            //     }
+            //     text-align: center;
+            // }
 
-            > .Milk {
+            > .color {
                 background-color: slateblue;
             }
         }
