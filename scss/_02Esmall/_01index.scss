@@ -85,7 +85,7 @@ header {
     }
 
     > #MenuNav {
-        @include DN;
+        // @include DN;
         // 寬度 與 高度（裝置的可視高度）
         width: $w1p * 10;
         height: $w1p * 10;
@@ -145,7 +145,7 @@ header {
                 margin: {
                     bottom: 100px;
                 }
-                text-align: center;
+                // text-align: center;
                 background-color: sandybrown;
             }
 
