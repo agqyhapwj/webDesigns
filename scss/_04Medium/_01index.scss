@@ -8,7 +8,7 @@ header {
     // // 寬度 100%
     // width: $w10 * 10;
 
-    nav {
+    > #MainNav {
         /*
         浮動對齊的問題 float
         1:#logo 與#BtnBOX 物件的父框架 nav，無寬度

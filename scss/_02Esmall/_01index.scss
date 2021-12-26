@@ -24,7 +24,7 @@ header {
     // width: 100%;
     width: $w1p * 10;
 
-    nav {
+    > #MainNav {
         // 寬度
         width: $w1p * 10;
         // 定位點 停佇
@@ -82,6 +82,22 @@ header {
         .Clear {
             @include clearFloat;
         }
+    }
+
+    > #MenuNav {
+        // 寬度 與 高度（裝置的可視高度）
+        width: $w1p * 10;
+        height: $w1p * 10;
+        // 定位點 絕對定位
+        position: absolute;
+        // 停佇
+        position: fixed;
+        // 靠上
+        top: 0;
+        // 溢位 隱藏捲軸
+        overflow: hidden;
+        z-index: 9999;
+        background-color: white;
     }
 }
 

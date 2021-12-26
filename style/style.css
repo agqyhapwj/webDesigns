@@ -25,7 +25,7 @@ You may only @extend selectors within the same directiv.
   header {
     width: 100%;
   }
-  header nav {
+  header > #MainNav {
     width: 100%;
     position: fixed;
     top: 0;
@@ -41,17 +41,17 @@ You may only @extend selectors within the same directiv.
         3:利用圖片高度撐開父框架的高
         */
   }
-  header nav #Logo {
+  header > #MainNav #Logo {
     width: 85vw;
   }
-  header nav #MenuBtn {
+  header > #MainNav #MenuBtn {
     width: 15vw;
   }
-  header nav #Logo {
+  header > #MainNav #Logo {
     float: left;
     background-color: #216568;
   }
-  header nav #MenuBtn {
+  header > #MainNav #MenuBtn {
     height: 60px;
     float: left;
     background-color: palevioletred;
@@ -61,15 +61,25 @@ You may only @extend selectors within the same directiv.
     background-size: contain;
     background-image: url(../../images/icon/menu.svg);
   }
-  header nav #icon,
-  header nav form {
+  header > #MainNav #icon,
+  header > #MainNav form {
     display: none;
   }
-  header nav .BtnBox {
+  header > #MainNav .BtnBox {
     display: none;
   }
-  header nav .Clear {
+  header > #MainNav .Clear {
     clear: both;
+  }
+  header > #MenuNav {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 9999;
+    background-color: white;
   }
   footer hr {
     margin-bottom: 2rem;
@@ -358,7 +368,7 @@ You may only @extend selectors within the same directiv.
 }
 
 @media screen and (min-width: 576px) {
-  header nav {
+  header > #MainNav {
     width: 100%;
     /*
         浮動對齊的問題 float
@@ -371,17 +381,17 @@ You may only @extend selectors within the same directiv.
         */
     background-color: #007c53;
   }
-  header nav #Logo {
+  header > #MainNav #Logo {
     width: 85vw;
   }
-  header nav #MenuBtn {
+  header > #MainNav #MenuBtn {
     width: 15vw;
   }
-  header nav #Logo {
+  header > #MainNav #Logo {
     float: left;
     background-color: #165f00;
   }
-  header nav #MenuBtn {
+  header > #MainNav #MenuBtn {
     height: 60px;
     float: left;
     background-color: palevioletred;
@@ -391,14 +401,14 @@ You may only @extend selectors within the same directiv.
     background-size: contain;
     background-image: url(../../images/icon/menu.svg);
   }
-  header nav #icon,
-  header nav form {
+  header > #MainNav #icon,
+  header > #MainNav form {
     display: none;
   }
-  header nav .BtnBox {
+  header > #MainNav .BtnBox {
     display: none;
   }
-  header nav .Clear {
+  header > #MainNav .Clear {
     clear: both;
   }
   footer hr {
@@ -708,7 +718,7 @@ You may only @extend selectors within the same directiv.
 }
 
 @media screen and (min-width: 768px) {
-  header nav {
+  header > #MainNav {
     /*
         浮動對齊的問題 float
         1:#logo 與#BtnBOX 物件的父框架 nav，無寬度
@@ -721,17 +731,17 @@ You may only @extend selectors within the same directiv.
     width: 100vw;
     background-color: #00ec9e;
   }
-  header nav #Logo {
+  header > #MainNav #Logo {
     width: 90vw;
   }
-  header nav #MenuBtn {
+  header > #MainNav #MenuBtn {
     width: 10vw;
   }
-  header nav #Logo {
+  header > #MainNav #Logo {
     float: left;
     background-color: #006b70;
   }
-  header nav #MenuBtn {
+  header > #MainNav #MenuBtn {
     height: 80px;
     float: left;
     text-indent: -9999px;
@@ -740,10 +750,10 @@ You may only @extend selectors within the same directiv.
     background-size: contain;
     background-image: url(../../images/icon/menu.svg);
   }
-  header nav .BtnBox {
+  header > #MainNav .BtnBox {
     display: none;
   }
-  header nav .Clear {
+  header > #MainNav .Clear {
     clear: both;
   }
   footer address {
@@ -759,7 +769,7 @@ You may only @extend selectors within the same directiv.
     display: flex;
     background-color: darkgoldenrod;
   }
-  header nav {
+  header > #MainNav {
     width: 100vw;
     height: 100px;
     display: -webkit-box;
@@ -769,11 +779,11 @@ You may only @extend selectors within the same directiv.
         flex-wrap: wrap;
     background-color: #5f470b;
   }
-  header nav #Logo {
+  header > #MainNav #Logo {
     width: 40vw;
     background-color: chocolate;
   }
-  header nav #icon {
+  header > #MainNav #icon {
     width: 30vw;
     display: block;
     list-style-type: none;
@@ -781,11 +791,11 @@ You may only @extend selectors within the same directiv.
     display: -ms-flexbox;
     display: flex;
   }
-  header nav form {
+  header > #MainNav form {
     width: 30vw;
     display: block;
   }
-  header nav .BtnBox {
+  header > #MainNav .BtnBox {
     display: block;
     width: 100vw;
     display: -webkit-box;
@@ -793,7 +803,7 @@ You may only @extend selectors within the same directiv.
     display: flex;
     list-style-type: none;
   }
-  header nav #MenuBtn {
+  header > #MainNav #MenuBtn {
     display: none;
   }
   footer address {
