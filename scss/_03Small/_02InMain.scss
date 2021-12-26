@@ -103,9 +103,15 @@
         }
 
         > article {
+            width: $w1p * 9.5;
             // 一行兩欄
-            display: inline-flex;
+            display: flex;
             flex-wrap: wrap;
+            // 行（順序排列）
+            flex-direction: row;
+            // 主軸心（水平）靠右，「原始預設就是這樣，這裡可以不給」
+            // justify-content: flex-start;
+
             > .Commodity {
                 // 寬度
                 width: $w10 * 4.5;
@@ -329,7 +335,7 @@
 
         > article {
             // 一行兩欄
-            display: inline-flex;
+            display: flex;
             flex-wrap: wrap;
             > .Commodity {
                 // 寬度

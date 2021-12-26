@@ -102,15 +102,21 @@
 
         > article {
             // 一行兩欄，已註解掉了↓↓裝置在閱讀上比較舒服，版面比較寬
-            // width: $w1p * 9.5;
-            display: flex;
-            flex-wrap: wrap;
+            width: $w1p * 9.5;
+            // 導讀 03Small 02檔
+
             > .Commodity {
+                // 寬度變數
+                $ComW: $w1p * 10 / 3 - 3%;
                 // 寬度
-                width: $w1p * 10 / 3 - 3%;
+                width: $ComW;
                 // 外間距
                 margin: {
                     bottom: 20px;
+                    // （（總寬度 100）-（物件的寬度 30.333 * 物件數 3 =91））= 9（剩下的寬度）
+                    // 剩下的寬度 / 左右邊自的總數
+                    left: ((($w1p * 10) - ($ComW * 3)) / 2) / 3;
+                    right: ((($w1p * 10) - ($ComW * 3)) / 2) / 3;
                 }
                 // 背景顏色
                 background-color: white;
