@@ -114,6 +114,7 @@ You may only @extend selectors within the same directiv.
     width: 45%;
     height: 70px;
     margin-bottom: 100px;
+    text-align: center;
     background-color: sandybrown;
   }
   header > #MenuNav > ul > .itemtwo {
@@ -121,6 +122,7 @@ You may only @extend selectors within the same directiv.
     height: 90px;
     margin-top: 10px;
     margin-bottom: 10px;
+    text-align: center;
   }
   header > #MenuNav > ul > .Milk {
     background-color: slateblue;
