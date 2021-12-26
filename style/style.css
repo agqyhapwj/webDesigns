@@ -212,7 +212,6 @@ You may only @extend selectors within the same directiv.
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
-    background-color: skyblue;
   }
   #Main > #Limited > article > .Commodity .LName > h3 {
     width: 80%;
@@ -225,7 +224,6 @@ You may only @extend selectors within the same directiv.
   #Main > #Limited > article > .Commodity > .Brief {
     width: 85%;
     text-align: justify;
-    background-color: #09dada;
     padding-bottom: 20px;
   }
   #Main > #Limited > article > .Commodity > #PriceBox {
@@ -311,7 +309,6 @@ You may only @extend selectors within the same directiv.
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
-    background-color: skyblue;
   }
   #Main > #Share > article > .Commodity .LName > h3 {
     width: 80%;
@@ -324,7 +321,6 @@ You may only @extend selectors within the same directiv.
   #Main > #Share > article > .Commodity > .Brief {
     width: 85%;
     text-align: justify;
-    background-color: #09dada;
     padding-bottom: 20px;
   }
   #Main > #Share > .more {
@@ -552,7 +548,6 @@ You may only @extend selectors within the same directiv.
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
-    background-color: skyblue;
   }
   #Main > #Limited > article > .Commodity .LName > h3 {
     width: 80%;
@@ -565,7 +560,6 @@ You may only @extend selectors within the same directiv.
   #Main > #Limited > article > .Commodity > .Brief {
     width: 85%;
     text-align: justify;
-    background-color: #09dada;
     padding-bottom: 20px;
   }
   #Main > #Limited > article > .Commodity > #PriceBox {
@@ -659,7 +653,6 @@ You may only @extend selectors within the same directiv.
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
-    background-color: skyblue;
   }
   #Main > #Share > article > .Commodity .LName > h3 {
     width: 80%;
@@ -672,7 +665,6 @@ You may only @extend selectors within the same directiv.
   #Main > #Share > article > .Commodity > .Brief {
     width: 85%;
     text-align: justify;
-    background-color: #09dada;
     padding-bottom: 20px;
   }
   #Main > #Share > .more {
@@ -926,7 +918,6 @@ You may only @extend selectors within the same directiv.
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
-    background-color: skyblue;
   }
   #Main > #Limited > article > .Commodity .LName > h3 {
     width: 80%;
@@ -939,7 +930,6 @@ You may only @extend selectors within the same directiv.
   #Main > #Limited > article > .Commodity > .Brief {
     width: 85%;
     text-align: justify;
-    background-color: #09dada;
     padding-bottom: 20px;
   }
   #Main > #Limited > article > .Commodity > #PriceBox {
@@ -1032,7 +1022,6 @@ You may only @extend selectors within the same directiv.
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
-    background-color: skyblue;
   }
   #Main > #Share > article > .Commodity .LName > h3 {
     width: 80%;
@@ -1045,7 +1034,6 @@ You may only @extend selectors within the same directiv.
   #Main > #Share > article > .Commodity > .Brief {
     width: 85%;
     text-align: justify;
-    background-color: #09dada;
     padding-bottom: 20px;
   }
   #Main > #Share > .more {
@@ -1216,7 +1204,6 @@ You may only @extend selectors within the same directiv.
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
-    background-color: skyblue;
   }
   #Main > #Limited > article > .Commodity .LName > h3 {
     width: 80%;
@@ -1229,7 +1216,6 @@ You may only @extend selectors within the same directiv.
   #Main > #Limited > article > .Commodity > .Brief {
     width: 85%;
     text-align: justify;
-    background-color: #09dada;
     padding-bottom: 20px;
   }
   #Main > #Limited > article > .Commodity > #PriceBox {
@@ -1323,7 +1309,6 @@ You may only @extend selectors within the same directiv.
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 15px;
-    background-color: skyblue;
   }
   #Main > #Share > article > .Commodity .LName > h3 {
     width: 80%;
@@ -1336,7 +1321,6 @@ You may only @extend selectors within the same directiv.
   #Main > #Share > article > .Commodity > .Brief {
     width: 85%;
     text-align: justify;
-    background-color: #09dada;
     padding-bottom: 20px;
   }
   #Main > #Share > .more {
