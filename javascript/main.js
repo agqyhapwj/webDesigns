@@ -17,10 +17,13 @@
     console.log(ONE);
     console.log("02");
 
-    // // 年份變數
+    // 日期函數 Date 產生每年都會自動更新的 Date
+    var year = new Date().getFullYear();
+
+    // 年份變數
     // var Year = "2022";
-    // // 由html 顯示資料
-    // document.getElementById('Year').textContent = Year;
+    // 由html 顯示資料
+    document.getElementById('Year').textContent = year;
 
     // 條件判斷 if else 單一條件
     var NumBer = 12;
