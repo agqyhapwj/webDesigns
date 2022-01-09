@@ -104,6 +104,7 @@ for ( i = 0; i <= 10; i = i + 1) {
     console.log(i);
 }
 
+WhileCode();
 // 迴圈 while (條件) {程式} 與 for 的差別在於無法指定執行的圈數
 function WhileCode() {
     // 總數
@@ -112,8 +113,15 @@ function WhileCode() {
     // 亂數(系統產生介於 0~1 之間)，將小數變為整數(數值要介於0~30之間，需乘以31)，設定為無條件捨去
 
     let attack;
-    attack = Math.floor(Math.random() * 30);
-    // console.log(attack);
+    
+    while (Number > 0 ) {
+        attack = Math.floor(Math.random() * 30);
+        console.log("亂數為：" + attack);
+
+        // 將計算過後的值，再指定給 Number
+        Number = Number - attack;
+        console.log("計算結果：" + Number);
+    }
     
 }
 
