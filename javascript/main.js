@@ -107,23 +107,21 @@ for ( i = 0; i <= 10; i = i + 1) {
 login();
 
 function login() {
-    // 變數：承接使用者輸入的資料
-    // 帳號
-    let User;
-    // 密碼
-    let Number;
+    // 變數：承接使用者輸入的資料, Acc=帳號、Pwd=密碼
+    let Acc;
+    let Pwd;
     // 可輸入訊自的對話視窗
-    User = window.prompt('請輸入帳號');
+    Acc = window.prompt('請輸入帳號');
 
     // 假設，網站有連接資料庫，帳號與密碼都由資料庫帶出
     let UserName = 'wei';
     let UserNum = '123456';
 
-    if ( User == UserName) {
+    if ( Acc == UserName) {
 
-        Number = window.prompt('請輸入密碼');
+        pwd = window.prompt('請輸入密碼');
 
-        if ( Number == UserNum) {
+        if ( pwd == UserNum) {
             console.log('歡迎登入！');
         } 
         else {
