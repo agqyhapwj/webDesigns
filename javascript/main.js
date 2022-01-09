@@ -4,6 +4,9 @@
 // 呼叫來使用
 TestCode();
 
+TimeCode();
+
+function TimeYear() {
     // 日期函數 Date 產生每年都會自動更新的 Date↓
     var year = new Date().getFullYear();
 
@@ -11,6 +14,8 @@ TestCode();
     // var Year = "2022";
     // 由html 顯示資料
     document.getElementById('Year').textContent = year;
+}
+
 
 // 自定義一個 function name(參數引數或空自) {程式碼}
 function TestCode() {
