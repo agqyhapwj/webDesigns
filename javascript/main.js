@@ -4,7 +4,7 @@
 // 呼叫來使用
 TestCode();
 
-TimeCode();
+TimeYear();
 
 function TimeYear() {
     // 日期函數 Date 產生每年都會自動更新的 Date↓
@@ -14,19 +14,16 @@ function TimeYear() {
     // var Year = "2022";
     // 由html 顯示資料
     document.getElementById('Year').textContent = year;
-}
+};
 
 
 // 自定義一個 function name(參數引數或空自) {程式碼}
 function TestCode() {
     // 變數命名：英文開頭 + 數字 + 底線，不能以數字開頭，javascript的關鍵字不能設定，英文大小寫混用
-    // es5版本 var
-    // var 宣告全域變數
+    // es5版本 var， es6版本 let(變數) cont (常數)
+    // 宣告全域變數
     var one;
     var ONE;
-    var One;
-    var O_ne;
-    var O_01ne;
 
     // 賦予值
     one = 1;
@@ -46,12 +43,24 @@ function TestCode() {
     if ( NumBer > 10)
         console.log("數字為：" + NumBer);
 
-    // 多向式判斷 if else
+    // 雙向式判斷 if else
     var Num = 20;
     if (NumBer < Num)
         console.log("NumBer比較小");
     else
         console.log("NumBer 比較大");
+
+    // 多向式判斷 if (條件) {程式} else if (條件) {程式} else {程式}
+    // 全域變數
+    let Num_One = 1;
+    let_Num_Two = 2;
+    if (Num_One == let_Num_Two) {
+        console.log("兩個變數相等")
+    } else if (Num_One > let_Num_Two) {
+        console.log(Num_Two + "大於" + Num_One);
+    } else {
+        console.log("條件不成立");
+    }
 }
 
     
