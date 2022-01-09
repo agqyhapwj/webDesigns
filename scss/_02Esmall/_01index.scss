@@ -83,9 +83,9 @@ header {
             @include clearFloat;
         }
     }
-
+    // 行動裝置選單展開「漢寶按鈕☰」
     > #MenuNav {
-        // @include DN;
+        @include DN;
         // 寬度 與 高度（裝置的可視高度）
         width: $w1p * 10;
         height: $w1p * 10;
@@ -195,6 +195,7 @@ footer {
         h4 {
             // 文字置中
             text-align: center;
+            padding-bottom: 1rem;
         }
     }
 

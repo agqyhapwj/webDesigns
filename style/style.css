@@ -72,6 +72,7 @@ You may only @extend selectors within the same directiv.
     clear: both;
   }
   header > #MenuNav {
+    display: none;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -139,6 +140,7 @@ You may only @extend selectors within the same directiv.
   }
   footer div h4 {
     text-align: center;
+    padding-bottom: 1rem;
   }
   footer address {
     display: none;
