@@ -24,7 +24,7 @@
 
     // 條件判斷 if else 單一條件
     var NumBer = 12;
-    // 條件成立執行的定義
+    // 條件成立執行這裡
     if ( NumBer < 5) {
         console.log("數字小於 5");
     }
