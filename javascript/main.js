@@ -76,11 +76,30 @@ function var_LetCode() {
     console.log( a + b);
 }
     
- var_LetCode();
+//  var_LetCode();
+
+function var_LetCode () {
+    // var 與let 的差別: 暗藍色表示找不到變數！
+    // var的作用域會在function內才會區分「全域或區域」的差別，let的作域包含了全部，例：function{...} if() {...}
+    // 全域變數
+    var A = 4, C = 1;
+    let x = 5, y = 6;
+    {
+        var d = A + C;
+        let z = x + y;
+    }
+    console.log(d);
+    // 呼叫不到 z 因為是「暗藍色」
+    console.log(z);
+
+    function NumCal() {
+        var d = A + C;
+        let z = x + y;
+    }
+}
  
- var d = 7;
- let f = 6;
- 
- if ( d > f ) {
-     console.log( d += 2 + f);
- }
+// 迴圈 for(網告變數起始值、條件、執行後增加或減少的次數) {程式}
+let i;
+for ( i = 0; i <= 10; i = i + 1) {
+    console.log(i);
+}
