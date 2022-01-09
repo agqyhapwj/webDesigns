@@ -76,4 +76,11 @@ function var_LetCode() {
     console.log( a + b);
 }
     
- var_LetCode();   
+ var_LetCode();
+ 
+ var d = 7;
+ let f = 6;
+ 
+ if ( d > f ) {
+     console.log( d += 1 + f);
+ }
