@@ -82,5 +82,5 @@ function var_LetCode() {
  let f = 6;
  
  if ( d > f ) {
-     console.log( d += 1 + f);
+     console.log( d += 2 + f);
  }
