@@ -114,7 +114,10 @@ function WhileCode() {
     let attack;
     attack = Math.floor(Math.random() * 30);
     // console.log(attack);
+    
 }
+
+
 
 // login();
 
