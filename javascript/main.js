@@ -114,14 +114,14 @@ function login() {
     Acc = window.prompt('請輸入帳號');
 
     // 假設，網站有連接資料庫，帳號與密碼都由資料庫帶出
-    let UserName = 'wei';
-    let UserNum = '123456';
+    let AccName = 'wei';
+    let PwdNum = '123456';
 
-    if ( Acc == UserName) {
+    if ( Acc == AccName) {
 
         pwd = window.prompt('請輸入密碼');
 
-        if ( pwd == UserNum) {
+        if ( pwd == PwdNum) {
             console.log('歡迎登入！');
         } 
         else {
