@@ -17,7 +17,19 @@
     console.log(ONE);
     console.log("02");
 
-    // 年份變數
-    var Year = "2022";
-    // 由html 顯示資料
-    document.getElementById('Year').textContent = Year;
+    // // 年份變數
+    // var Year = "2022";
+    // // 由html 顯示資料
+    // document.getElementById('Year').textContent = Year;
+
+    // 條件判斷 if else 單一條件
+    var NumBer = 12;
+    // 條件成立執行的定義
+    if ( NumBer < 5) {
+        console.log("數字小於 5");
+    }
+
+    if ( NumBer > 10 ) console.log("數字大於 10");
+
+    if ( NumBer > 10)
+        console.log("數字為：" + NumBer);
