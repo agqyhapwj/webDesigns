@@ -17,10 +17,10 @@
     console.log(ONE);
     console.log("02");
 
-    // 日期函數 Date 產生每年都會自動更新的 Date
+    // 日期函數 Date 產生每年都會自動更新的 Date↓
     var year = new Date().getFullYear();
 
-    // 年份變數
+    // 年份變數↑
     // var Year = "2022";
     // 由html 顯示資料
     document.getElementById('Year').textContent = year;
