@@ -98,7 +98,7 @@ function var_LetCode () {
     }
 }
  
-// 迴圈 for(網告變數起始值、條件、執行後增加或減少的次數) {程式}
+// 迴圈 for(宣告變數起始值、條件、執行後增加或減少的次數) {程式}
 let i;
 for ( i = 0; i <= 10; i = i + 1) {
     console.log(i);
