@@ -125,11 +125,13 @@ function login() {
 
         if ( Number == UserNum) {
             console.log('歡迎登入！');
-        } else {
+        } 
+        else {
             console.log("帳號與密碼有誤！");
         }
 
-    } else {
-        console.log("帳號與密碼有誤！")
+    } 
+    else {
+        console.log("帳號與密碼有誤！");
     }
 }
