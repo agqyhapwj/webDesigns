@@ -2,7 +2,7 @@
 /* 單或雙引號裡的(' , ")皆為字串 */
 
 // 呼叫來使用
-TestCode();
+// TestCode();
 
 TimeYear();
 
@@ -53,15 +53,27 @@ function TestCode() {
     // 多向式判斷 if (條件) {程式} else if (條件) {程式} else {程式}
     // 全域變數
     let Num_One = 1;
-    let_Num_Two = 2;
+    let Num_Two = 2;
     if (Num_One == let_Num_Two) {
         console.log("兩個變數相等")
-    } else if (Num_One > let_Num_Two) {
+    } else if (Num_One > Num_Two) {
         console.log(Num_Two + "大於" + Num_One);
     } else {
         console.log("條件不成立");
-    }
+    };
 }
 
+// 全域變數
+var a = 1;
+let b = 2;
+
+// var 與 let 的差別
+function var_LetCode() {
+    // 區域變數
+    var a = 3;
+    let b = 4;
+
+    console.log( a + b);
+}
     
-    
+ var_LetCode();   
