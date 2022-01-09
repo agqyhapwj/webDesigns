@@ -103,3 +103,33 @@ let i;
 for ( i = 0; i <= 10; i = i + 1) {
     console.log(i);
 }
+
+login();
+
+function login() {
+    // 變數：承接使用者輸入的資料
+    // 帳號
+    let User;
+    // 密碼
+    let Number;
+    // 可輸入訊自的對話視窗
+    User = window.prompt('請輸入帳號');
+
+    // 假設，網站有連接資料庫，帳號與密碼都由資料庫帶出
+    let UserName = 'wei';
+    let UserNum = '123456';
+
+    if ( User == UserName) {
+
+        Number = window.prompt('請輸入密碼');
+
+        if ( Number == UserNum) {
+            console.log('歡迎登入！');
+        } else {
+            console.log("帳號與密碼有誤！");
+        }
+
+    } else {
+        console.log("帳號與密碼有誤！")
+    }
+}
