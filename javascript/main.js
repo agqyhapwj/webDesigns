@@ -133,11 +133,7 @@ function WhileCode() {
 
 // testMyWhile();
 function testMyWhile() {
-    var j = 5
-    while (j > 0) {
-        if (j == 3) break;
-        console.log(j);
-    }
+    
 }
 
 
