@@ -131,7 +131,7 @@ function WhileCode() {
     
 }
 
-testMyWhile();
+// testMyWhile();
 function testMyWhile() {
     var j = 5
     while (j > 0) {
