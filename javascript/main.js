@@ -110,7 +110,7 @@ function var_LetCode () {
 function WhileCode() {
     // 總數
     let Number = 200;
-    // 亂數(系統產生介於 0~1 之間)，將小數變為整數(數值要介於0~30之間，需乘以31)，設定為無條件捨去
+    // 亂數(系統產生介於 0~1 之間)，將小數變為整數(數值要介於0~30之間，需乘以31)，設定為無條件捨去 floor
     let attack;
     let count = 1;
     
