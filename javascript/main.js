@@ -104,7 +104,7 @@ function var_LetCode () {
 //     console.log(i);
 // }
 
-// WhileCode();
+WhileCode();
 
 // 迴圈 while (條件) {程式} 與 for 的差別在於無法指定執行的圈數
 function WhileCode() {
@@ -153,7 +153,7 @@ function login() {
 
     if ( Acc == AccName) {
 
-        pwd = window.prompt('請輸入密碼');
+        Pwd = window.prompt('請輸入密碼');
 
         if ( Pwd == PwdNum) {
             console.log('歡迎登入！');
