@@ -119,7 +119,7 @@ function WhileCode() {
         console.log("第" + count + "次");
         count = count + 1;
 
-        attack = Math.floor(Math.random() * 30);
+        attack = Math.floor(Math.random() * 20 + 11);
         console.log("亂數為：" + attack);
 
         // 將計算過後的值，再指定給 Number
