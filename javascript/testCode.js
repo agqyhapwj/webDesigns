@@ -160,3 +160,13 @@ function login() {
         console.log("帳號與密碼有誤！");
     }
 }
+
+// 陣列array，基本會配合for迴圈使用
+function ArrayCode() {
+    // 宣告陣列變數，給予值
+    let Items = [101, '01', '項目'];
+    // 資料輸出，迴圈讀取陣列，起始值都是由「0」開始
+    for (let i = 0; i <= 2; i++) {
+        console.log(Items[i]);
+    }
+}
