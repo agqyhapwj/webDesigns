@@ -24,4 +24,9 @@ function CopyRightContent () {
     div.innerHTML = '<h4> BsCoffee&copy;版權宣告2020 - <span id="Year"></span> </h4>';
 
     TimeYear();
+
+    // 調整 框架 位置，呼叫要選取的標籤
+    // 1:在被選取的元素開頭插入內容 prepend() 置入被選取元素之中
+    let Address = document.getElementById('Address');
+    Address.prepend(div);
 }
