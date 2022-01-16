@@ -161,6 +161,7 @@ function login() {
     }
 }
 
+ArrayCode();
 // 陣列array，基本會配合for迴圈使用
 function ArrayCode() {
     // 宣告陣列變數，給予值
