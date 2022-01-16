@@ -20,6 +20,8 @@ function CopyRightContent () {
     // 這段語法只接受「純文字」任何標籤都不行
     // div.textContent = "BsCoffee&copy;版權宣告2020 -";
 
-    // html語法「這語法就可以包標籤了」
-    div.innerHTML = "<h4> BsCoffee&copy;版權宣告2020 - <span>2021</span> </h4>";
+    // html語法「可以包標籤」若要寫入id or class最外層要用，(單引號)
+    div.innerHTML = '<h4> BsCoffee&copy;版權宣告2020 - <span id="Year"></span> </h4>';
+
+    TimeYear();
 }
