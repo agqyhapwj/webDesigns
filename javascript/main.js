@@ -28,6 +28,6 @@ function CopyRightContent () {
     // 調整 框架 位置，呼叫要選取的標籤
     let Address = document.getElementById('Address');
     
-    // 3:在被選取的元素 (之前) 插入內容 before() 置入被選取元素標籤之前
+    // 3:在被選取的元素(之前)插入內容 語法:before() 置入被選取元素標籤之前
     Address.before(div);
 }
