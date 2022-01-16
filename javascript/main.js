@@ -73,3 +73,10 @@ function SmallNavCon() {
     }
 
 }
+
+// 手機裝置選單
+MenuNav();
+function MenuNav() {
+    let MenuNav = document.getElementById('MenuNav');
+    MenuNav.style.display = "none";
+}
