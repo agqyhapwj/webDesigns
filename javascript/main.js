@@ -131,13 +131,6 @@ function WhileCode() {
     
 }
 
-// testMyWhile();
-function testMyWhile() {
-    
-}
-
-
-
 // login();
 
 function login() {
