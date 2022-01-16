@@ -1,4 +1,4 @@
-// 新增自動更新年份
+// 新增自動更新年份，寫在footer內的div所以呼叫要注意順序
 // TimeYear();
 function TimeYear() {
     var year = new Date().getFullYear();
