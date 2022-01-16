@@ -26,16 +26,8 @@ function CopyRightContent () {
     TimeYear();
 
     // 調整 框架 位置，呼叫要選取的標籤
-    // 1:在被選取的元素內 (開頭) 插入內容 prepend() 置入被選取元素之中
     let Address = document.getElementById('Address');
-    // Address.prepend(div);
-
-    // 2:在被選取的元素內 (結尾) 插入內容 append() 置入被選取元素之中
-    // Address.append(div);
-
+    
     // 3:在被選取的元素 (之前) 插入內容 before() 置入被選取元素標籤之前
     Address.before(div);
-
-    // 4:在被選取的元素 (之後) 插入內容 append() 置入被選取元素標籤之後
-    // Address.after(div);
 }
