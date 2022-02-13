@@ -184,7 +184,7 @@ You may only @extend selectors within the same directiv.
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 250px;
+    padding-bottom: 335px;
   }
   #Main #Banner #ImgBox .Item01 {
     width: 100vw;
@@ -513,7 +513,7 @@ You may only @extend selectors within the same directiv.
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 295px;
+    padding-bottom: 385px;
   }
   #Main #Banner #ImgBox .Item01 {
     width: 100vw;
@@ -866,7 +866,7 @@ You may only @extend selectors within the same directiv.
     font-size: 1.2rem;
     position: absolute;
     z-index: 15;
-    top: 120px;
+    top: 227.5px;
     border-radius: 15px;
   }
   #Main #Banner .LeftBtn {
@@ -880,7 +880,7 @@ You may only @extend selectors within the same directiv.
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 335px;
+    padding-bottom: 550px;
     background-color: aliceblue;
   }
   #Main #Banner #ImgBox li {
@@ -889,7 +889,7 @@ You may only @extend selectors within the same directiv.
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 250px;
+    padding-bottom: 550px;
   }
   #Main #Banner #ImgBox .Item01 {
     width: 100vw;
@@ -1147,7 +1147,7 @@ You may only @extend selectors within the same directiv.
     font-size: 1.2rem;
     position: absolute;
     z-index: 15;
-    top: 120px;
+    top: 277.5px;
     border-radius: 15px;
   }
   #Main #Banner .LeftBtn {
@@ -1161,7 +1161,7 @@ You may only @extend selectors within the same directiv.
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 335px;
+    padding-bottom: 650px;
     background-color: aliceblue;
   }
   #Main #Banner #ImgBox li {
@@ -1170,7 +1170,7 @@ You may only @extend selectors within the same directiv.
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 250px;
+    padding-bottom: 650px;
   }
   #Main #Banner #ImgBox .Item01 {
     width: 100vw;
