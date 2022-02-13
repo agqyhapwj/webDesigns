@@ -91,5 +91,5 @@ function PhoneMenushow() {
 
 Pageload();
 function Pageload() {
-    $('header').load("../web/header.html");
+    $('header').load("web/header.html");
 }
