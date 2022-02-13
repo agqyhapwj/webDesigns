@@ -16,7 +16,69 @@
     <!-- 老師有幫忙的 -->
 
     <body>
-        <header></header>
+        <header>
+            <nav id="MainNav">
+                <!-- 導覽列 nav大框架 logo=商標或標題h1,  icon, 按鈕 ，項目ul 清單li   -->
+                <!-- logo -->
+                <h1 id="Logo">BsCoffee</h1>
+
+                <!-- 手機版選單按鈕 -->
+                <div id="MenuBtn">
+                    <!-- 設定方法一：直接置入圖片img；alt 替代文字(圖片連結失效時)；title提示文字(不重要的圖片，可以不用設定)；圖片很難設定為 水平置中；解決方式：利用文字取代圖片，設定背景圖呈現 -->
+                    <!-- <img src="images/icon/menu.svg" alt="BS選單圖片" title=""> -->
+                    123
+                </div>
+
+                <!-- icon -->
+                <div id="icon">
+                    <li class="MemberLogin">會員</li>
+                    <li class="Facebook">臉書</li>
+                </div>
+
+                <!-- 搜尋框 -->
+                <form action="">
+                    <input
+                        id="search"
+                        type="text"
+                        placeholder="請輸入商品名稱"
+                        style="text-align: center"
+                    />
+                </form>
+
+                <!-- 導覽列文字連結按鈕 「電腦版」才會出現 -->
+                <ul class="BtnBox">
+                    <li class="News">
+                        <a href="web/limited.html">最新活動</a>
+                    </li>
+                    <li class="CofeBeans">咖啡豆專區</li>
+                    <li class="Member">會員事項</li>
+                    <li class="BusLocation">營業據點</li>
+                    <li class="DepositCofe">咖啡寄杯</li>
+                    <div class="OnlineDelivery">線上宅配</div>
+                </ul>
+
+                <!-- 清除浮動樣式 -->
+                <p class="Clear"></p>
+            </nav>
+
+            <!-- 行動裝置選單 「選單展開」這部分是到後來才寫的，一開始並沒有 -->
+            <nav id="MenuNav">
+                <li id="Close">Close</li>
+                <h1>
+                    <a href="index.html">BSCOFFEE</a>
+                </h1>
+                <ul>
+                    <li class="Limited item">
+                        <a href="web/limited.html">最新活動</a>
+                    </li>
+                    <li class="Share item">咖啡豆專區</li>
+                    <li class="Member item">會員事項</li>
+                    <li class="Location item">營業據點</li>
+                    <li class="Keep item">咖啡寄杯</li>
+                    <li class="Online item">線上宅配</li>
+                </ul>
+            </nav>
+        </header>
         <!-- hr = 分隔線 -->
         <hr />
 
@@ -476,7 +538,30 @@
             </article>
         </article>
 
-        <footer></footer>
+        <footer id="Footer">
+                <!--擁有者資訊  版權聲明 瀏覽器解析度 安全政策 服務條款 連結:隱私政策  -->
+                <!-- 手機版的頁尾資訊 -->
+                <nav class="SmallNav" id="SmallNav"></nav>
+
+                <!-- 聯絡資訊 地址 客服電話 E-mail LindID Fb GoogleMap 等…-->
+                <!-- <div> <h4> BsCoffee&copy;版權宣告2020 - <span id="Year">2021</span> </h4> </div> -->
+
+                <address id="Address">
+                    <h4>聯絡資訊:</h4>
+                    <p class="Address">
+                    <h5>地址:彰化縣員林市</h5>
+                    </p>
+                    <p class="Tel">
+                    <h5>TEL: 0908-995511</h5>
+                    </p>
+                    <p class="E-mail">
+                    <h5>E-mail: agqyhapwj555@gmail.com</h5>
+                    </p>
+                    <p class="LineID">
+                    <h5>Line ID: agqyhapw555</h5>
+                    </p>
+                </address>
+        </footer>
 
         <!-- 外連檔 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
