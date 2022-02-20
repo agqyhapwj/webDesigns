@@ -110,8 +110,7 @@ LimitedCon();
 // 新增 限量(最新商品)
 function LimitedCon() {
     let CommID = ["CO1","CO2","CO3","CO4","CO5","CO6","CO7","CO8"];
-    
-    for(let i=0; i<CommID; i++ ) {
+    for(let i=0; i<CommID.length; i++ ) {
         // 新增標籤 section
     let sec = document.createElement('section');
 
@@ -122,6 +121,7 @@ function LimitedCon() {
     SE.appendChild(sec);
 
     // 給予 class
+    sec.setAttribute("class", 'Commodity');
     sec.setAttribute("class", CommID[i]);
     
     /*==========================================*/
@@ -129,7 +129,8 @@ function LimitedCon() {
     let ul = document.createElement('ul');
 
     // 在 Commodity 內新增 ul
-    // let CO = document.querySelector(CommClass[i]);
+    // let CO = document.querySelector('.Commodity');
+    let CO = document.getElementById(CommID[i]);
 
     // 建立 ul 框架
     CO.appendChild(ul);
@@ -230,7 +231,8 @@ function LimitedCon() {
         ul = document.createElement('ul');
 
         // 在 Commodity 內新增 ul
-        CO = document.querySelector('.Commodity');
+        // CO = document.querySelector('.Commodity');
+        CO = document.getElementById(CommID[i]);
         ul.setAttribute("id","PriceBox");
         // // 建立 ul
         CO.appendChild(ul);
@@ -239,9 +241,9 @@ function LimitedCon() {
         // 陣列 class
         let PBLi = ['OriginaPrice','BargainPrice','Car'];
         // 內容
-        let PGLiCon = ['原價 <span> <s> 1000 </s> </span> 元','特價 <span> 800 </span> 元','購物車'];
+        let PBLiCon = ['原價 <span> <s> 1000 </s> </span> 元','特價 <span> 800 </span> 元','購物車'];
 
-    ForLi(PBLi,PriceBox,PGLiCon);
+    ForLi(PBLi, PriceBox, PBLiCon);
         /*============================================================*/
         // 建新 for (新增li)方法
         function ForLi(Class, IdName, Con){
