@@ -1125,7 +1125,7 @@ You may only @extend selectors within the same directiv.
 
 @media screen and (min-width: 1200px) {
   header {
-    width: 100vw;
+    width: 100%;
     background-color: #7d0a28;
   }
   footer address {
@@ -1416,7 +1416,7 @@ You may only @extend selectors within the same directiv.
 
 @media screen and (min-width: 1400px) {
   header {
-    width: 100vw;
+    width: 100%;
     background-color: #204570;
   }
   footer address {
