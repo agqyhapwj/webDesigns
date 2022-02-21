@@ -246,7 +246,7 @@ function LimitedCon() {
     // 建新 for (新增li)方法
     function ForLi(Class, IdName, Con){
         // for 迴圈
-        for(let i =0; i<Class.length; i++) {
+        for(let i =0; i < Class.length; i++) {
             //建立 li
             let li = document.createElement('li');
             
