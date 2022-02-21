@@ -121,8 +121,8 @@ function LimitedCon() {
         SE.appendChild(sec);
 
         // 給予 class
-        sec.setAttribute("class", 'Commodity');
-        sec.setAttribute("class", CommID[i]);
+        sec.setAttribute("class", "Commodity");
+        sec.setAttribute("id", CommID[i]);
         
         /*==========================================*/
         // 新增標籤 ul
