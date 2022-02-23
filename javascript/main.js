@@ -135,7 +135,7 @@ function LimitedCon() {
         // 建立 ul 框架
         CO.appendChild(ul);
 
-        // 點予 id 名稱
+        // 給予 id 名稱
         ul.setAttribute("id", "TitleBox");
 
         // 設計迴圈
