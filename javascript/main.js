@@ -262,5 +262,5 @@ function LimitedCon() {
         // 終止方式(函式)執行
         return;
     }
-    }
+  }
 }
