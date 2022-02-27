@@ -32,7 +32,7 @@ header {
         // 靠上
         top: 0;
         z-index: 999;
-        background-color: wheat;
+        background-color: darkcyan;
         /*
         浮動對齊的問題 float
         1:#logo 與#BtnBOX 物件的父框架 nav，無寬度
@@ -55,7 +55,7 @@ header {
             // 寬度 % or VW(螢幕可視範圍的百分比)
 
             float: left;
-            background-color: rgb(33, 101, 104);
+            background-color: antiquewhite;
         }
 
         // 靠左對齊(與 Logo 同一行)
@@ -63,7 +63,7 @@ header {
             height: 60px;
             // 浮點對齊法：靠左對齊 float:left
             float: left;
-            background-color: palevioletred;
+            background-color: darkgray;
             // 文字取代圖片，呈現背景圖，而隱藏文字；首行縮排
             text-indent: -9999px;
             @include PhoneMenu(center, contain, icon, "menu.svg");
@@ -85,7 +85,7 @@ header {
     }
     // 行動裝置選單展開「漢寶按鈕☰」
     > #MenuNav {
-        @include DN;
+        // @include DN;
         // 寬度 與 高度（裝置的可視高度）
         width: $w1p * 10;
         height: $w1p * 10;

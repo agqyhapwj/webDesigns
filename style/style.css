@@ -30,7 +30,7 @@ You may only @extend selectors within the same directiv.
     position: fixed;
     top: 0;
     z-index: 999;
-    background-color: wheat;
+    background-color: darkcyan;
     /*
         浮動對齊的問題 float
         1:#logo 與#BtnBOX 物件的父框架 nav，無寬度
@@ -49,12 +49,12 @@ You may only @extend selectors within the same directiv.
   }
   header > #MainNav #Logo {
     float: left;
-    background-color: #216568;
+    background-color: antiquewhite;
   }
   header > #MainNav #MenuBtn {
     height: 60px;
     float: left;
-    background-color: palevioletred;
+    background-color: darkgray;
     text-indent: -9999px;
     background-repeat: no-repeat;
     background-position: center;
@@ -72,7 +72,6 @@ You may only @extend selectors within the same directiv.
     clear: both;
   }
   header > #MenuNav {
-    display: none;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -185,7 +184,7 @@ You may only @extend selectors within the same directiv.
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 250px;
+    padding-bottom: 335px;
   }
   #Main #Banner #ImgBox .Item01 {
     width: 100vw;
@@ -514,7 +513,7 @@ You may only @extend selectors within the same directiv.
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 295px;
+    padding-bottom: 385px;
   }
   #Main #Banner #ImgBox .Item01 {
     width: 100vw;
@@ -867,7 +866,7 @@ You may only @extend selectors within the same directiv.
     font-size: 1.2rem;
     position: absolute;
     z-index: 15;
-    top: 120px;
+    top: 227.5px;
     border-radius: 15px;
   }
   #Main #Banner .LeftBtn {
@@ -881,7 +880,7 @@ You may only @extend selectors within the same directiv.
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 335px;
+    padding-bottom: 550px;
     background-color: aliceblue;
   }
   #Main #Banner #ImgBox li {
@@ -890,7 +889,7 @@ You may only @extend selectors within the same directiv.
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 250px;
+    padding-bottom: 550px;
   }
   #Main #Banner #ImgBox .Item01 {
     width: 100vw;
@@ -1126,7 +1125,7 @@ You may only @extend selectors within the same directiv.
 
 @media screen and (min-width: 1200px) {
   header {
-    width: 100vw;
+    width: 100%;
     background-color: #7d0a28;
   }
   footer address {
@@ -1148,7 +1147,7 @@ You may only @extend selectors within the same directiv.
     font-size: 1.2rem;
     position: absolute;
     z-index: 15;
-    top: 120px;
+    top: 277.5px;
     border-radius: 15px;
   }
   #Main #Banner .LeftBtn {
@@ -1162,7 +1161,7 @@ You may only @extend selectors within the same directiv.
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 335px;
+    padding-bottom: 650px;
     background-color: aliceblue;
   }
   #Main #Banner #ImgBox li {
@@ -1171,7 +1170,7 @@ You may only @extend selectors within the same directiv.
     position: absolute;
     font-size: 72px;
     text-align: center;
-    padding-bottom: 250px;
+    padding-bottom: 650px;
   }
   #Main #Banner #ImgBox .Item01 {
     width: 100vw;
@@ -1417,7 +1416,7 @@ You may only @extend selectors within the same directiv.
 
 @media screen and (min-width: 1400px) {
   header {
-    width: 100vw;
+    width: 100%;
     background-color: #204570;
   }
   footer address {
