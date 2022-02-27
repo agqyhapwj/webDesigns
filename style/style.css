@@ -30,7 +30,7 @@ You may only @extend selectors within the same directiv.
     position: fixed;
     top: 0;
     z-index: 999;
-    background-color: wheat;
+    background-color: darkcyan;
     /*
         浮動對齊的問題 float
         1:#logo 與#BtnBOX 物件的父框架 nav，無寬度
@@ -49,12 +49,12 @@ You may only @extend selectors within the same directiv.
   }
   header > #MainNav #Logo {
     float: left;
-    background-color: #216568;
+    background-color: antiquewhite;
   }
   header > #MainNav #MenuBtn {
     height: 60px;
     float: left;
-    background-color: palevioletred;
+    background-color: darkgray;
     text-indent: -9999px;
     background-repeat: no-repeat;
     background-position: center;
