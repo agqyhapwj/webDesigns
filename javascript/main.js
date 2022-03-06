@@ -106,10 +106,14 @@ function SmallNavCon() {
 
 }
 
-LimitedCon();
+// 主頁商品 共用變數區(全域)變數
+//設定 div class 名稱陣列
+let DClass = ['Images','LName','Brief'];
+
+LimitedCon(8);
 // 新增 限量(最新商品)
-function LimitedCon() {
-    for(let i=0; i < 8; i++ ) {
+function LimitedCon(Number) {
+    for(let i=0; i < Number; i++ ) {
         // 新增標籤 section
         let sec = document.createElement('section');
 
@@ -181,8 +185,7 @@ function LimitedCon() {
 
             // ul id=TitleBox 同一層
             // div class=Images  // div class=LName  // div class=Brief 建立三個div框架
-            //設定 div class 名稱陣列
-            let DClass = ['Images','LName','Brief'];
+            
 
             for(let i =0;i<DClass.length;i++) {
                 // 新增 div 的框架，宣告變數
@@ -266,13 +269,21 @@ function LimitedCon() {
 ShareCon(8);
 // 新增 好物分享 的內容
 function ShareCon(Number) {
-    for (let i = 0; i < Number; i++) {
-        NewTag('ShareCon', 'section', 'class', 'Commodity');
+    let i = Number;
+    let a = i + Number;
+    // 在同一頁面中，會將相同 名稱的 class，累加編號
+    for ( i; i < a; i++) {
+        New_ID_Tag('ShareCon', 'section', 'class', 'Commodity');
+        New_Class_Tag('Commodity', 'p', 'class', 'Null', i);
+
+        for(let b = 0; b < DClass.length; b++) {
+            New_Class_Tag('Commodity', 'div', 'class', DClass[b], i);
+        }
     }
-    return
+    return;
 }
 
-function NewTag(IdName, NewTagName, IdClass, IdClassName){
+function New_ID_Tag(IdName, NewTagName, IdClass, IdClassName){
       // 指定在 框架(自訂) 內新增標籤，宣告變數
         let BoxTag = document.getElementById(IdName);
 
@@ -283,5 +294,19 @@ function NewTag(IdName, NewTagName, IdClass, IdClassName){
         BoxTag.appendChild(TagName);
 
         // 給予屬性
+        TagName.setAttribute(IdClass, IdClassName);
+}
+
+function New_Class_Tag(ClassName, NewTagName, IdClass, IdClassName, i){
+    // 指定在 框架(自訂) 內新增標籤，宣告變數
+        let BoxTag = document.getElementsByClassName(ClassName)[i];
+
+        // 新增標籤 宣告變數
+        let TagName = document.createElement(NewTagName);
+
+        // // 在 框架 內建立 標籤
+        BoxTag.appendChild(TagName);
+
+        // // 給予屬性
         TagName.setAttribute(IdClass, IdClassName);
 }
