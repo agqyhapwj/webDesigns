@@ -263,6 +263,7 @@ function LimitedCon() {
        
     }
 
+ShareCon(8);
 // 新增 好物分享 的內容
 function ShareCon(Number) {
     for (let i = 0; i < Number; i++) {
