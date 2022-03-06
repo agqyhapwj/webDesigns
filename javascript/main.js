@@ -109,7 +109,6 @@ function SmallNavCon() {
 LimitedCon();
 // 新增 限量(最新商品)
 function LimitedCon() {
-    let CommID = ["CO1","CO2","CO3","CO4","CO5","CO6","CO7","CO8"];
     for(let i=0; i < 8; i++ ) {
         // 新增標籤 section
         let sec = document.createElement('section');
@@ -263,3 +262,21 @@ function LimitedCon() {
         }
        
     }
+
+// 新增 好物分享 的內容
+function ShareCon(Number) {
+    for (let i = 0; i < Number; i++) {
+        // 指定在 框架(自訂) 內新增標籤，宣告變數
+        let Article = document.getElementById('ShareCon');
+
+        // 新增標籤 宣告變數
+        let section = document.createElement('section');
+
+        // 在 框架 內建立 標籤
+        Article.appendChild(section);
+
+        // 給予屬性
+        section.setAttrebute("class", 'commodity');
+    }
+    return
+}
