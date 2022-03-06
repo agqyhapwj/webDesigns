@@ -206,3 +206,59 @@ function ArrayCode() {
         console.log(Items[i]);
     }
 }
+
+
+
+// 暫不用 sec.setAttribute("id", CommID[i]);
+/*==========================================*/
+
+        // 新增標籤 ul
+        let ul = document.createElement('ul');
+
+        
+        // let CO = document.getElementById(CommID[i]);
+
+        
+
+        
+
+        ForLi(LiClass, TB, LiCon);
+        
+
+    
+     /*==========================================*/
+
+    
+
+    
+
+    /*============================================================*/
+    // 價格
+    // 新增標籤 ul
+    
+
+    // 在 Commodity 內新增 ul
+    // CO = document.querySelector('.Commodity');
+    CO = document.getElementById(CommID[i]);
+
+    
+
+    
+
+    ForLi(PBLi, PriceBox, PBLiCon);
+    /*============================================================*/
+    // 建新 for (新增li)方法
+    function ForLi(Class, IdName, Con){
+        // for 迴圈
+        for(let i =0; i < Class.length; i++) {
+            //建立 li
+            let li = document.createElement('li');
+            
+            // 在 框架 新增 標籤 li
+            IdName.appendChild(li);
+            
+            // 新增 class 屬性
+            li.setAttribute("class",Class[i]);
+
+            // 置入 內容
+            li.innerHTML = Con[i];
