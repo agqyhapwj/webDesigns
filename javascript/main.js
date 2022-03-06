@@ -267,17 +267,21 @@ ShareCon(8);
 // 新增 好物分享 的內容
 function ShareCon(Number) {
     for (let i = 0; i < Number; i++) {
-        // 指定在 框架(自訂) 內新增標籤，宣告變數
-        let Article = document.getElementById('ShareCon');
-
-        // 新增標籤 宣告變數
-        let section = document.createElement('section');
-
-        // 在 框架 內建立 標籤
-        Article.appendChild(section);
-
-        // 給予屬性
-        section.setAttribute("class", 'commodity');
+        NewTag('ShareCon', 'section', 'class', 'Commodity');
     }
     return
+}
+
+function NewTag(IdName, NewTagName, IdClass, IdClassName){
+      // 指定在 框架(自訂) 內新增標籤，宣告變數
+        let BoxTag = document.getElementById(IdName);
+
+        // 新增標籤 宣告變數
+        let TagName = document.createElement(NewTagName);
+
+        // 在 框架 內建立 標籤
+        BoxTag.appendChild(TagName);
+
+        // 給予屬性
+        TagName.setAttribute(IdClass, IdClassName);
 }
