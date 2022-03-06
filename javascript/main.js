@@ -277,7 +277,7 @@ function ShareCon(Number) {
         Article.appendChild(section);
 
         // 給予屬性
-        section.setAttrebute("class", 'commodity');
+        section.setAttribute("class", 'commodity');
     }
     return
 }
