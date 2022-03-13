@@ -279,10 +279,82 @@ function ShareCon(Number) {
         for(let b = 0; b < DClass.length; b++) {
             New_Class_Tag('Commodity', 'div', 'class', DClass[b], i);
         }
+
+        let CO = document.getElementsByClassName('Commodity')[i];
+        // Images 內新增資料
+        let A = document.createElement('a');
+        // 新增連結屬性
+        A.setAttribute("href", "javascript:;");
+        // 宣告指定 class 的變數
+        let Images = CO.querySelector('.Images');
+        // let Images = CO.getElementByClassName('Images')[i];
+        // 在 Images 內新增
+        Images.appendChild(A);
+
+        // Images > a 內新增資料
+        let Img = document.createElement('img');
+        // 屬性
+        Img.setAttribute("src", "images/Merchandise/001.jpg");
+        // 在 a 內新增
+        A.appendChild(Img);
+
+        New_ClassTagContent('LName', 'h3', i, '商品名稱');
+        New_Class_TagContent('LName', 'li', 'class', 'LineId', i, '聯絡客服');
     }
     return;
 }
 
+// 只渲染框架
+function New_IDTag(IdName,NewTagtName) {
+    let BoxTag = document.getElementById(IdName);
+
+    // 新增標籤 宣告變數
+    let TagName = document.createElement(NewTagtName);
+
+    // 在框架 內建立 標籤
+    BoxTag.appendChild(TagName);
+}
+
+//  只渲染框架
+function New_ClassTag(ClassName, NewTagName, i) {
+    // 指定在 框架(自訂) 內新增標籤，宣告變數
+        let BoxTag = document.getElementsByClassName(ClassName)[i];
+
+        // 新增標籤 宣告變數
+        let TagName = document.createElement(NewTagName);
+
+        // // 在 框架 內建立 標籤
+        BoxTag.appendChild(TagName);
+}
+
+// 1.渲染框架給予資料內容
+function New_ClassTagContent(ClassName, NewTagName, i, Content){
+    // 指定在 框架(自訂) 內新增標籤，宣告變數
+        let BoxTag = document.getElementsByClassName(ClassName)[i];
+
+        // 新增標籤 宣告變數
+        let TagName = document.createElement(NewTagName);
+
+        // // 在 框架 內建立 標籤
+        BoxTag.appendChild(TagName).innerHTML = Content;
+}
+
+// 2.渲染框架給予資料內容
+function New_Class_TagContent(ClassName, NewTagName, IdClass, IdClassName, i, Content){
+    // 指定在 框架(自訂) 內新增標籤，宣告變數
+        let BoxTag = document.getElementsByClassName(ClassName)[i];
+
+        // 新增標籤 宣告變數
+        let TagName = document.createElement(NewTagName);
+
+        // // 在 框架 內建立 標籤
+        BoxTag.appendChild(TagName).innerHTML = Content;
+
+        // 給予屬性
+        TagName.setAttribute(IdClass, IdClassName);
+}
+
+// 給予 渲染框架 一個 ID 屬性
 function New_ID_Tag(IdName, NewTagName, IdClass, IdClassName){
       // 指定在 框架(自訂) 內新增標籤，宣告變數
         let BoxTag = document.getElementById(IdName);
@@ -297,6 +369,7 @@ function New_ID_Tag(IdName, NewTagName, IdClass, IdClassName){
         TagName.setAttribute(IdClass, IdClassName);
 }
 
+// 給予 渲染框架 一個 Class 屬性
 function New_Class_Tag(ClassName, NewTagName, IdClass, IdClassName, i){
     // 指定在 框架(自訂) 內新增標籤，宣告變數
         let BoxTag = document.getElementsByClassName(ClassName)[i];
