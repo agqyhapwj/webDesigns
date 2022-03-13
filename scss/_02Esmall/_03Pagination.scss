@@ -1,0 +1,16 @@
+// 分頁設定
+#Main > #Limited #Pagination {
+    width: 90%;
+    height: 55px;
+    display: flex;
+    list-style-type: none;
+}
+
+.bar-left {
+    width: 45px;
+    height: 45px;
+    font-size: 2rem;
+    line-height: 45px;
+    text-align: center;
+    background-color: white;
+}
