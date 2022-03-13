@@ -1,6 +1,7 @@
 // 分頁設定
 #Main > #Limited #Pagination {
-    width: 90%;
+    // 讀入資料庫之後，再改為 %
+    width: 55px * 7;
     height: 55px;
     display: flex;
     list-style-type: none;

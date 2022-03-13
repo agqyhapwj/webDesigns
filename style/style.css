@@ -419,8 +419,10 @@ You may only @extend selectors within the same directiv.
     width: 45px;
     height: 45px;
     font-size: 2rem;
+    font-weight: 200;
     line-height: 45px;
     text-align: center;
+    color: black;
     background-color: white;
   }
 }
@@ -772,6 +774,24 @@ You may only @extend selectors within the same directiv.
     text-decoration: none;
     color: royalblue;
     border-radius: 20px;
+  }
+  #Main > #Limited #Pagination {
+    width: 385px;
+    height: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  .bar-left {
+    width: 45px;
+    height: 45px;
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 45px;
+    text-align: center;
+    color: black;
+    background-color: white;
   }
 }
 
