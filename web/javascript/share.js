@@ -165,4 +165,5 @@ function AImg(COName, ClassName, LinkPath, PhotoPath, i) {
     Img.setAttribute("src", PhotoPath);
     // 在 a 內新增
     A.appendChild(Img);
+    }
 }
