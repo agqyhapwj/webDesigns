@@ -391,6 +391,22 @@ function New_Class_Tag(ClassName, NewTagName, IdClass, IdClassName, i){
         TagName.setAttribute(IdClass, IdClassName);
 }
 
+// 給予渲染框架 一個 class 屬性 給予內容
+function New_Class_TagContent(ClassName, NewTagName, IdClass, IdClassName, i, Content){
+    // 指定在 框架(自訂) 內新增標籤，宣告變數
+        let BoxTag = document.getElementsByClassName(ClassName)[i];
+
+        // 新增標籤 宣告變數
+        let TagName = document.createElement(NewTagName);
+
+        // // 在 框架 內建立 標籤
+        BoxTag.appendChild(TagName).innerHtml = Contetn;
+
+        // // 給予屬性
+        TagName.setAttribute(IdClass, IdClassName);
+}
+
+
 // 給予兩個屬性
 function New_class_Tag2(ClassName, NewTagName, IdClass, IdClassName, IdClass, IdClassName2, i){
     // 指定在 框架(自訂) 內新增標籤，宣告變數
