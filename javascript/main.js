@@ -298,10 +298,11 @@ function ShareCon(Number) {
         // 在 a 內新增
         A.appendChild(Img);
 
-        New_ClassTagContent('LName', 'h3', i, '商品名稱');
+        let H3Name = ['商品名稱1', '商品名稱2', '商品名稱3', '商品名稱4', '商品名稱5', '商品名稱6', '商品名稱7', '商品名稱8'];
+
+        New_ClassTagContent('LName', 'h3', i, H3Name);
         New_Class_TagContent('LName', 'li', 'class', 'LineId', i, '聯絡客服');
 
-            // new_ClassTagContent('Brief', 'li', i, '商品簡介:字數限制(<mark>中文13個字，英文與數字26個字</mark>)會利用...設計');
         document.getElementsByClassName('Brief')[i].innerHTML = "商品簡介:字數限制(<mark>中文13個字，英文與數字26個字</mark>)會利用...設計"
     }
     return;
@@ -331,7 +332,7 @@ function New_ClassTag(ClassName, NewTagName, i) {
 }
 
 // 1.渲染框架給予資料內容
-function New_ClassTagContent(ClassName, NewTagName, i, Content){
+function New_ClassTagContent(ClassName, NewTagName, i, Content) {
     // 指定在 框架(自訂) 內新增標籤，宣告變數
         let BoxTag = document.getElementsByClassName(ClassName)[i];
 
@@ -339,7 +340,10 @@ function New_ClassTagContent(ClassName, NewTagName, i, Content){
         let TagName = document.createElement(NewTagName);
 
         // // 在 框架 內建立 標籤
-        BoxTag.appendChild(TagName).innerHTML = Content;
+        // BoxTag.appendChild(TagName).innerHTML = Content;
+
+        // i=8  b=0  8-8=0  ~  i(8)-8=0  i(9)-8=1
+        BoxTag.appendChild(TagName).innerHTML = Content[ i - 8 ];
 }
 
 // 2.渲染框架給予資料內容
