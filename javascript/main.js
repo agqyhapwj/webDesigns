@@ -399,3 +399,25 @@ function New_class_Tag2(ClassName, NewTagName, IdClass, IdClassName, IdClass, Id
         TagName.setAttribute(IdClass, IdClassName);
         TagName.setAttribute(IdClass, IdClassName2);
 }
+
+// 圖片連結應用
+function AImg(COName, ClassName, LinkPath, PhotoPath, i) {
+    let CO = document.getElementsByClassName(COName)[i];
+    // Images 內新增資料
+    let A = document.createElement('a');
+    // 新增 連結 屬性
+    A.setAttribute("href", LinkPath);
+    // 宣告 指定 class 的變數
+    let Images = CO.querySelector(ClassName);
+    // let Images = CO.getElementsByClassName('Images')[i];
+    
+    // 在Images 內新增
+    Images.appendChild(A);
+
+    // Images > a 內新增資料
+    let Img = document.createElement('img');
+    // 屬性
+    Img.setAttribute("src", PhotoPath);
+    // 在 a 內新增
+    A.appendChild(Img);
+}
