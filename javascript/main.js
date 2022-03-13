@@ -300,6 +300,9 @@ function ShareCon(Number) {
 
         New_ClassTagContent('LName', 'h3', i, '商品名稱');
         New_Class_TagContent('LName', 'li', 'class', 'LineId', i, '聯絡客服');
+
+            // new_ClassTagContent('Brief', 'li', i, '商品簡介:字數限制(<mark>中文13個字，英文與數字26個字</mark>)會利用...設計');
+        document.getElementsByClassName('Brief')[i].innerHTML = "商品簡介:字數限制(<mark>中文13個字，英文與數字26個字</mark>)會利用...設計"
     }
     return;
 }
