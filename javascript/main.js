@@ -294,7 +294,7 @@ function ShareCon(Number) {
         // Images > a 內新增資料
         let Img = document.createElement('img');
         // 屬性
-        Img.setAttribute("src", "images/Merchandise/001.jpg");
+        Img.setAttribute("src", "images/Merchandise/002.jpg");
         // 在 a 內新增
         A.appendChild(Img);
 
