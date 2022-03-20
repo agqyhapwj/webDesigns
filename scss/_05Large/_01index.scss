@@ -9,7 +9,7 @@ header {
     display: flex;
     // 換行
 
-    background-color: darkgoldenrod;
+    background-color: rgb(165, 233, 230);
 
     > #MainNav {
         // // 寬度 100%
@@ -17,13 +17,13 @@ header {
         height: 100px;
         display: flex;
         flex-wrap: wrap;
-        background-color: rgb(95, 71, 11);
+        background-color: rgb(91, 233, 226);
 
         //Logo寬度 + icon 寬度 = 總寬度 100vw (100%)
         #Logo {
             width: $w10 * 4;
             // float: none;
-            background-color: chocolate;
+            background-color: rgba(5, 146, 139, 0.6);
         }
 
         #icon {

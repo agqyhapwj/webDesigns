@@ -20,7 +20,7 @@ header {
         3:利用圖片高度撐開父框架的高
         */
         // width: $w10 * 10;
-        background-color: rgb(0, 124, 83);
+        background-color: rgb(219, 156, 236);
         // 解決方法二：清除浮動狀態，由nav設定寫在53行
 
         // 單位不同無法計算，所以改為同一單位vw
@@ -31,7 +31,7 @@ header {
             // 寬度 % or VW(螢幕可視範圍的百分比)
             // width: $w10 * 8;
             float: left;
-            background-color: rgb(22, 95, 0);
+            background-color: rgb(209, 116, 235);
         }
 
         // 靠左對齊(與 Logo 同一行)
@@ -39,7 +39,7 @@ header {
             height: 60px;
             // 浮點對齊法：靠左對齊 float:left
             float: left;
-            background-color: palevioletred;
+            background-color: rgb(197, 75, 235);
             // 文字取代圖片，呈現背景圖，而隱藏文字；首行縮排
             text-indent: -9999px;
             @include PhoneMenu(center, contain, icon, "menu.svg");

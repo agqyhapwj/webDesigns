@@ -439,7 +439,7 @@ You may only @extend selectors within the same directiv.
         2:清除浮動狀態，由nav設定
         3:利用圖片高度撐開父框架的高
         */
-    background-color: #007c53;
+    background-color: #db9cec;
   }
   header > #MainNav #Logo {
     width: 85vw;
@@ -449,12 +449,12 @@ You may only @extend selectors within the same directiv.
   }
   header > #MainNav #Logo {
     float: left;
-    background-color: #165f00;
+    background-color: #d174eb;
   }
   header > #MainNav #MenuBtn {
     height: 60px;
     float: left;
-    background-color: palevioletred;
+    background-color: #c54beb;
     text-indent: -9999px;
     background-repeat: no-repeat;
     background-position: center;
@@ -807,7 +807,7 @@ You may only @extend selectors within the same directiv.
         3:利用圖片高度撐開父框架的高
         */
     width: 100vw;
-    background-color: #00ec9e;
+    background-color: #05a7af;
   }
   header > #MainNav #Logo {
     width: 90vw;
@@ -822,6 +822,7 @@ You may only @extend selectors within the same directiv.
   header > #MainNav #MenuBtn {
     height: 80px;
     float: left;
+    background-color: #166185;
     text-indent: -9999px;
     background-repeat: no-repeat;
     background-position: center;
@@ -845,7 +846,7 @@ You may only @extend selectors within the same directiv.
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: darkgoldenrod;
+    background-color: #a5e9e6;
   }
   header > #MainNav {
     width: 100vw;
@@ -855,11 +856,11 @@ You may only @extend selectors within the same directiv.
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background-color: #5f470b;
+    background-color: #5be9e2;
   }
   header > #MainNav #Logo {
     width: 40vw;
-    background-color: chocolate;
+    background-color: rgba(5, 146, 139, 0.6);
   }
   header > #MainNav #icon {
     width: 30vw;
