@@ -343,7 +343,7 @@ You may only @extend selectors within the same directiv.
     border-radius: 20px;
   }
   #Main > #Share {
-    background-image: url(../../images/BG/002.jgp);
+    background-image: url(../../images/BG/001.jpg);
   }
   #Main > #Share h1 {
     font-size: 1.5rem;
@@ -703,7 +703,7 @@ You may only @extend selectors within the same directiv.
     border-radius: 20px;
   }
   #Main > #Share {
-    background-image: url(../../images/BG/002.png);
+    background-image: url(../../images/BG/001.jpg);
   }
   #Main > #Share h1 {
     width: 100%;
@@ -1089,7 +1089,7 @@ You may only @extend selectors within the same directiv.
     border-radius: 20px;
   }
   #Main > #Share {
-    background-image: url(../../images/BG/002.png);
+    background-image: url(../../images/BG/001.jpg);
   }
   #Main > #Share h1 {
     font-size: 1.5rem;
@@ -1245,7 +1245,7 @@ You may only @extend selectors within the same directiv.
     background-image: url(../../images/banner/01.jpg);
   }
   #Main > #Limited {
-    background-image: url(../../images/BG/002.jpg);
+    background-image: url(../../images/BG/001.jpg);
   }
   #Main > #Limited h1 {
     font-size: 1.5rem;
@@ -1375,7 +1375,7 @@ You may only @extend selectors within the same directiv.
     border-radius: 20px;
   }
   #Main > #Share {
-    background-image: url(../../images/BG/002.png);
+    background-image: url(../../images/BG/001.jpg);
   }
   #Main > #Share h1 {
     font-size: 1.5rem;
