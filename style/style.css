@@ -31,7 +31,7 @@ You may only @extend selectors within the same directiv.
     position: fixed;
     top: 0;
     z-index: 999;
-    background-color: #e2d6d6;
+    background-color: #ddd7d7;
     /*
         浮動對齊的問題 float
         1:#logo 與#BtnBOX 物件的父框架 nav，無寬度
