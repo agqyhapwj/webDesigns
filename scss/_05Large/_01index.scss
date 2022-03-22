@@ -64,5 +64,18 @@ footer {
     address {
         // 呼叫 混合函式(寫在共用區)
         @include OB;
+        h4 {
+            text-align: center;
+        }
+        > h5 {
+            // display: flex;
+            // position: absolute;
+            text-align: center;
+            // float: unset;
+            height: 30px;
+            line-height: 30px;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
     }
 }
