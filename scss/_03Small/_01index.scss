@@ -79,6 +79,10 @@ footer {
             display: flex;
             @include DNli;
             // background-color: rgb(197, 194, 190);
+            li > a {
+                color: black;
+                text-decoration: none;
+            }
         }
     }
 
