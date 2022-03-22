@@ -903,12 +903,6 @@ You may only @extend selectors within the same directiv.
     text-align: center;
     height: 30px;
     line-height: 30px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
   #Main {
     background-color: #b8e7f0;
