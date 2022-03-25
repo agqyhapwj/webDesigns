@@ -890,6 +890,10 @@ You may only @extend selectors within the same directiv.
     display: flex;
     list-style-type: none;
   }
+  header > #MainNav .BtnBox a {
+    text-decoration: none;
+    color: black;
+  }
   header > #MainNav #MenuBtn {
     display: none;
   }

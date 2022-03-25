@@ -46,6 +46,10 @@ header {
             display: flex;
             // 隱藏項目符號
             @include DNli;
+            a {
+                text-decoration: none;
+                color: black;
+            }
 
             // // 如果有第二層選單可以用這個方式
             // ul {
