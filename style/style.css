@@ -51,13 +51,10 @@ You may only @extend selectors within the same directiv.
   header > #MainNav #Logo {
     float: left;
     background-color: #c5bdbd;
-<<<<<<< HEAD
   }
   header > #MainNav #Logo a {
     color: black;
     text-decoration: none;
-=======
->>>>>>> 1173e2bb69bc300110bbe82ea2de78d73603645c
   }
   header > #MainNav #MenuBtn {
     height: 60px;
@@ -423,25 +420,8 @@ You may only @extend selectors within the same directiv.
     color: royalblue;
     border-radius: 20px;
   }
-  #Main > #Limited #Pagination {
-    width: 90%;
-    height: 55px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style-type: none;
-  }
-  .bar-left {
-    width: 45px;
-    height: 45px;
-    font-size: 2rem;
-    font-weight: 200;
-    line-height: 45px;
-    text-align: center;
-    color: black;
-    background-color: white;
-  }
-  #Main > #Share #Pagination {
+  #Main > #Limited #Pagination,
+  #Share #Pagination {
     width: 90%;
     height: 55px;
     display: -webkit-box;
@@ -484,13 +464,10 @@ You may only @extend selectors within the same directiv.
   header > #MainNav #Logo {
     float: left;
     background-color: #d174eb;
-<<<<<<< HEAD
   }
   header > #MainNav #Logo a {
     color: black;
     text-decoration: none;
-=======
->>>>>>> 1173e2bb69bc300110bbe82ea2de78d73603645c
   }
   header > #MainNav #MenuBtn {
     height: 60px;
@@ -580,15 +557,13 @@ You may only @extend selectors within the same directiv.
     display: flex;
     list-style-type: none;
   }
-<<<<<<< HEAD
   footer nav ul a {
     text-decoration: none;
     color: black;
-=======
+  }
   footer nav ul li > a {
     color: black;
     text-decoration: none;
->>>>>>> 1173e2bb69bc300110bbe82ea2de78d73603645c
   }
   footer div {
     margin-bottom: 0.7rem;
@@ -881,25 +856,8 @@ You may only @extend selectors within the same directiv.
     color: royalblue;
     border-radius: 20px;
   }
-  #Main > #Limited #Pagination {
-    width: 385px;
-    height: 55px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style-type: none;
-  }
-  .bar-left {
-    width: 45px;
-    height: 45px;
-    font-size: 2rem;
-    font-weight: 200;
-    line-height: 45px;
-    text-align: center;
-    color: black;
-    background-color: white;
-  }
-  #Main > #Share #Pagination {
+  #Main > #Limited #Pagination,
+  #Share #Pagination {
     width: 385px;
     height: 55px;
     display: -webkit-box;
@@ -1044,13 +1002,10 @@ You may only @extend selectors within the same directiv.
   header > #MainNav #Logo {
     width: 40vw;
     background-color: rgba(5, 146, 139, 0.6);
-<<<<<<< HEAD
   }
   header > #MainNav #Logo a {
     color: black;
     text-decoration: none;
-=======
->>>>>>> 1173e2bb69bc300110bbe82ea2de78d73603645c
   }
   header > #MainNav #icon {
     width: 30vw;
