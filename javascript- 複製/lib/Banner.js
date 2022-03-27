@@ -11,6 +11,22 @@ let ChangeImage = function(num) {
     current = ( current + num + images.length) % images.length;
     document.getElementById('Bannerimg').src = images[current];
 
+    // current += num;
+
+    // 不循環寫法
+    // if(current < 0) {
+    //     current = 0
+    // } else if ( current > images.length - 1){
+    //     current = images.length - 1
+    // }
+
+    // 循環寫法
+    // if(current < 0) {
+    //     current = images.length -1
+    // } else if ( current > images.length - 1){
+    //     current = 0
+    // }
+
     // if(current + num >= 0 && current + num < images.length) {
     //     // 索引變數 = 索引變數 + 自訂參數 current = current + num
     //     current += num;
@@ -21,7 +37,8 @@ let ChangeImage = function(num) {
     //     // 這段 else 是後來加的，才會一直循環；否則執行 0 1 2 3 4 後就停止了
     //     current = -1;
     // }
-console.log(current);
+    document.getElementById('Bannerimg').src = images[current];
+    console.log(current);
 
 }
 
@@ -35,10 +52,10 @@ document.getElementById('next').onclick = function() {
 }
 
 // 自動播放 3000毫秒 = 三秒
-let Timer = setInterval(() => {
-    if ( current < images.length ) {
-        ChangeImage(1);
-        // 用console.log(current)，印出它執行的次數
-        console.log(current);
-    }
-},3000);
+// let Timer = setInterval(() => {
+//     if ( current < images.length ) {
+//         ChangeImage(1);
+//         // 用console.log(current)，印出它執行的次數
+//         console.log(current);
+//     }
+// },3000);
