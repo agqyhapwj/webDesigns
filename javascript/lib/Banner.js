@@ -13,7 +13,7 @@ let current = 0;
 let ChangeImage = function(num) {
     // // 判斷式條件 -- 索引編號 + 自訂參數值 >=0 && 索引編號 + 自訂參數 < 圖片陣列的長度成立時
 
-    current = ( current + num + images.length) % Pimages.length;
+    current = ( current + num + Pimages.length) % Pimages.length;
     // img 預設圖
     document.getElementById('Bannerimg').src = Pimages[current];
 
