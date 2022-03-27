@@ -51,10 +51,13 @@ You may only @extend selectors within the same directiv.
   header > #MainNav #Logo {
     float: left;
     background-color: #c5bdbd;
+<<<<<<< HEAD
   }
   header > #MainNav #Logo a {
     color: black;
     text-decoration: none;
+=======
+>>>>>>> 1173e2bb69bc300110bbe82ea2de78d73603645c
   }
   header > #MainNav #MenuBtn {
     height: 60px;
@@ -481,10 +484,13 @@ You may only @extend selectors within the same directiv.
   header > #MainNav #Logo {
     float: left;
     background-color: #d174eb;
+<<<<<<< HEAD
   }
   header > #MainNav #Logo a {
     color: black;
     text-decoration: none;
+=======
+>>>>>>> 1173e2bb69bc300110bbe82ea2de78d73603645c
   }
   header > #MainNav #MenuBtn {
     height: 60px;
@@ -574,9 +580,15 @@ You may only @extend selectors within the same directiv.
     display: flex;
     list-style-type: none;
   }
+<<<<<<< HEAD
   footer nav ul a {
     text-decoration: none;
     color: black;
+=======
+  footer nav ul li > a {
+    color: black;
+    text-decoration: none;
+>>>>>>> 1173e2bb69bc300110bbe82ea2de78d73603645c
   }
   footer div {
     margin-bottom: 0.7rem;
@@ -1032,10 +1044,13 @@ You may only @extend selectors within the same directiv.
   header > #MainNav #Logo {
     width: 40vw;
     background-color: rgba(5, 146, 139, 0.6);
+<<<<<<< HEAD
   }
   header > #MainNav #Logo a {
     color: black;
     text-decoration: none;
+=======
+>>>>>>> 1173e2bb69bc300110bbe82ea2de78d73603645c
   }
   header > #MainNav #icon {
     width: 30vw;

@@ -32,10 +32,13 @@ header {
             // width: $w10 * 8;
             float: left;
             background-color: rgb(209, 116, 235);
+<<<<<<< HEAD
             a {
                 color: black;
                 text-decoration: none;
             }
+=======
+>>>>>>> 1173e2bb69bc300110bbe82ea2de78d73603645c
         }
 
         // 靠左對齊(與 Logo 同一行)
@@ -174,6 +177,10 @@ footer {
                 color: black;
             }
             // background-color: rgb(197, 194, 190);
+            li > a {
+                color: black;
+                text-decoration: none;
+            }
         }
     }
 
