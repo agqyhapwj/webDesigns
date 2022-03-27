@@ -1,6 +1,6 @@
 // 指定圖片路徑的陣列
 // 電腦版
-let images = ['images/banner/01.jpg', 'images/banner/02.jpg', 'images/banner/03.jpg', 'images/banner/04.jpg', 'images/banner/05.jpg'];
+let Pimages = ['images/banner/01.jpg', 'images/banner/02.jpg', 'images/banner/03.jpg', 'images/banner/04.jpg', 'images/banner/05.jpg'];
 // 平版
 let Timages = ['images/banner/t/01.jpg', 'images/banner/t/02.jpg', 'images/banner/t/03.jpg', 'images/banner/t/04.jpg', 'images/banner/t/05.jpg'];
 // 手機
@@ -13,8 +13,18 @@ let current = 0;
 let ChangeImage = function(num) {
     // // 判斷式條件 -- 索引編號 + 自訂參數值 >=0 && 索引編號 + 自訂參數 < 圖片陣列的長度成立時
 
-    current = ( current + num + images.length) % images.length;
-    document.getElementById('Bannerimg').src = images[current];
+    current = ( current + num + images.length) % Pimages.length;
+    // img 預設圖
+    document.getElementById('Bannerimg').src = Pimages[current];
+
+    // 電腦版
+    document.getElementById('Pimg').src = Pimages[current];
+
+    // 平版
+    document.getElementById('Timg').src = Timages[current];
+
+    // 手機版
+    document.getElementById('Simg').src = Simages[current];
 
     // current += num;
 
@@ -42,7 +52,7 @@ let ChangeImage = function(num) {
     //     // 這段 else 是後來加的，才會一直循環；否則執行 0 1 2 3 4 後就停止了
     //     current = -1;
     // }
-    document.getElementById('Bannerimg').src = images[current];
+    document.getElementById('Bannerimg').src = Pimages[current];
     console.log(current);
 
 }
