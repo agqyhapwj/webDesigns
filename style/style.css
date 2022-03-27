@@ -189,8 +189,8 @@ You may only @extend selectors within the same directiv.
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 335px;
     background-color: aliceblue;
+    font-size: 0;
   }
   #Main #Banner #ImgBox li {
     width: 100vw;
@@ -604,8 +604,8 @@ You may only @extend selectors within the same directiv.
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 385px;
     background-color: aliceblue;
+    font-size: 0;
   }
   #Main #Banner #ImgBox li {
     width: 100vw;
@@ -1063,6 +1063,7 @@ You may only @extend selectors within the same directiv.
     z-index: 15;
     top: 227.5px;
     border-radius: 15px;
+    cursor: pointer;
   }
   #Main #Banner .LeftBtn {
     left: 2.5vw;
@@ -1075,8 +1076,8 @@ You may only @extend selectors within the same directiv.
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 550px;
     background-color: aliceblue;
+    font-size: 0;
   }
   #Main #Banner #ImgBox li {
     width: 100vw;
@@ -1344,6 +1345,7 @@ You may only @extend selectors within the same directiv.
     z-index: 15;
     top: 277.5px;
     border-radius: 15px;
+    cursor: pointer;
   }
   #Main #Banner .LeftBtn {
     left: 2.5vw;
@@ -1356,8 +1358,8 @@ You may only @extend selectors within the same directiv.
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 650px;
     background-color: aliceblue;
+    font-size: 0;
   }
   #Main #Banner #ImgBox li {
     width: 100vw;

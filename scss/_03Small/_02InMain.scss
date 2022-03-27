@@ -28,6 +28,7 @@
             position: absolute;
             // 移動階層(圖層概念)
             z-index: 15;
+            // 左右按鈕 物件往下推算高度
             top: ($ImagePadding/ 2) - (95px / 2);
             @include Rounded(15);
         }
@@ -45,8 +46,10 @@
             width: $w10 * 10;
             @include DNli;
             // 內間距設定下方間距，當成圖片的高度，單位 % 或 vh
-            padding-bottom: $ImagePadding;
+            // padding-bottom: $ImagePadding;
             background-color: aliceblue;
+            // 文字尺寸為 0
+            font-size: 0;
             li {
                 width: $w10 * 10;
                 float: left;
