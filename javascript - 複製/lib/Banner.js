@@ -6,13 +6,11 @@ let current = 0;
 
 // 方法 宣告變數，將執行方法直接寫入變數中
 let ChangeImage = function(num) {
-if(current + num >=0 && current + num < images.length) {
-    current = current + num;
-}else if (current + num < images.length){
-    current = images.length;
-}
-
     // // 判斷式條件 -- 索引編號 + 自訂參數值 >=0 && 索引編號 + 自訂參數 < 圖片陣列的長度成立時
+
+    current = ( current + num + images.length) % images.length;
+    document.getElementById('Bannerimg').src = images[current];
+
     // if(current + num >= 0 && current + num < images.length) {
     //     // 索引變數 = 索引變數 + 自訂參數 current = current + num
     //     current += num;
@@ -37,10 +35,10 @@ document.getElementById('next').onclick = function() {
 }
 
 // 自動播放 3000毫秒 = 三秒
-// let Timer = setInterval(() => {
-//     if ( current < images.length ) {
-//         ChangeImage(1);
-//         // 用console.log(current)，印出它執行的次數
-//         console.log(current);
-//     }
-// },3000);
+let Timer = setInterval(() => {
+    if ( current < images.length ) {
+        ChangeImage(1);
+        // 用console.log(current)，印出它執行的次數
+        console.log(current);
+    }
+},3000);
