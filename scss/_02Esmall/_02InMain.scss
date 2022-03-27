@@ -33,6 +33,7 @@
             // 移動階層(圖層概念)
             z-index: 15;
             // 左右按鈕 物件往下推算高度
+            // top: ($ImgPadding / 2) - (95px / 2);
             top: 40%;
             @include Rounded(15);
         }
