@@ -1061,7 +1061,7 @@ You may only @extend selectors within the same directiv.
     font-size: 1.2rem;
     position: absolute;
     z-index: 15;
-    top: 227.5px;
+    top: 40%;
     border-radius: 15px;
     cursor: pointer;
   }
@@ -1343,7 +1343,7 @@ You may only @extend selectors within the same directiv.
     font-size: 1.2rem;
     position: absolute;
     z-index: 15;
-    top: 277.5px;
+    top: 40%;
     border-radius: 15px;
     cursor: pointer;
   }
