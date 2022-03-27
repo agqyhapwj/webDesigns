@@ -1,6 +1,6 @@
 // 主頁商品 共用變數區(全域)變數
 
-ShareCon(8);
+
 // 新增 好物分享 的內容
 function ShareCon(Number) {
     //設定 div class 名稱陣列
