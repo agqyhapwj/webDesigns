@@ -1,4 +1,5 @@
 // 指定圖片路徑的陣列
+
 // 電腦版
 let Pimages = ['images/banner/01.jpg', 'images/banner/02.jpg', 'images/banner/03.jpg', 'images/banner/04.jpg', 'images/banner/05.jpg'];
 // 平版
