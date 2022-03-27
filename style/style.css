@@ -175,7 +175,7 @@ You may only @extend selectors within the same directiv.
     font-size: 1.2rem;
     position: absolute;
     z-index: 15;
-    top: 120px;
+    top: 40%;
     border-radius: 15px;
   }
   #Main #Banner .LeftBtn {
