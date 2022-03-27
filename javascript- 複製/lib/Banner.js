@@ -9,7 +9,7 @@ let ChangeImage = function(num) {
     // // 判斷式條件 -- 索引編號 + 自訂參數值 >=0 && 索引編號 + 自訂參數 < 圖片陣列的長度成立時
 
     current = ( current + num + images.length) % images.length;
-    document.getElementById('Banner').src = images[current];
+    document.getElementById('Bannerimg').src = images[current];
 
     // if(current + num >= 0 && current + num < images.length) {
     //     // 索引變數 = 索引變數 + 自訂參數 current = current + num
