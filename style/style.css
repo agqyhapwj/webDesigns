@@ -31,7 +31,7 @@ You may only @extend selectors within the same directiv.
     position: fixed;
     top: 0;
     z-index: 999;
-    background-color: darkcyan;
+    background-color: #ddd7d7;
     /*
         浮動對齊的問題 float
         1:#logo 與#BtnBOX 物件的父框架 nav，無寬度
@@ -50,7 +50,11 @@ You may only @extend selectors within the same directiv.
   }
   header > #MainNav #Logo {
     float: left;
-    background-color: antiquewhite;
+    background-color: #c5bdbd;
+  }
+  header > #MainNav #Logo a {
+    color: black;
+    text-decoration: none;
   }
   header > #MainNav #MenuBtn {
     height: 60px;
@@ -82,6 +86,10 @@ You may only @extend selectors within the same directiv.
     z-index: 9999;
     background-color: white;
   }
+  header > #MenuNav a {
+    color: black;
+    text-decoration: none;
+  }
   header > #MenuNav > #Close {
     width: 40px;
     height: 40px;
@@ -89,7 +97,8 @@ You may only @extend selectors within the same directiv.
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: rosybrown;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
   }
   header > #MenuNav > h1 {
     width: 100%;
@@ -134,6 +143,10 @@ You may only @extend selectors within the same directiv.
     display: -ms-flexbox;
     display: flex;
     list-style-type: none;
+  }
+  footer nav ul li > a {
+    color: black;
+    text-decoration: none;
   }
   footer div {
     margin-bottom: 0.7rem;
@@ -223,7 +236,7 @@ You may only @extend selectors within the same directiv.
     background-image: url(../../images/banner/01.jpg);
   }
   #Main > #Limited {
-    background-image: url(../../images/BG/001.png);
+    background-image: url(../../images/BG/001.jpg);
   }
   #Main > #Limited h1 {
     font-size: 1.5rem;
@@ -343,7 +356,7 @@ You may only @extend selectors within the same directiv.
     border-radius: 20px;
   }
   #Main > #Share {
-    background-image: url(../../images/BG/002.png);
+    background-image: url(../../images/BG/001.jpg);
   }
   #Main > #Share h1 {
     font-size: 1.5rem;
@@ -425,6 +438,24 @@ You may only @extend selectors within the same directiv.
     color: black;
     background-color: white;
   }
+  #Main > #Share #Pagination {
+    width: 90%;
+    height: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  .bar-left {
+    width: 45px;
+    height: 45px;
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 45px;
+    text-align: center;
+    color: black;
+    background-color: white;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -439,7 +470,7 @@ You may only @extend selectors within the same directiv.
         2:清除浮動狀態，由nav設定
         3:利用圖片高度撐開父框架的高
         */
-    background-color: #007c53;
+    background-color: #db9cec;
   }
   header > #MainNav #Logo {
     width: 85vw;
@@ -449,12 +480,16 @@ You may only @extend selectors within the same directiv.
   }
   header > #MainNav #Logo {
     float: left;
-    background-color: #165f00;
+    background-color: #d174eb;
+  }
+  header > #MainNav #Logo a {
+    color: black;
+    text-decoration: none;
   }
   header > #MainNav #MenuBtn {
     height: 60px;
     float: left;
-    background-color: palevioletred;
+    background-color: #c54beb;
     text-indent: -9999px;
     background-repeat: no-repeat;
     background-position: center;
@@ -471,6 +506,61 @@ You may only @extend selectors within the same directiv.
   header > #MainNav .Clear {
     clear: both;
   }
+  header > #MenuNav {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 9999;
+    background-color: white;
+  }
+  header > #MenuNav a {
+    color: black;
+    text-decoration: none;
+  }
+  header > #MenuNav > #Close {
+    width: 40px;
+    height: 40px;
+    list-style-type: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+  }
+  header > #MenuNav > h1 {
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    line-height: 110px;
+    background-color: yellowgreen;
+  }
+  header > #MenuNav > ul {
+    width: 90%;
+    position: relative;
+    top: 50px;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: salmon;
+  }
+  header > #MenuNav > ul margin {
+    top: -260px;
+  }
+  header > #MenuNav > ul > .item {
+    width: 30%;
+    height: 70px;
+    margin-bottom: 100px;
+    background-color: sandybrown;
+  }
+  header > #MenuNav > ul > .color {
+    background-color: slateblue;
+  }
   footer hr {
     margin-bottom: 2rem;
   }
@@ -483,6 +573,10 @@ You may only @extend selectors within the same directiv.
     display: -ms-flexbox;
     display: flex;
     list-style-type: none;
+  }
+  footer nav ul a {
+    text-decoration: none;
+    color: black;
   }
   footer div {
     margin-bottom: 0.7rem;
@@ -570,7 +664,7 @@ You may only @extend selectors within the same directiv.
     background-image: url(../../images/banner/01.jpg);
   }
   #Main > #Limited {
-    background-image: url(../../images/BG/001.png);
+    background-image: url(../../images/BG/001.jpg);
   }
   #Main > #Limited h1 {
     width: 100%;
@@ -703,7 +797,7 @@ You may only @extend selectors within the same directiv.
     border-radius: 20px;
   }
   #Main > #Share {
-    background-image: url(../../images/BG/002.png);
+    background-image: url(../../images/BG/001.jpg);
   }
   #Main > #Share h1 {
     width: 100%;
@@ -793,6 +887,24 @@ You may only @extend selectors within the same directiv.
     color: black;
     background-color: white;
   }
+  #Main > #Share #Pagination {
+    width: 385px;
+    height: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+  }
+  .bar-left {
+    width: 45px;
+    height: 45px;
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 45px;
+    text-align: center;
+    color: black;
+    background-color: white;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -807,7 +919,7 @@ You may only @extend selectors within the same directiv.
         3:利用圖片高度撐開父框架的高
         */
     width: 100vw;
-    background-color: #00ec9e;
+    background-color: #05a7af;
   }
   header > #MainNav #Logo {
     width: 90vw;
@@ -819,9 +931,14 @@ You may only @extend selectors within the same directiv.
     float: left;
     background-color: #006b70;
   }
+  header > #MainNav #Logo a {
+    color: black;
+    text-decoration: none;
+  }
   header > #MainNav #MenuBtn {
     height: 80px;
     float: left;
+    background-color: #166185;
     text-indent: -9999px;
     background-repeat: no-repeat;
     background-position: center;
@@ -834,6 +951,61 @@ You may only @extend selectors within the same directiv.
   header > #MainNav .Clear {
     clear: both;
   }
+  header > #MenuNav {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 9999;
+    background-color: white;
+  }
+  header > #MenuNav a {
+    color: black;
+    text-decoration: none;
+  }
+  header > #MenuNav > #Close {
+    width: 40px;
+    height: 40px;
+    list-style-type: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+  }
+  header > #MenuNav > h1 {
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    line-height: 110px;
+    background-color: yellowgreen;
+  }
+  header > #MenuNav > ul {
+    width: 90%;
+    position: relative;
+    top: 50px;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: salmon;
+  }
+  header > #MenuNav > ul margin {
+    top: -260px;
+  }
+  header > #MenuNav > ul > .item {
+    width: 30%;
+    height: 70px;
+    margin-bottom: 100px;
+    background-color: sandybrown;
+  }
+  header > #MenuNav > ul > .color {
+    background-color: slateblue;
+  }
   footer address {
     display: none;
   }
@@ -845,7 +1017,7 @@ You may only @extend selectors within the same directiv.
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: darkgoldenrod;
+    background-color: #a5e9e6;
   }
   header > #MainNav {
     width: 100vw;
@@ -855,11 +1027,15 @@ You may only @extend selectors within the same directiv.
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background-color: #5f470b;
+    background-color: #5be9e2;
   }
   header > #MainNav #Logo {
     width: 40vw;
-    background-color: chocolate;
+    background-color: rgba(5, 146, 139, 0.6);
+  }
+  header > #MainNav #Logo a {
+    color: black;
+    text-decoration: none;
   }
   header > #MainNav #icon {
     width: 30vw;
@@ -881,11 +1057,23 @@ You may only @extend selectors within the same directiv.
     display: flex;
     list-style-type: none;
   }
+  header > #MainNav .BtnBox a {
+    text-decoration: none;
+    color: black;
+  }
   header > #MainNav #MenuBtn {
     display: none;
   }
   footer address {
     display: block;
+  }
+  footer address h4 {
+    text-align: center;
+  }
+  footer address > h5 {
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
   }
   #Main {
     background-color: #b8e7f0;
@@ -964,7 +1152,7 @@ You may only @extend selectors within the same directiv.
     background-image: url(../../images/banner/01.jpg);
   }
   #Main > #Limited {
-    background-image: url(../../images/BG/001.png);
+    background-image: url(../../images/BG/001.jpg);
   }
   #Main > #Limited h1 {
     font-size: 1.5rem;
@@ -1089,7 +1277,7 @@ You may only @extend selectors within the same directiv.
     border-radius: 20px;
   }
   #Main > #Share {
-    background-image: url(../../images/BG/002.png);
+    background-image: url(../../images/BG/001.jpg);
   }
   #Main > #Share h1 {
     font-size: 1.5rem;
@@ -1245,7 +1433,7 @@ You may only @extend selectors within the same directiv.
     background-image: url(../../images/banner/01.jpg);
   }
   #Main > #Limited {
-    background-image: url(../../images/BG/001.png);
+    background-image: url(../../images/BG/001.jpg);
   }
   #Main > #Limited h1 {
     font-size: 1.5rem;
@@ -1375,7 +1563,7 @@ You may only @extend selectors within the same directiv.
     border-radius: 20px;
   }
   #Main > #Share {
-    background-image: url(../../images/BG/002.png);
+    background-image: url(../../images/BG/001.jpg);
   }
   #Main > #Share h1 {
     font-size: 1.5rem;

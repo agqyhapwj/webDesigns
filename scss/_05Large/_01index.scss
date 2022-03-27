@@ -9,7 +9,7 @@ header {
     display: flex;
     // 換行
 
-    background-color: darkgoldenrod;
+    background-color: rgb(165, 233, 230);
 
     > #MainNav {
         // // 寬度 100%
@@ -17,13 +17,17 @@ header {
         height: 100px;
         display: flex;
         flex-wrap: wrap;
-        background-color: rgb(95, 71, 11);
+        background-color: rgb(91, 233, 226);
 
         //Logo寬度 + icon 寬度 = 總寬度 100vw (100%)
         #Logo {
             width: $w10 * 4;
             // float: none;
-            background-color: chocolate;
+            background-color: rgba(5, 146, 139, 0.6);
+            a {
+                color: black;
+                text-decoration: none;
+            }
         }
 
         #icon {
@@ -46,6 +50,10 @@ header {
             display: flex;
             // 隱藏項目符號
             @include DNli;
+            a {
+                text-decoration: none;
+                color: black;
+            }
 
             // // 如果有第二層選單可以用這個方式
             // ul {
@@ -64,5 +72,18 @@ footer {
     address {
         // 呼叫 混合函式(寫在共用區)
         @include OB;
+        h4 {
+            text-align: center;
+        }
+        > h5 {
+            // display: flex;
+            // position: absolute;
+            text-align: center;
+            // float: unset;
+            height: 30px;
+            line-height: 30px;
+            // flex-wrap: wrap;
+            // flex-direction: row;
+        }
     }
 }

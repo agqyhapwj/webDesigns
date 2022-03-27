@@ -65,7 +65,7 @@
 
             <!-- 行動裝置選單 「選單展開」這部分是到後來才寫的，一開始並沒有 -->
             <nav id="MenuNav">
-                <li id="Close">Close</li>
+                <li id="Close">X</li>
                 <h1>
                     <a href="index.html">BSCOFFEE</a>
                 </h1>
@@ -90,14 +90,14 @@
             <!--輪播廣告區(div命名) 輪播功能用javascript 命名建議用ID選擇器；輪播功能用css3 命名用ID或類別選擇器  -->
             <!-- 固定輪播圖：主內容 會隨著頁面不同而改變 商品廣告輪播區 -->
             <div id="Banner">
-                <div class="Btn LeftBtn">〈</div>
-                <div class="Btn RightBtn">〉</div>
+                <div class="Btn LeftBtn" id="prev">L</div>
+                <div class="Btn RightBtn" id="next">R</div>
+
                 <ul id="ImgBox">
-                    <li class="Item01">1</li>
-                    <li class="Item02">2</li>
-                    <li class="Item03">3</li>
-                    <li class="Item04">4</li>
-                    <li class="Item05">5</li>
+                    <li class="Item01">
+                        <img id="Bannerimg" src="images/banner/01.jpg">
+                    </li>
+                    
                 </ul>
             </div>
 
@@ -135,7 +135,7 @@
                 <!-- <div> <h4> BsCoffee&copy;版權宣告2020 - <span id="Year">2021</span> </h4> </div> -->
 
                 <address id="Address">
-                    <h4>聯絡資訊:</h4>
+                    <h4>聯絡資訊</h4>
                     <p class="Address">
                     <h5>地址:彰化縣員林市</h5>
                     </p>
@@ -152,9 +152,7 @@
         </footer>
 
         <!-- 外連檔 -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="javascript/jquery-3.6.0.js"></script>
-        <script src="javascript/main.js?20220213001"></script>
-        <!-- <script src="javascript/testCode.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+        <script data-main="javascript/app" src="javascript/init/require.js"></script>
     </body>
 </html>

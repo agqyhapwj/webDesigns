@@ -32,7 +32,7 @@ header {
         // 靠上
         top: 0;
         z-index: 999;
-        background-color: darkcyan;
+        background-color: rgb(221, 215, 215);
         /*
         浮動對齊的問題 float
         1:#logo 與#BtnBOX 物件的父框架 nav，無寬度
@@ -55,7 +55,11 @@ header {
             // 寬度 % or VW(螢幕可視範圍的百分比)
 
             float: left;
-            background-color: antiquewhite;
+            background-color: rgb(197, 189, 189);
+            a {
+                color: black;
+                text-decoration: none;
+            }
         }
 
         // 靠左對齊(與 Logo 同一行)
@@ -63,7 +67,7 @@ header {
             height: 60px;
             // 浮點對齊法：靠左對齊 float:left
             float: left;
-            background-color: darkgray;
+            background-color: rgb(169, 169, 169);
             // 文字取代圖片，呈現背景圖，而隱藏文字；首行縮排
             text-indent: -9999px;
             @include PhoneMenu(center, contain, icon, "menu.svg");
@@ -100,6 +104,11 @@ header {
         z-index: 9999;
         background-color: white;
 
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
         > #Close {
             // 寬度與高度
             width: 40px;
@@ -110,7 +119,8 @@ header {
             // 位移 靠右 要設定 上和右 與頁面間距
             top: 10px;
             right: 10px;
-            background-color: rosybrown;
+            background-color: rgba(255, 255, 255, 0.5);
+            text-align: center;
         }
         > h1 {
             // 寬度
@@ -185,6 +195,10 @@ footer {
             display: flex;
             @include DNli;
             // background-color: rgb(197, 194, 190);
+            li > a {
+                color: black;
+                text-decoration: none;
+            }
         }
     }
 

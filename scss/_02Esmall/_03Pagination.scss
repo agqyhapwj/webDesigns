@@ -16,3 +16,21 @@
     color: black;
     background-color: white;
 }
+
+#Main > #Share #Pagination {
+    width: 90%;
+    height: 55px;
+    display: flex;
+    list-style-type: none;
+}
+
+.bar-left {
+    width: 45px;
+    height: 45px;
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 45px;
+    text-align: center;
+    color: black;
+    background-color: white;
+}

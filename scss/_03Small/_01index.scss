@@ -20,7 +20,7 @@ header {
         3:利用圖片高度撐開父框架的高
         */
         // width: $w10 * 10;
-        background-color: rgb(0, 124, 83);
+        background-color: rgb(219, 156, 236);
         // 解決方法二：清除浮動狀態，由nav設定寫在53行
 
         // 單位不同無法計算，所以改為同一單位vw
@@ -31,7 +31,11 @@ header {
             // 寬度 % or VW(螢幕可視範圍的百分比)
             // width: $w10 * 8;
             float: left;
-            background-color: rgb(22, 95, 0);
+            background-color: rgb(209, 116, 235);
+            a {
+                color: black;
+                text-decoration: none;
+            }
         }
 
         // 靠左對齊(與 Logo 同一行)
@@ -39,7 +43,7 @@ header {
             height: 60px;
             // 浮點對齊法：靠左對齊 float:left
             float: left;
-            background-color: palevioletred;
+            background-color: rgb(197, 75, 235);
             // 文字取代圖片，呈現背景圖，而隱藏文字；首行縮排
             text-indent: -9999px;
             @include PhoneMenu(center, contain, icon, "menu.svg");
@@ -60,6 +64,93 @@ header {
             @include clearFloat;
         }
     }
+    // 行動裝置選單展開「漢寶按鈕☰」
+    > #MenuNav {
+        // @include DN;
+        // 寬度 與 高度（裝置的可視高度）
+        width: $w1p * 10;
+        height: $w1p * 10;
+        // 定位點 絕對定位
+        position: absolute;
+        // 停佇
+        position: fixed;
+        // 靠上
+        top: 0;
+        // 溢位 隱藏捲軸
+        overflow: hidden;
+        z-index: 9999;
+        background-color: white;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        > #Close {
+            // 寬度與高度
+            width: 40px;
+            height: 40px;
+            @include DNli;
+            // 定位點 絕對定位
+            position: absolute;
+            // 位移 靠右 要設定 上和右 與頁面間距
+            top: 10px;
+            right: 10px;
+            background-color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+        }
+        > h1 {
+            // 寬度
+            width: $w1p * 10;
+            // 高度
+            height: 110px;
+            text-align: center;
+            line-height: 110px;
+            background-color: yellowgreen;
+        }
+        > ul {
+            width: $w1p * 9;
+            // 定位點 相對定位
+            position: relative;
+            // 移位 往下移動（設定 top 數值）
+            top: 50px;
+
+            // 上邊界 外間距
+            margin {
+                top: -260px;
+            }
+            @include DNli;
+            // 彈性佈局
+            display: flex;
+            // 換行
+            flex-wrap: wrap;
+            background-color: salmon;
+
+            > .item {
+                width: $w1p * 9 / 3;
+                height: 70px;
+                margin: {
+                    bottom: 100px;
+                }
+                // text-align: center;
+                background-color: sandybrown;
+            }
+
+            // > .itemtwo {
+            //     width: $w1p * 10 / 2 - 2;
+            //     height: 90px;
+            //     margin: {
+            //         top: 10px;
+            //         bottom: 10px;
+            //     }
+            //     text-align: center;
+            // }
+
+            > .color {
+                background-color: slateblue;
+            }
+        }
+    }
 }
 
 footer {
@@ -78,6 +169,10 @@ footer {
             // 彈性佈局
             display: flex;
             @include DNli;
+            a {
+                text-decoration: none;
+                color: black;
+            }
             // background-color: rgb(197, 194, 190);
         }
     }
