@@ -68,7 +68,7 @@ document.getElementById('next').onclick = function() {
 
 // 自動播放 3000毫秒 = 三秒
 // let Timer = setInterval(() => {
-//     if ( current < images.length ) {
+//     if ( current < Pimages.length ) {
 //         ChangeImage(1);
 //         // 用console.log(current)，印出它執行的次數
 //         console.log(current);
