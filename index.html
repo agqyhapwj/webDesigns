@@ -98,16 +98,24 @@
                         <img id="Bannerimg" src="images/banner/01.jpg">
                     </li>
                 </ul> -->
+                <picture class="Item01">
+                    <!-- 三個裝置 給予三個判斷 -->
+                    <source srcset="images/banner/s/01.jpg" media="(max-width: 767px)">
+                    <source srcset="images/banner/t/01.jpg" media="(max-width: 1023px)">
+                    <source srcset="images/banner/01.jpg" media="(min-width: 1024px)">
+                    <!-- img 當上述判斷讀取不到圖片時，或是，瀏覽器不支援時 -->
+                    <img src="images/banner/01.jpg" alt="">
+                </picture>
 
-                <div class="Btn LeftBtn">L</div>
-                <div class="Btn RightBtn">R</div>
-                <ul id="ImgBox">
+                <!-- <div class="Btn LeftBtn">L</div>
+                <div class="Btn RightBtn">R</div> -->
+                <!-- <ul id="ImgBox">
                     <li class="Item01"></li>
                     <li class="Item02"></li>
                     <li class="Item03"></li>
                     <li class="Item04"></li>
                     <li class="Item05"></li>
-                </ul>
+                </ul> -->
             </div>
 
             <!-- 主內容廣告區 1:新品上市 8個商品-->

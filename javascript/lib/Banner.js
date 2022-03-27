@@ -1,5 +1,10 @@
 // 指定圖片路徑的陣列
+// 電腦版
 let images = ['images/banner/01.jpg', 'images/banner/02.jpg', 'images/banner/03.jpg', 'images/banner/04.jpg', 'images/banner/05.jpg'];
+// 平版
+let Timages = ['images/banner/t/01.jpg', 'images/banner/t/02.jpg', 'images/banner/t/03.jpg', 'images/banner/t/04.jpg', 'images/banner/t/05.jpg'];
+// 手機
+let Simages = ['images/banner/s/01.jpg', 'images/banner/s/02.jpg', 'images/banner/s/03.jpg', 'images/banner/s/04.jpg', 'images/banner/s/05.jpg'];
 
 // 自訂索引變數[current]，紀錄目前正在顯示第幾張圖片，儲存著圖片對應的索引編號
 let current = 0;
