@@ -8,5 +8,16 @@ footer {
     #Address {
         // 呼叫 混合函式(寫在共用區)
         @include OB;
+        h4 {
+            text-align: center;
+        }
+
+        #Information {
+            @include DNli;
+            width: $w1p * 10;
+            // line-height: 1.5rem;
+            // text-align: center;
+            display: flex;
+        }
     }
 }

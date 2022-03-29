@@ -1043,10 +1043,12 @@ You may only @extend selectors within the same directiv.
   footer #Address h4 {
     text-align: center;
   }
-  footer #Address > h5 {
-    text-align: center;
-    height: 30px;
-    line-height: 30px;
+  footer #Address #Information {
+    list-style-type: none;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   #Main {
     background-color: #b8e7f0;
@@ -1329,6 +1331,16 @@ You may only @extend selectors within the same directiv.
   }
   footer #Address {
     display: block;
+  }
+  footer #Address h4 {
+    text-align: center;
+  }
+  footer #Address #Information {
+    list-style-type: none;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   #Main {
     background-color: #b8e7f0;
