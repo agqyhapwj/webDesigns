@@ -214,7 +214,7 @@ footer {
         }
     }
 
-    address {
+    #Address {
         // 呼叫 混合函式(寫在共用區)
         @include DN;
     }

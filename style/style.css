@@ -155,7 +155,7 @@ You may only @extend selectors within the same directiv.
     text-align: center;
     padding-bottom: 1rem;
   }
-  footer address {
+  footer #Address {
     display: none;
   }
   #Main {
@@ -574,7 +574,7 @@ You may only @extend selectors within the same directiv.
   footer div h4 {
     text-align: center;
   }
-  footer address {
+  footer #Address {
     display: none;
   }
   #Main {
@@ -979,7 +979,7 @@ You may only @extend selectors within the same directiv.
   header > #MenuNav > ul > .color {
     background-color: slateblue;
   }
-  footer address {
+  footer #Address {
     display: none;
   }
 }
@@ -1037,13 +1037,13 @@ You may only @extend selectors within the same directiv.
   header > #MainNav #MenuBtn {
     display: none;
   }
-  footer address {
+  footer #Address {
     display: block;
   }
-  footer address h4 {
+  footer #Address h4 {
     text-align: center;
   }
-  footer address > h5 {
+  footer #Address > h5 {
     text-align: center;
     height: 30px;
     line-height: 30px;
@@ -1327,7 +1327,7 @@ You may only @extend selectors within the same directiv.
     width: 100%;
     background-color: #7d0a28;
   }
-  footer address {
+  footer #Address {
     display: block;
   }
   #Main {
@@ -1619,7 +1619,7 @@ You may only @extend selectors within the same directiv.
     width: 100%;
     background-color: #204570;
   }
-  footer address {
+  footer #Address {
     display: block;
   }
 }
