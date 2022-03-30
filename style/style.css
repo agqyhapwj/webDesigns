@@ -161,9 +161,6 @@ You may only @extend selectors within the same directiv.
   #Main {
     background-color: #b8e7e6;
   }
-  #Main > .NullBox {
-    height: 100px;
-  }
   #Main #Banner {
     width: 100vw;
     overflow: hidden;
