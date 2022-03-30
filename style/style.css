@@ -160,7 +160,6 @@ You may only @extend selectors within the same directiv.
   }
   #Main #Banner {
     width: 100vw;
-    height: 75vw;
     overflow: hidden;
     position: relative;
     margin-top: 60px;
