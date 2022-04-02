@@ -1,19 +1,22 @@
+import 'bin/jquery-3.6.0.js';
+import 'bin/menunav.js'
+
 // 手機裝置選單
 // MenuNav();
-function MenuNav() {
-    let MenuNav = document.getElementById('MenuNav');
-    MenuNav.style.display = "none";
-}
+// function MenuNav() {
+//     let MenuNav = document.getElementById('MenuNav');
+//     MenuNav.style.display = "none";
+// }
 
 // PhoneMenushow();
 // menu手機版按鈕
-function PhoneMenushow() {
-    let Menu = document.getElementsByClassName('MenuBtn');
-    // 顯示手機版選單內容
-    Menu.style.display = "block";
-}
+// function PhoneMenushow() {
+//     let Menu = document.getElementsByClassName('MenuBtn');
+//     // 顯示手機版選單內容
+//     Menu.style.display = "block";
+// }
 
-PhoneMenushow2();
+// PhoneMenushow2();
 function PhoneMenushow2() {
     // $ jQuery的變數前綴詞
     // 隱藏選單
