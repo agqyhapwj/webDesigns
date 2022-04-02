@@ -20,7 +20,9 @@
             <nav id="MainNav">
                 <!-- 導覽列 nav大框架 logo=商標或標題h1,  icon, 按鈕 ，項目ul 清單li   -->
                 <!-- logo -->
-                <h1 id="Logo">BsCoffee</h1>
+                <h1 id="Logo">
+                    <a href="#">BsCoffee</a>
+                </h1>
 
                 <!-- 手機版選單按鈕 -->
                 <div id="MenuBtn">
@@ -65,7 +67,7 @@
 
             <!-- 行動裝置選單 「選單展開」這部分是到後來才寫的，一開始並沒有 -->
             <nav id="MenuNav">
-                <li id="Close">Close</li>
+                <li id="Close">X</li>
                 <h1>
                     <a href="index.html">BSCOFFEE</a>
                 </h1>
@@ -90,15 +92,30 @@
             <!--輪播廣告區(div命名) 輪播功能用javascript 命名建議用ID選擇器；輪播功能用css3 命名用ID或類別選擇器  -->
             <!-- 固定輪播圖：主內容 會隨著頁面不同而改變 商品廣告輪播區 -->
             <div id="Banner">
-                <div class="Btn LeftBtn">〈</div>
-                <div class="Btn RightBtn">〉</div>
+                <div class="Btn LeftBtn" id="prev">L</div>
+                <div class="Btn RightBtn" id="next">R</div>
+
                 <ul id="ImgBox">
+                    <li class="Item01">
+                        <img id="Bannerimg" src="images/banner/01.jpg">
+                    </li>
+                </ul>
+                <picture class="Item01">
+                    <!-- 三個裝置 給予三個判斷 -->
+                    <source id="Simg" srcset="images/banner/s/01.jpg" media="(max-width: 767px)">
+                    <source id="Timg" srcset="images/banner/t/01.jpg" media="(max-width: 1023px)">
+                    <source id="Pimg" srcset="images/banner/01.jpg" media="(min-width: 1024px)">
+                    <!-- img 當上述判斷讀取不到圖片時，或是，瀏覽器不支援時 -->
+                    <img id="Bannerimg" src="images/banner/01.jpg">
+                </picture>
+
+                <!-- <ul id="ImgBox">
                     <li class="Item01"></li>
                     <li class="Item02"></li>
                     <li class="Item03"></li>
                     <li class="Item04"></li>
                     <li class="Item05"></li>
-                </ul>
+                </ul> -->
             </div>
 
             <!-- 主內容廣告區 1:新品上市 8個商品-->
@@ -134,27 +151,19 @@
                 <!-- 聯絡資訊 地址 客服電話 E-mail LindID Fb GoogleMap 等…-->
                 <!-- <div> <h4> BsCoffee&copy;版權宣告2020 - <span id="Year">2021</span> </h4> </div> -->
 
-                <address id="Address">
-                    <h4>聯絡資訊:</h4>
-                    <p class="Address">
-                    <h5>地址:彰化縣員林市</h5>
-                    </p>
-                    <p class="Tel">
-                    <h5>TEL: 0908-995511</h5>
-                    </p>
-                    <p class="E-mail">
-                    <h5>E-mail: agqyhapwj555@gmail.com</h5>
-                    </p>
-                    <p class="LineID">
-                    <h5>Line ID: agqyhapw555</h5>
-                    </p>
-                </address>
+                <div id="Address">
+                    <h4>聯絡資訊</h4>
+                    <ul id="Information">
+                        <li class="Address"><b>地址:</b>彰化縣員林市惠來街xx號</li>
+                        <li class="TelNum"><b>電話:</b>0908-995511</li>
+                        <li class="LindID"><b>加賴:</b>agqyhapwj555</li>
+                        <li class="E-mail"><b>信箱:</b>agqyhapwj555@gmail.com</li>
+                    </ul>
+                </div>
         </footer>
 
         <!-- 外連檔 -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="javascript/jquery-3.6.0.js"></script>
-        <script src="javascript/main.js?20220213001"></script>
-        <!-- <script src="javascript/testCode.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+        <script data-main="javascript/app" src="javascript/init/require.js"></script>
     </body>
 </html>

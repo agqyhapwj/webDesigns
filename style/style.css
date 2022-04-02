@@ -52,6 +52,10 @@ You may only @extend selectors within the same directiv.
     float: left;
     background-color: #c5bdbd;
   }
+  header > #MainNav #Logo a {
+    color: black;
+    text-decoration: none;
+  }
   header > #MainNav #MenuBtn {
     height: 60px;
     float: left;
@@ -74,13 +78,17 @@ You may only @extend selectors within the same directiv.
   }
   header > #MenuNav {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     position: fixed;
     top: 0;
     overflow: hidden;
     z-index: 9999;
     background-color: white;
+  }
+  header > #MenuNav a {
+    color: black;
+    text-decoration: none;
   }
   header > #MenuNav > #Close {
     width: 40px;
@@ -89,7 +97,8 @@ You may only @extend selectors within the same directiv.
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: rosybrown;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
   }
   header > #MenuNav > h1 {
     width: 100%;
@@ -135,6 +144,10 @@ You may only @extend selectors within the same directiv.
     display: flex;
     list-style-type: none;
   }
+  footer nav ul li > a {
+    color: black;
+    text-decoration: none;
+  }
   footer div {
     margin-bottom: 0.7rem;
   }
@@ -142,11 +155,8 @@ You may only @extend selectors within the same directiv.
     text-align: center;
     padding-bottom: 1rem;
   }
-  footer address {
+  footer #Address {
     display: none;
-  }
-  #Main {
-    background-color: #b8e7e6;
   }
   #Main #Banner {
     width: 100vw;
@@ -162,7 +172,7 @@ You may only @extend selectors within the same directiv.
     font-size: 1.2rem;
     position: absolute;
     z-index: 15;
-    top: 120px;
+    top: 40%;
     border-radius: 15px;
   }
   #Main #Banner .LeftBtn {
@@ -176,8 +186,8 @@ You may only @extend selectors within the same directiv.
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 335px;
     background-color: aliceblue;
+    font-size: 0;
   }
   #Main #Banner #ImgBox li {
     width: 100vw;
@@ -407,7 +417,8 @@ You may only @extend selectors within the same directiv.
     color: royalblue;
     border-radius: 20px;
   }
-  #Main > #Limited #Pagination {
+  #Main > #Limited #Pagination,
+  #Share #Pagination {
     width: 90%;
     height: 55px;
     display: -webkit-box;
@@ -451,6 +462,10 @@ You may only @extend selectors within the same directiv.
     float: left;
     background-color: #d174eb;
   }
+  header > #MainNav #Logo a {
+    color: black;
+    text-decoration: none;
+  }
   header > #MainNav #MenuBtn {
     height: 60px;
     float: left;
@@ -471,6 +486,61 @@ You may only @extend selectors within the same directiv.
   header > #MainNav .Clear {
     clear: both;
   }
+  header > #MenuNav {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 9999;
+    background-color: white;
+  }
+  header > #MenuNav a {
+    color: black;
+    text-decoration: none;
+  }
+  header > #MenuNav > #Close {
+    width: 40px;
+    height: 40px;
+    list-style-type: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+  }
+  header > #MenuNav > h1 {
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    line-height: 110px;
+    background-color: yellowgreen;
+  }
+  header > #MenuNav > ul {
+    width: 90%;
+    position: relative;
+    top: 50px;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: salmon;
+  }
+  header > #MenuNav > ul margin {
+    top: -260px;
+  }
+  header > #MenuNav > ul > .item {
+    width: 30%;
+    height: 70px;
+    margin-bottom: 100px;
+    background-color: sandybrown;
+  }
+  header > #MenuNav > ul > .color {
+    background-color: slateblue;
+  }
   footer hr {
     margin-bottom: 2rem;
   }
@@ -484,13 +554,21 @@ You may only @extend selectors within the same directiv.
     display: flex;
     list-style-type: none;
   }
+  footer nav ul a {
+    text-decoration: none;
+    color: black;
+  }
+  footer nav ul li > a {
+    color: black;
+    text-decoration: none;
+  }
   footer div {
     margin-bottom: 0.7rem;
   }
   footer div h4 {
     text-align: center;
   }
-  footer address {
+  footer #Address {
     display: none;
   }
   #Main {
@@ -523,8 +601,8 @@ You may only @extend selectors within the same directiv.
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 385px;
     background-color: aliceblue;
+    font-size: 0;
   }
   #Main #Banner #ImgBox li {
     width: 100vw;
@@ -775,7 +853,8 @@ You may only @extend selectors within the same directiv.
     color: royalblue;
     border-radius: 20px;
   }
-  #Main > #Limited #Pagination {
+  #Main > #Limited #Pagination,
+  #Share #Pagination {
     width: 385px;
     height: 55px;
     display: -webkit-box;
@@ -819,6 +898,10 @@ You may only @extend selectors within the same directiv.
     float: left;
     background-color: #006b70;
   }
+  header > #MainNav #Logo a {
+    color: black;
+    text-decoration: none;
+  }
   header > #MainNav #MenuBtn {
     height: 80px;
     float: left;
@@ -835,8 +918,136 @@ You may only @extend selectors within the same directiv.
   header > #MainNav .Clear {
     clear: both;
   }
-  footer address {
+  header > #MenuNav {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 9999;
+    background-color: white;
+  }
+  header > #MenuNav a {
+    color: black;
+    text-decoration: none;
+  }
+  header > #MenuNav > #Close {
+    width: 40px;
+    height: 40px;
+    list-style-type: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+  }
+  header > #MenuNav > h1 {
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    line-height: 110px;
+    background-color: yellowgreen;
+  }
+  header > #MenuNav > ul {
+    width: 90%;
+    position: relative;
+    top: 50px;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: salmon;
+  }
+  header > #MenuNav > ul margin {
+    top: -260px;
+  }
+  header > #MenuNav > ul > .item {
+    width: 30%;
+    height: 70px;
+    margin-bottom: 100px;
+    background-color: sandybrown;
+  }
+  header > #MenuNav > ul > .color {
+    background-color: slateblue;
+  }
+  footer #Address {
     display: none;
+  }
+  #Main #Banner {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  #Main #Banner .Btn {
+    width: 20px;
+    height: 95px;
+    text-align: center;
+    line-height: 95px;
+    font-size: 1.2rem;
+    position: absolute;
+    z-index: 15;
+    top: 145px;
+    border-radius: 15px;
+  }
+  #Main #Banner .LeftBtn {
+    left: 2.5vw;
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  #Main #Banner .RightBtn {
+    right: 2.5vw;
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  #Main #Banner #ImgBox {
+    width: 100vw;
+    list-style-type: none;
+    background-color: aliceblue;
+    font-size: 0;
+  }
+  #Main #Banner #ImgBox li {
+    width: 100vw;
+    float: left;
+    position: absolute;
+    font-size: 72px;
+    text-align: center;
+    padding-bottom: 385px;
+  }
+  #Main #Banner #ImgBox .Item01 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../images/banner/05.jpg);
+  }
+  #Main #Banner #ImgBox .Item02 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../images/banner/04.jpg);
+  }
+  #Main #Banner #ImgBox .Item03 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../images/banner/03.jpg);
+  }
+  #Main #Banner #ImgBox .Item04 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../images/banner/02.jpg);
+  }
+  #Main #Banner #ImgBox .Item05 {
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../images/banner/01.jpg);
   }
 }
 
@@ -862,6 +1073,10 @@ You may only @extend selectors within the same directiv.
     width: 40vw;
     background-color: rgba(5, 146, 139, 0.6);
   }
+  header > #MainNav #Logo a {
+    color: black;
+    text-decoration: none;
+  }
   header > #MainNav #icon {
     width: 30vw;
     display: block;
@@ -882,11 +1097,25 @@ You may only @extend selectors within the same directiv.
     display: flex;
     list-style-type: none;
   }
+  header > #MainNav .BtnBox a {
+    text-decoration: none;
+    color: black;
+  }
   header > #MainNav #MenuBtn {
     display: none;
   }
-  footer address {
+  footer #Address {
     display: block;
+  }
+  footer #Address h4 {
+    text-align: center;
+  }
+  footer #Address #Information {
+    list-style-type: none;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   #Main {
     background-color: #b8e7f0;
@@ -904,8 +1133,9 @@ You may only @extend selectors within the same directiv.
     font-size: 1.2rem;
     position: absolute;
     z-index: 15;
-    top: 227.5px;
+    top: 40%;
     border-radius: 15px;
+    cursor: pointer;
   }
   #Main #Banner .LeftBtn {
     left: 2.5vw;
@@ -918,8 +1148,8 @@ You may only @extend selectors within the same directiv.
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 550px;
     background-color: aliceblue;
+    font-size: 0;
   }
   #Main #Banner #ImgBox li {
     width: 100vw;
@@ -1166,8 +1396,18 @@ You may only @extend selectors within the same directiv.
     width: 100%;
     background-color: #7d0a28;
   }
-  footer address {
+  footer #Address {
     display: block;
+  }
+  footer #Address h4 {
+    text-align: center;
+  }
+  footer #Address #Information {
+    list-style-type: none;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   #Main {
     background-color: #b8e7f0;
@@ -1185,8 +1425,9 @@ You may only @extend selectors within the same directiv.
     font-size: 1.2rem;
     position: absolute;
     z-index: 15;
-    top: 277.5px;
+    top: 40%;
     border-radius: 15px;
+    cursor: pointer;
   }
   #Main #Banner .LeftBtn {
     left: 2.5vw;
@@ -1199,8 +1440,8 @@ You may only @extend selectors within the same directiv.
   #Main #Banner #ImgBox {
     width: 100vw;
     list-style-type: none;
-    padding-bottom: 650px;
     background-color: aliceblue;
+    font-size: 0;
   }
   #Main #Banner #ImgBox li {
     width: 100vw;
@@ -1457,7 +1698,7 @@ You may only @extend selectors within the same directiv.
     width: 100%;
     background-color: #204570;
   }
-  footer address {
+  footer #Address {
     display: block;
   }
 }
