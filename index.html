@@ -1,169 +1,165 @@
 <!DOCTYPE html>
 <!-- 網頁語系 繁體中文=^^= -->
 <html lang="zh-tw">
-    <!-- head裡的內容 瀏覽器內的相關文件資訊 ment標籤(文字編碼方式 支援的瀏覽器 響應式標籤 網頁標籤 關鍵字等...)-->
+<!-- head裡的內容 瀏覽器內的相關文件資訊 ment標籤(文字編碼方式 支援的瀏覽器 響應式標籤 網頁標籤 關鍵字等...)-->
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- 外部樣式連結 -->
-        <link rel="stylesheet" href="dist/style/style.min.css" />
-        <title>BSCOFFEE</title>
-    </head>
-    <!-- html5響應式架構 id(唯一#) class(類別.) IE不支援(main標籤)可用 文章(article id="main")或(div id=main)來取代-->
-    <!-- 頁者headerr(每頁固定) 主內容main(隨著頁面主題而不同，IE瀏覽器不支援) 頁尾footer(每頁固定) -->
-    <!-- 老師有幫忙的 -->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 外部樣式連結 -->
+    <link rel="stylesheet" href="dist/style/style.min.css" />
+    <title>BSCOFFEE99</title>
+</head>
+<!-- html5響應式架構 id(唯一#) class(類別.) IE不支援(main標籤)可用 文章(article id="main")或(div id=main)來取代-->
+<!-- 頁者headerr(每頁固定) 主內容main(隨著頁面主題而不同，IE瀏覽器不支援) 頁尾footer(每頁固定) -->
+<!-- 老師有幫忙的 -->
 
-    <body>
-        <header>
-            <nav id="MainNav">
-                <!-- 導覽列 nav大框架 logo=商標或標題h1,  icon, 按鈕 ，項目ul 清單li   -->
-                <!-- logo -->
-                <h1 id="Logo">
-                    <a href="#">BsCoffee</a>
-                </h1>
+<body>
+    <header>
+        <nav id="MainNav">
+            <!-- 導覽列 nav大框架 logo=商標或標題h1,  icon, 按鈕 ，項目ul 清單li   -->
+            <!-- logo -->
+            <h1 id="Logo">
+                <a href="#">BsCoffee</a>
+            </h1>
 
-                <!-- 手機版選單按鈕 -->
-                <div id="MenuBtn">
-                    <!-- 設定方法一：直接置入圖片img；alt 替代文字(圖片連結失效時)；title提示文字(不重要的圖片，可以不用設定)；圖片很難設定為 水平置中；解決方式：利用文字取代圖片，設定背景圖呈現 -->
-                    <!-- <img src="images/icon/menu.svg" alt="BS選單圖片" title=""> -->
-                    123
-                </div>
+            <!-- 手機版選單按鈕 -->
+            <div id="MenuBtn">
+                <!-- 設定方法一：直接置入圖片img；alt 替代文字(圖片連結失效時)；title提示文字(不重要的圖片，可以不用設定)；圖片很難設定為 水平置中；解決方式：利用文字取代圖片，設定背景圖呈現 -->
+                <!-- <img src="images/icon/menu.svg" alt="BS選單圖片" title=""> -->
+                123
+            </div>
 
-                <!-- icon 有bootstrap 的 ico-->
-                <div id="icon">
-                    <li class="MemberLogin  bi-person-fill">會員</li>
-                    <li class="Facebook bi bi-facebook">臉書</li>
-                </div>
+            <!-- icon 有bootstrap 的 ico-->
+            <div id="icon">
+                <li class="MemberLogin  bi-person-fill">會員</li>
+                <li class="Facebook bi bi-facebook">臉書</li>
+            </div>
 
-                <!-- 搜尋框 -->
-                <form action="">
-                    <input
-                        id="search"
-                        type="text"
-                        placeholder="請輸入商品名稱"
-                        style="text-align: center"
-                    />
-                </form>
+            <!-- 搜尋框 -->
+            <form action="">
+                <input id="search" type="text" placeholder="請輸入商品名稱" style="text-align: center" />
+            </form>
 
-                <!-- 導覽列文字連結按鈕 「電腦版」才會出現 -->
-                <ul class="BtnBox">
-                    <li class="News">
-                        <a href="web/limited.html">最新活動</a>
-                    </li>
-                    <li class="CofeBeans">
-                        <a href="web/share.html">咖啡豆專區</a>
-                    </li>
-                    <li class="Member">會員事項</li>
-                    <li class="BusLocation">營業據點</li>
-                    <li class="DepositCofe">咖啡寄杯</li>
-                    <div class="OnlineDelivery">線上宅配</div>
-                </ul>
+            <!-- 導覽列文字連結按鈕 「電腦版」才會出現 -->
+            <ul class="BtnBox">
+                <li class="News">
+                    <a href="web/limited.html">最新活動</a>
+                </li>
+                <li class="CofeBeans">
+                    <a href="web/share.html">咖啡豆專區</a>
+                </li>
+                <li class="Member">會員事項</li>
+                <li class="BusLocation">營業據點</li>
+                <li class="DepositCofe">咖啡寄杯</li>
+                <div class="OnlineDelivery">線上宅配</div>
+            </ul>
 
-                <!-- 清除浮動樣式 -->
-                <p class="Clear"></p>
-            </nav>
+            <!-- 清除浮動樣式 -->
+            <p class="Clear"></p>
+        </nav>
 
-            <!-- 行動裝置選單 「選單展開」這部分是到後來才寫的，一開始並沒有 -->
-            <nav id="MenuNav">
-                <li id="Close">X</li>
-                <h1>
-                    <a href="index.html">BSCOFFEE</a>
-                </h1>
-                <ul>
-                    <li class="Limited item">
-                        <a href="web/limited.html">最新活動</a>
-                    </li>
-                    <li class="Share item">
-                        <a href="web/share.html">咖啡豆專區</a>
-                    </li>
-                    <li class="Member item">會員事項</li>
-                    <li class="Location item">營業據點</li>
-                    <li class="Keep item">咖啡寄杯</li>
-                    <li class="Online item">線上宅配</li>
-                </ul>
-            </nav>
-        </header>
-        <!-- hr = 分隔線 -->
-        <hr />
+        <!-- 行動裝置選單 「選單展開」這部分是到後來才寫的，一開始並沒有 -->
+        <nav id="MenuNav">
+            <li id="Close">X</li>
+            <h1>
+                <a href="index.html">BSCOFFEE</a>
+            </h1>
+            <ul>
+                <li class="Limited item">
+                    <a href="web/limited.html">最新活動</a>
+                </li>
+                <li class="Share item">
+                    <a href="web/share.html">咖啡豆專區</a>
+                </li>
+                <li class="Member item">會員事項</li>
+                <li class="Location item">營業據點</li>
+                <li class="Keep item">咖啡寄杯</li>
+                <li class="Online item">線上宅配</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- hr = 分隔線 -->
+    <hr />
 
-        <article id="Main">
-            <!--輪播廣告區(div命名) 輪播功能用javascript 命名建議用ID選擇器；輪播功能用css3 命名用ID或類別選擇器  -->
-            <!-- 固定輪播圖：主內容 會隨著頁面不同而改變 商品廣告輪播區 -->
-            <div id="Banner">
-                <div class="Btn LeftBtn" id="prev">L</div>
-                <div class="Btn RightBtn" id="next">R</div>
+    <article id="Main">
+        <!--輪播廣告區(div命名) 輪播功能用javascript 命名建議用ID選擇器；輪播功能用css3 命名用ID或類別選擇器  -->
+        <!-- 固定輪播圖：主內容 會隨著頁面不同而改變 商品廣告輪播區 -->
+        <div id="Banner">
+            <div class="Btn LeftBtn" id="prev">L</div>
+            <div class="Btn RightBtn" id="next">R</div>
 
-                <ul id="ImgBox">
-                    <li class="Item01">
-                        <img id="Bannerimg" src="images/banner/01.jpg">
-                    </li>
-                </ul>
-                <picture class="Item01">
-                    <!-- 三個裝置 給予三個判斷 -->
-                    <source id="Simg" srcset="images/banner/s/01.jpg" media="(max-width: 767px)">
-                    <source id="Timg" srcset="images/banner/t/01.jpg" media="(max-width: 1023px)">
-                    <source id="Pimg" srcset="images/banner/01.jpg" media="(min-width: 1024px)">
-                    <!-- img 當上述判斷讀取不到圖片時，或是，瀏覽器不支援時 -->
+            <ul id="ImgBox">
+                <li class="Item01">
                     <img id="Bannerimg" src="images/banner/01.jpg">
-                </picture>
+                </li>
+            </ul>
+            <picture class="Item01">
+                <!-- 三個裝置 給予三個判斷 -->
+                <source id="Simg" srcset="images/banner/s/01.jpg" media="(max-width: 767px)">
+                <source id="Timg" srcset="images/banner/t/01.jpg" media="(max-width: 1023px)">
+                <source id="Pimg" srcset="images/banner/01.jpg" media="(min-width: 1024px)">
+                <!-- img 當上述判斷讀取不到圖片時，或是，瀏覽器不支援時 -->
+                <img id="Bannerimg" src="images/banner/01.jpg">
+            </picture>
 
-                <!-- <ul id="ImgBox">
+            <!-- <ul id="ImgBox">
                     <li class="Item01"></li>
                     <li class="Item02"></li>
                     <li class="Item03"></li>
                     <li class="Item04"></li>
                     <li class="Item05"></li>
                 </ul> -->
-            </div>
+        </div>
 
-            <!-- 主內容廣告區 1:新品上市 8個商品-->
-            <article id="Limited">
-                <h1>最新商品</h1>
-                <!-- 區段section 商品1-->
-                <article id="LimCon"></article>
+        <!-- 主內容廣告區 1:新品上市 8個商品-->
+        <article id="Limited">
+            <h1>最新商品</h1>
+            <!-- 區段section 商品1-->
+            <article id="LimCon"></article>
 
-                <!-- 換頁 more -->
-                <li class="more">
-                    <a href="web/limited.html">more...</a>
-                </li>
-            </article>
-
-            <!-- 2:好物分享圖文廣告區 兩個品項-->
-            <article id="Share">
-                <h1>好物分享</h1>
-
-                <article id="ShareCon"></article>
-
-                <!-- 換頁 more -->
-                <li class="more">
-                    <a href="web/share.html">more...</a>
-                </li>
-            </article>
+            <!-- 換頁 more -->
+            <li class="more">
+                <a href="web/limited.html">more...</a>
+            </li>
         </article>
 
-        <footer id="Footer">
-                <!--擁有者資訊  版權聲明 瀏覽器解析度 安全政策 服務條款 連結:隱私政策  -->
-                <!-- 手機版的頁尾資訊 -->
-                <nav class="SmallNav" id="SmallNav"></nav>
+        <!-- 2:好物分享圖文廣告區 兩個品項-->
+        <article id="Share">
+            <h1>好物分享</h1>
 
-                <!-- 聯絡資訊 地址 客服電話 E-mail LindID Fb GoogleMap 等…-->
-                <!-- <div> <h4> BsCoffee&copy;版權宣告2020 - <span id="Year">2021</span> </h4> </div> -->
+            <article id="ShareCon"></article>
 
-                <div id="Address">
-                    <h4>聯絡資訊</h4>
-                    <ul id="Information">
-                        <li class="Address"><b>地址:</b>彰化縣員林市惠來街xx號</li>
-                        <li class="TelNum"><b>電話:</b>0908-995511</li>
-                        <li class="LindID"><b>加賴:</b>agqyhapwj555</li>
-                        <li class="E-mail"><b>信箱:</b>agqyhapwj555@gmail.com</li>
-                    </ul>
-                </div>
-        </footer>
+            <!-- 換頁 more -->
+            <li class="more">
+                <a href="web/share.html">more...</a>
+            </li>
+        </article>
+    </article>
 
-        <!-- 外連檔 -->
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-        <script data-main="javascript/app" src="javascript/init/require.js"></script>
-    </body>
+    <footer id="Footer">
+        <!--擁有者資訊  版權聲明 瀏覽器解析度 安全政策 服務條款 連結:隱私政策  -->
+        <!-- 手機版的頁尾資訊 -->
+        <nav class="SmallNav" id="SmallNav"></nav>
+
+        <!-- 聯絡資訊 地址 客服電話 E-mail LindID Fb GoogleMap 等…-->
+        <!-- <div> <h4> BsCoffee&copy;版權宣告2020 - <span id="Year">2021</span> </h4> </div> -->
+
+        <div id="Address">
+            <h4>聯絡資訊</h4>
+            <ul id="Information">
+                <li class="Address"><b>地址:</b>彰化縣員林市惠來街xx號</li>
+                <li class="TelNum"><b>電話:</b>0908-995511</li>
+                <li class="LindID"><b>加賴:</b>agqyhapwj555</li>
+                <li class="E-mail"><b>信箱:</b>agqyhapwj555@gmail.com</li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- 外連檔 -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script data-main="javascript/app" src="javascript/init/require.js"></script>
+</body>
+
 </html>
