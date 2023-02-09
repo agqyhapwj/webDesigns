@@ -31,16 +31,16 @@ You may only @extend selectors within the same directiv.
     position: fixed;
     top: 0;
     z-index: 999;
-    background-color: #ddd7d7;
+    background-color: rgb(221, 215, 215);
     /*
-        浮動對齊的問題 float
-        1:#logo 與#BtnBOX 物件的父框架 nav，無寬度
-        2: nav的父框架 header，高度消失(展開)
-        解決方式
-        1: nav 的父框架 header，給予高度；或是 nav 給予高度
-        2:清除浮動狀態，由nav設定
-        3:利用圖片高度撐開父框架的高
-        */
+    浮動對齊的問題 float
+    1:#logo 與#BtnBOX 物件的父框架 nav，無寬度
+    2: nav的父框架 header，高度消失(展開)
+    解決方式
+    1: nav 的父框架 header，給予高度；或是 nav 給予高度
+    2:清除浮動狀態，由nav設定
+    3:利用圖片高度撐開父框架的高
+    */
   }
   header > #MainNav #Logo {
     width: 85vw;
@@ -50,7 +50,7 @@ You may only @extend selectors within the same directiv.
   }
   header > #MainNav #Logo {
     float: left;
-    background-color: #c5bdbd;
+    background-color: rgb(197, 189, 189);
   }
   header > #MainNav #Logo a {
     color: black;
@@ -59,7 +59,7 @@ You may only @extend selectors within the same directiv.
   header > #MainNav #MenuBtn {
     height: 60px;
     float: left;
-    background-color: darkgray;
+    background-color: rgb(169, 169, 169);
     text-indent: -9999px;
     background-repeat: no-repeat;
     background-position: center;
@@ -67,7 +67,7 @@ You may only @extend selectors within the same directiv.
     background-image: url(../../images/icon/menu.svg);
   }
   header > #MainNav #icon,
-  header > #MainNav form {
+header > #MainNav form {
     display: none;
   }
   header > #MainNav .BtnBox {
@@ -125,7 +125,7 @@ You may only @extend selectors within the same directiv.
     width: 30%;
     height: 70px;
     margin-bottom: 100px;
-    background-color: #b5ecec;
+    background-color: rgb(181, 236, 236);
   }
   header > #MenuNav > ul > .color {
     background-color: slateblue;
@@ -279,7 +279,7 @@ You may only @extend selectors within the same directiv.
     border-radius: 15px;
   }
   #Main > #Limited > article > .Commodity > .Images > a > img {
-    border: 1.5px solid #440707;
+    border: 1.5px solid rgb(68, 7, 7);
     border-radius: 15px;
   }
   #Main > #Limited > article > .Commodity .LName {
@@ -376,7 +376,7 @@ You may only @extend selectors within the same directiv.
     border-radius: 15px;
   }
   #Main > #Share > article > .Commodity > .Images > a > img {
-    border: 1.5px solid #440707;
+    border: 1.5px solid rgb(68, 7, 7);
     border-radius: 15px;
   }
   #Main > #Share > article > .Commodity .LName {
@@ -417,7 +417,7 @@ You may only @extend selectors within the same directiv.
     border-radius: 20px;
   }
   #Main > #Limited #Pagination,
-  #Share #Pagination {
+#Share #Pagination {
     width: 90%;
     height: 55px;
     display: -webkit-box;
@@ -436,20 +436,19 @@ You may only @extend selectors within the same directiv.
     background-color: white;
   }
 }
-
 @media screen and (min-width: 576px) {
   header > #MainNav {
     width: 100%;
     /*
-        浮動對齊的問題 float
-        1:#logo 與#BtnBOX 物件的父框架 nav，無寬度
-        2: nav的父框架 header，高度消失(展開)
-        解決方式
-        1: nav 的父框架 header，給予高度；或是 nav 給予高度
-        2:清除浮動狀態，由nav設定
-        3:利用圖片高度撐開父框架的高
-        */
-    background-color: #db9cec;
+    浮動對齊的問題 float
+    1:#logo 與#BtnBOX 物件的父框架 nav，無寬度
+    2: nav的父框架 header，高度消失(展開)
+    解決方式
+    1: nav 的父框架 header，給予高度；或是 nav 給予高度
+    2:清除浮動狀態，由nav設定
+    3:利用圖片高度撐開父框架的高
+    */
+    background-color: rgb(219, 156, 236);
   }
   header > #MainNav #Logo {
     width: 85vw;
@@ -459,7 +458,7 @@ You may only @extend selectors within the same directiv.
   }
   header > #MainNav #Logo {
     float: left;
-    background-color: #d174eb;
+    background-color: rgb(209, 116, 235);
   }
   header > #MainNav #Logo a {
     color: black;
@@ -468,7 +467,7 @@ You may only @extend selectors within the same directiv.
   header > #MainNav #MenuBtn {
     height: 60px;
     float: left;
-    background-color: #c54beb;
+    background-color: rgb(197, 75, 235);
     text-indent: -9999px;
     background-repeat: no-repeat;
     background-position: center;
@@ -476,7 +475,7 @@ You may only @extend selectors within the same directiv.
     background-image: url(../../images/icon/menu.svg);
   }
   header > #MainNav #icon,
-  header > #MainNav form {
+header > #MainNav form {
     display: none;
   }
   header > #MainNav .BtnBox {
@@ -534,7 +533,7 @@ You may only @extend selectors within the same directiv.
     width: 30%;
     height: 70px;
     margin-bottom: 100px;
-    background-color: #737ed3;
+    background-color: rgb(115, 126, 211);
   }
   header > #MenuNav > ul > .color {
     background-color: slateblue;
@@ -706,7 +705,7 @@ You may only @extend selectors within the same directiv.
     border-radius: 15px;
   }
   #Main > #Limited > article > .Commodity > .Images > a > img {
-    border: 1.5px solid #440707;
+    border: 1.5px solid rgb(68, 7, 7);
     border-radius: 15px;
   }
   #Main > #Limited > article > .Commodity .LName {
@@ -811,7 +810,7 @@ You may only @extend selectors within the same directiv.
     border-radius: 15px;
   }
   #Main > #Share > article > .Commodity > .Images > a > img {
-    border: 1.5px solid #440707;
+    border: 1.5px solid rgb(68, 7, 7);
     border-radius: 15px;
   }
   #Main > #Share > article > .Commodity .LName {
@@ -852,7 +851,7 @@ You may only @extend selectors within the same directiv.
     border-radius: 20px;
   }
   #Main > #Limited #Pagination,
-  #Share #Pagination {
+#Share #Pagination {
     width: 385px;
     height: 55px;
     display: -webkit-box;
@@ -871,20 +870,19 @@ You may only @extend selectors within the same directiv.
     background-color: white;
   }
 }
-
 @media screen and (min-width: 768px) {
   header > #MainNav {
     /*
-        浮動對齊的問題 float
-        1:#logo 與#BtnBOX 物件的父框架 nav，無寬度
-        2: nav的父框架 header，高度消失(展開)
-        解決方式
-        1: nav 的父框架 header，給予高度；或是 nav 給予高度
-        2:清除浮動狀態，由nav設定
-        3:利用圖片高度撐開父框架的高
-        */
+    浮動對齊的問題 float
+    1:#logo 與#BtnBOX 物件的父框架 nav，無寬度
+    2: nav的父框架 header，高度消失(展開)
+    解決方式
+    1: nav 的父框架 header，給予高度；或是 nav 給予高度
+    2:清除浮動狀態，由nav設定
+    3:利用圖片高度撐開父框架的高
+    */
     width: 100vw;
-    background-color: #05a7af;
+    background-color: rgb(5, 167, 175);
   }
   header > #MainNav #Logo {
     width: 90vw;
@@ -894,7 +892,7 @@ You may only @extend selectors within the same directiv.
   }
   header > #MainNav #Logo {
     float: left;
-    background-color: #006b70;
+    background-color: rgb(0, 107, 112);
   }
   header > #MainNav #Logo a {
     color: black;
@@ -903,7 +901,7 @@ You may only @extend selectors within the same directiv.
   header > #MainNav #MenuBtn {
     height: 80px;
     float: left;
-    background-color: #166185;
+    background-color: rgb(22, 97, 133);
     text-indent: -9999px;
     background-repeat: no-repeat;
     background-position: center;
@@ -965,7 +963,7 @@ You may only @extend selectors within the same directiv.
     width: 30%;
     height: 70px;
     margin-bottom: 100px;
-    background-color: #7ccf00;
+    background-color: rgb(124, 207, 0);
   }
   header > #MenuNav > ul > .color {
     background-color: slateblue;
@@ -1047,14 +1045,13 @@ You may only @extend selectors within the same directiv.
     background-image: url(../../images/banner/01.jpg);
   }
 }
-
 @media screen and (min-width: 992px) {
   header {
     width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: #a5e9e6;
+    background-color: rgb(165, 233, 230);
   }
   header > #MainNav {
     width: 100vw;
@@ -1064,7 +1061,7 @@ You may only @extend selectors within the same directiv.
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background-color: #5be9e2;
+    background-color: rgb(91, 233, 226);
   }
   header > #MainNav #Logo {
     width: 40vw;
@@ -1115,7 +1112,7 @@ You may only @extend selectors within the same directiv.
     display: flex;
   }
   #Main {
-    background-color: #b8e7f0;
+    background-color: rgb(184, 231, 240);
   }
   #Main #Banner {
     width: 100vw;
@@ -1204,7 +1201,7 @@ You may only @extend selectors within the same directiv.
     width: 95%;
   }
   #Main > #Limited > article > .Commodity {
-    width: 30.33333%;
+    width: 30.3333333333%;
     margin-bottom: 20px;
     margin-left: 1.5%;
     margin-right: 1.5%;
@@ -1244,7 +1241,7 @@ You may only @extend selectors within the same directiv.
     border-radius: 15px;
   }
   #Main > #Limited > article > .Commodity > .Images > a > img {
-    border: 1.5px solid #440707;
+    border: 1.5px solid rgb(68, 7, 7);
     border-radius: 15px;
   }
   #Main > #Limited > article > .Commodity .LName {
@@ -1329,7 +1326,7 @@ You may only @extend selectors within the same directiv.
     width: 95%;
   }
   #Main > #Share > article > .Commodity {
-    width: 30.33333%;
+    width: 30.3333333333%;
     margin-bottom: 20px;
     margin-left: 1.5%;
     margin-right: 1.5%;
@@ -1346,7 +1343,7 @@ You may only @extend selectors within the same directiv.
     border-radius: 15px;
   }
   #Main > #Share > article > .Commodity > .Images > a > img {
-    border: 1.5px solid #440707;
+    border: 1.5px solid rgb(68, 7, 7);
     border-radius: 15px;
   }
   #Main > #Share > article > .Commodity .LName {
@@ -1387,11 +1384,10 @@ You may only @extend selectors within the same directiv.
     border-radius: 20px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   header {
     width: 100%;
-    background-color: #7d0a28;
+    background-color: rgb(125, 10, 40);
   }
   footer #Address {
     display: block;
@@ -1407,7 +1403,7 @@ You may only @extend selectors within the same directiv.
     display: flex;
   }
   #Main {
-    background-color: #b8e7f0;
+    background-color: rgb(184, 231, 240);
   }
   #Main #Banner {
     width: 100vw;
@@ -1541,7 +1537,7 @@ You may only @extend selectors within the same directiv.
     border-radius: 15px;
   }
   #Main > #Limited > article > .Commodity > .Images > a > img {
-    border: 1.5px solid #440707;
+    border: 1.5px solid rgb(68, 7, 7);
     border-radius: 15px;
   }
   #Main > #Limited > article > .Commodity .LName {
@@ -1648,7 +1644,7 @@ You may only @extend selectors within the same directiv.
     border-radius: 15px;
   }
   #Main > #Share > article > .Commodity > .Images > a > img {
-    border: 1.5px solid #440707;
+    border: 1.5px solid rgb(68, 7, 7);
     border-radius: 15px;
   }
   #Main > #Share > article > .Commodity .LName {
@@ -1689,11 +1685,10 @@ You may only @extend selectors within the same directiv.
     border-radius: 20px;
   }
 }
-
 @media screen and (min-width: 1400px) {
   header {
     width: 100%;
-    background-color: #204570;
+    background-color: rgb(32, 69, 112);
   }
   footer #Address {
     display: block;
